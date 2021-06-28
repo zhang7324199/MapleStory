@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="1540815.img"><imgdir name="info"><int name="hideName" value="1"/><int name="skeleton" value="1"/><int name="jsonLoad" value="1"/><imgdir name="spine"><string name="1540815.atlas" value="
+brokenwall01.png
+size: 1015,1022
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+big bit_02
+  rotate: true
+  xy: 774, 531
+  size: 114, 156
+  orig: 114, 156
+  offset: 0, 0
+  index: -1
+big bit_03
+  rotate: true
+  xy: 371, 385
+  size: 125, 281
+  orig: 125, 281
+  offset: 0, 0
+  index: -1
+big bit_06
+  rotate: true
+  xy: 588, 2
+  size: 114, 185
+  orig: 114, 185
+  offset: 0, 0
+  index: -1
+big bit_07
+  rotate: true
+  xy: 775, 10
+  size: 193, 220
+  orig: 193, 220
+  offset: 0, 0
+  index: -1
+bit_01
+  rotate: true
+  xy: 230, 24
+  size: 46, 97
+  orig: 46, 97
+  offset: 0, 0
+  index: -1
+bit_02
+  rotate: false
+  xy: 932, 547
+  size: 80, 98
+  orig: 80, 98
+  offset: 0, 0
+  index: -1
+bit_03
+  rotate: true
+  xy: 2, 5
+  size: 65, 125
+  orig: 65, 125
+  offset: 0, 0
+  index: -1
+bit_04
+  rotate: true
+  xy: 419, 7
+  size: 75, 167
+  orig: 75, 167
+  offset: 0, 0
+  index: -1
+bit_05
+  rotate: true
+  xy: 129, 13
+  size: 57, 99
+  orig: 57, 99
+  offset: 0, 0
+  index: -1
+bit_06
+  rotate: true
+  xy: 329, 15
+  size: 55, 50
+  orig: 55, 50
+  offset: 0, 0
+  index: -1
+bit_07
+  rotate: false
+  xy: 381, 9
+  size: 36, 63
+  orig: 36, 63
+  offset: 0, 0
+  index: -1
+bit_08
+  rotate: true
+  xy: 361, 74
+  size: 42, 55
+  orig: 42, 55
+  offset: 0, 0
+  index: -1
+broken_wall
+  rotate: false
+  xy: 2, 72
+  size: 357, 285
+  orig: 357, 285
+  offset: 0, 0
+  index: -1
+crack_03
+  rotate: false
+  xy: 734, 205
+  size: 279, 305
+  orig: 279, 305
+  offset: 0, 0
+  index: -1
+light
+  rotate: true
+  xy: 371, 512
+  size: 508, 401
+  orig: 508, 401
+  offset: 0, 0
+  index: -1
+light_dust_D_01
+  rotate: true
+  xy: 775, 647
+  size: 373, 219
+  orig: 373, 219
+  offset: 0, 0
+  index: -1
+light_dust_D_02
+  rotate: false
+  xy: 361, 118
+  size: 371, 239
+  orig: 371, 239
+  offset: 0, 0
+  index: -1
+small_bit_01
+  rotate: true
+  xy: 481, 84
+  size: 32, 44
+  orig: 32, 44
+  offset: 0, 0
+  index: -1
+small_bit_02
+  rotate: false
+  xy: 230, 7
+  size: 33, 15
+  orig: 33, 15
+  offset: 0, 0
+  index: -1
+small_bit_03
+  rotate: true
+  xy: 418, 84
+  size: 32, 61
+  orig: 32, 61
+  offset: 0, 0
+  index: -1
+wall
+  rotate: false
+  xy: 2, 359
+  size: 367, 661
+  orig: 367, 661
+  offset: 0, 0
+  index: -1
+
+brokenwall012.png
+size: 926,570
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+big bit_01
+  rotate: true
+  xy: 277, 367
+  size: 201, 335
+  orig: 201, 335
+  offset: 0, 0
+  index: -1
+big bit_04
+  rotate: true
+  xy: 558, 189
+  size: 158, 261
+  orig: 158, 261
+  offset: 0, 0
+  index: -1
+big bit_05
+  rotate: true
+  xy: 264, 14
+  size: 175, 246
+  orig: 175, 246
+  offset: 0, 0
+  index: -1
+crack_01
+  rotate: true
+  xy: 512, 29
+  size: 158, 227
+  orig: 158, 227
+  offset: 0, 0
+  index: -1
+crack_02
+  rotate: false
+  xy: 2, 2
+  size: 260, 282
+  orig: 260, 282
+  offset: 0, 0
+  index: -1
+light_ball
+  rotate: false
+  xy: 741, 14
+  size: 183, 173
+  orig: 183, 173
+  offset: 0, 0
+  index: -1
+light_line
+  rotate: false
+  xy: 277, 191
+  size: 279, 174
+  orig: 279, 174
+  offset: 0, 0
+  index: -1
+smog_01
+  rotate: false
+  xy: 614, 349
+  size: 294, 219
+  orig: 294, 219
+  offset: 0, 0
+  index: -1
+smog_02
+  rotate: false
+  xy: 2, 286
+  size: 273, 282
+  orig: 273, 282
+  offset: 0, 0
+  index: -1
+"/><string name="1540815.json" value=""/><canvas name="brokenwall01.png" width="1015" height="1022"><vector name="origin" x="971" y="573"/><int name="z" value="0"/><string name="_hash" value="d709c5eadd7ebc0fc23ad30f4d8eeae723205c25a8a069334f11df9c48f48bbb"/></canvas><canvas name="brokenwall012.png" width="926" height="570"><vector name="origin" x="576" y="337"/><int name="z" value="0"/><string name="_hash" value="7223481e9f2205d04491789edf4ae865f9d6c8cd7c85a819e6758ef3bda387f3"/></canvas></imgdir></imgdir><imgdir name="stand"><string name="aniName" value="animation_01"/></imgdir><imgdir name="broken1"><string name="aniName" value="animation_02"/><int name="special" value="1"/></imgdir><imgdir name="broken2"><string name="aniName" value="animation_03"/><int name="special" value="1"/></imgdir><imgdir name="broken3"><string name="aniName" value="animation_04"/><int name="special" value="1"/></imgdir><imgdir name="broken4"><string name="aniName" value="animation_05"/><int name="special" value="1"/></imgdir><imgdir name="die"><string name="aniName" value="animation_06"/><int name="special" value="1"/></imgdir></imgdir>

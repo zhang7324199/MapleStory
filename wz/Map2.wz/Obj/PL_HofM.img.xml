@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="PL_HofM.img"><imgdir name="act1_5"><imgdir name="illust"><imgdir name="0"><string name="004.atlas" value="
+0
+size: 1024,997
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg3
+  rotate: false
+  xy: 2, 154
+  size: 1020, 158
+  orig: 1020, 158
+  offset: 0, 0
+  index: -1
+bg4
+  rotate: false
+  xy: 2, 314
+  size: 1020, 681
+  orig: 1020, 681
+  offset: 0, 0
+  index: -1
+leg
+  rotate: false
+  xy: 2, 2
+  size: 112, 150
+  orig: 112, 150
+  offset: 0, 0
+  index: -1
+
+0042.png
+size: 1024,918
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG
+  rotate: false
+  xy: 2, 403
+  size: 1020, 513
+  orig: 1020, 513
+  offset: 0, 0
+  index: -1
+bg2
+  rotate: false
+  xy: 2, 2
+  size: 1000, 399
+  orig: 1000, 399
+  offset: 0, 0
+  index: -1
+
+0043.png
+size: 984,819
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dust
+  rotate: false
+  xy: 2, 2
+  size: 738, 432
+  orig: 738, 432
+  offset: 0, 0
+  index: -1
+evan
+  rotate: false
+  xy: 2, 438
+  size: 538, 379
+  orig: 538, 379
+  offset: 0, 0
+  index: -1
+wing_r
+  rotate: true
+  xy: 542, 436
+  size: 381, 440
+  orig: 381, 440
+  offset: 0, 0
+  index: -1
+
+0044.png
+size: 679,772
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg2_
+  rotate: false
+  xy: 2, 2
+  size: 675, 768
+  orig: 675, 768
+  offset: 0, 0
+  index: -1
+
+0045.png
+size: 744,588
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke
+  rotate: false
+  xy: 2, 2
+  size: 740, 584
+  orig: 740, 584
+  offset: 0, 0
+  index: -1
+
+0046.png
+size: 571,451
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+e_body
+  rotate: false
+  xy: 2, 2
+  size: 567, 447
+  orig: 567, 447
+  offset: 0, 0
+  index: -1
+"/><string name="004.json" value=""/><canvas name="0" width="1024" height="997"><vector name="origin" x="512" y="498"/><int name="z" value="0"/><string name="_hash" value="e1d966b4cabd885648b657b1a3ca1a390f80e8fb4cfe4d0de483934a6ecbc7c7"/></canvas><canvas name="0042.png" width="1024" height="918"><vector name="origin" x="512" y="459"/><int name="z" value="0"/><string name="_hash" value="fd2e1c95ba9120947abed0374932bccf12dc36a3d72659fedd06d3606b2e6a76"/></canvas><canvas name="0043.png" width="984" height="819"><vector name="origin" x="492" y="409"/><int name="z" value="0"/><string name="_hash" value="4348709d3aaf179d1a100a432562e21fb31b5a83d19494d2b4b284956c5ff4c8"/></canvas><canvas name="0044.png" width="679" height="772"><vector name="origin" x="339" y="386"/><int name="z" value="0"/><string name="_hash" value="a9ad55f4cf9d36af5bbf9cb2719458e8ce3992b647a36ed079cb4ee2878de282"/></canvas><canvas name="0045.png" width="744" height="588"><vector name="origin" x="372" y="294"/><int name="z" value="0"/><string name="_hash" value="661901d621246a0ae515b880c23ea9a00d2424d14c35ec394657cc243b6bf30f"/></canvas><canvas name="0046.png" width="571" height="451"><vector name="origin" x="285" y="225"/><int name="z" value="0"/><string name="_hash" value="7306edc42d4ad010de060ff8b19e489dd1928662de632d84e18a485891f89e96"/></canvas><string name="spine" value="004"/></imgdir><imgdir name="1"><string name="skeleton.atlas" value="
+0
+size: 1004,828
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+m_01
+  rotate: false
+  xy: 2, 2
+  size: 1000, 824
+  orig: 1000, 824
+  offset: 0, 0
+  index: -1
+
+skeleton2.png
+size: 1004,795
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+m_02
+  rotate: false
+  xy: 2, 2
+  size: 1000, 791
+  orig: 1000, 791
+  offset: 0, 0
+  index: -1
+"/><string name="skeleton.json" value="{
+&quot;skeleton&quot;: { &quot;hash&quot;: &quot;xFcvuq3qjIsImKxTgyoioPkvoLA&quot;, &quot;spine&quot;: &quot;2.1.27&quot;, &quot;width&quot;: 2324.37, &quot;height&quot;: 1915.28 },
+&quot;bones&quot;: [
+	{ &quot;name&quot;: &quot;root&quot;, &quot;x&quot;: 1, &quot;y&quot;: 1 },
+	{ &quot;name&quot;: &quot;shimma&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: 405.65, &quot;y&quot;: 142.05 },
+	{ &quot;name&quot;: &quot;effect&quot;, &quot;parent&quot;: &quot;shimma&quot;, &quot;x&quot;: -411, &quot;y&quot;: -140 },
+	{ &quot;name&quot;: &quot;bone&quot;, &quot;parent&quot;: &quot;effect&quot;, &quot;x&quot;: 13, &quot;y&quot;: 5, &quot;scaleX&quot;: 0.507, &quot;scaleY&quot;: 0.507 },
+	{ &quot;name&quot;: &quot;bone2&quot;, &quot;parent&quot;: &quot;effect&quot;, &quot;x&quot;: 17, &quot;y&quot;: 12, &quot;scaleX&quot;: 0.909, &quot;scaleY&quot;: 0.909 }
+],
+&quot;slots&quot;: [
+	{ &quot;name&quot;: &quot;m_01&quot;, &quot;bone&quot;: &quot;bone&quot;, &quot;attachment&quot;: &quot;m_01&quot; },
+	{ &quot;name&quot;: &quot;m_02&quot;, &quot;bone&quot;: &quot;bone2&quot; },
+	{ &quot;name&quot;: &quot;1&quot;, &quot;bone&quot;: &quot;shimma&quot;, &quot;attachment&quot;: &quot;1&quot; }
+],
+&quot;skins&quot;: {
+	&quot;default&quot;: {
+		&quot;1&quot;: {
+			&quot;1&quot;: {
+				&quot;type&quot;: &quot;boundingbox&quot;,
+				&quot;vertices&quot;: [ -426.88153, 28.27868, -570.65625, -136.79645, -432.20633, -275.24643, -283.10648, -142.1214 ]
+			}
+		},
+		&quot;m_01&quot;: {
+			&quot;m_01&quot;: { &quot;x&quot;: -2.63, &quot;y&quot;: 39.51, &quot;scaleX&quot;: 4.582, &quot;scaleY&quot;: 4.582, &quot;width&quot;: 1000, &quot;height&quot;: 824 }
+		},
+		&quot;m_02&quot;: {
+			&quot;m_02&quot;: { &quot;width&quot;: 1000, &quot;height&quot;: 791 }
+		}
+	}
+},
+&quot;animations&quot;: {
+	&quot;animation&quot;: {
+		&quot;slots&quot;: {
+			&quot;m_01&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;m_01&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;name&quot;: &quot;m_01&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;m_02&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.3333, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			}
+		},
+		&quot;bones&quot;: {
+			&quot;bone&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0.71, &quot;y&quot;: 0.71 },
+					{ &quot;time&quot;: 0.1666, &quot;x&quot;: 0.581, &quot;y&quot;: 0.581 },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 0.71, &quot;y&quot;: 0.71 }
+				]
+			},
+			&quot;root&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;shimma&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;effect&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;bone2&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			}
+		},
+		&quot;drawOrder&quot;: [
+			{ &quot;time&quot;: 0 },
+			{ &quot;time&quot;: 0.3333 }
+		]
+	}
+}
+}"/><canvas name="0" width="1004" height="828"><vector name="origin" x="502" y="414"/><int name="z" value="0"/><string name="_hash" value="aa2b9163862331b98b4a0b962e77d2f08034727afcd364d4ad38a49c557ae27d"/></canvas><canvas name="skeleton2.png" width="1004" height="795"><vector name="origin" x="502" y="397"/><int name="z" value="0"/><string name="_hash" value="904521c8031f16ec22d33fe5a52ced50b89c8e05a6ac1f6cec93fa5cb8587ddc"/></canvas><string name="spine" value="skeleton"/></imgdir><imgdir name="2"><canvas name="0" width="1366" height="400"><vector name="origin" x="683" y="200"/><int name="z" value="0"/><string name="_hash" value="352839e01285cb95bc0fcbc1f03b11a8b99a2e2946cb11a77ece84c01b02cbe7"/></canvas></imgdir><imgdir name="3"><canvas name="0" width="1366" height="768"><vector name="origin" x="683" y="384"/><int name="z" value="0"/><string name="_hash" value="50a536b82ba085db295a87c7b8a35892b519932d134986ecda137e1178c34cc0"/></canvas></imgdir><imgdir name="4"><string name="Deselect11.atlas" value="
+0
+size: 1019,1023
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG2
+  rotate: false
+  xy: 2, 619
+  size: 1015, 402
+  orig: 1015, 402
+  offset: 0, 0
+  index: -1
+PAN_A_1
+  rotate: false
+  xy: 706, 214
+  size: 302, 81
+  orig: 302, 81
+  offset: 0, 0
+  index: -1
+RING_A
+  rotate: true
+  xy: 706, 297
+  size: 320, 309
+  orig: 320, 309
+  offset: 0, 0
+  index: -1
+RING_B
+  rotate: true
+  xy: 706, 2
+  size: 210, 240
+  orig: 210, 240
+  offset: 0, 0
+  index: -1
+all_card
+  rotate: true
+  xy: 2, 11
+  size: 606, 702
+  orig: 606, 702
+  offset: 0, 0
+  index: -1
+
+Deselect112.png
+size: 1016,1022
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PAN_A_2
+  rotate: true
+  xy: 980, 746
+  size: 274, 34
+  orig: 274, 34
+  offset: 0, 0
+  index: -1
+PAN_C_3
+  rotate: false
+  xy: 2, 545
+  size: 976, 475
+  orig: 976, 475
+  offset: 0, 0
+  index: -1
+RING_C
+  rotate: false
+  xy: 829, 20
+  size: 179, 157
+  orig: 179, 157
+  offset: 0, 0
+  index: -1
+card_F
+  rotate: false
+  xy: 634, 2
+  size: 193, 175
+  orig: 193, 175
+  offset: 0, 0
+  index: -1
+light
+  rotate: true
+  xy: 2, 33
+  size: 510, 630
+  orig: 510, 630
+  offset: 0, 0
+  index: -1
+smoke_C
+  rotate: true
+  xy: 634, 179
+  size: 364, 337
+  orig: 364, 337
+  offset: 0, 0
+  index: -1
+
+Deselect113.png
+size: 999,1018
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PAN_A_4
+  rotate: false
+  xy: 2, 614
+  size: 976, 402
+  orig: 976, 402
+  offset: 0, 0
+  index: -1
+PAN_B_3
+  rotate: false
+  xy: 2, 210
+  size: 976, 402
+  orig: 976, 402
+  offset: 0, 0
+  index: -1
+PAN_C_1
+  rotate: false
+  xy: 281, 65
+  size: 293, 143
+  orig: 293, 143
+  offset: 0, 0
+  index: -1
+card_A
+  rotate: true
+  xy: 2, 2
+  size: 206, 277
+  orig: 206, 277
+  offset: 0, 0
+  index: -1
+card_D
+  rotate: true
+  xy: 750, 96
+  size: 112, 247
+  orig: 112, 247
+  offset: 0, 0
+  index: -1
+card_E
+  rotate: false
+  xy: 576, 10
+  size: 172, 198
+  orig: 172, 198
+  offset: 0, 0
+  index: -1
+
+Deselect114.png
+size: 1016,1019
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+PAN_A_3
+  rotate: true
+  xy: 530, 2
+  size: 526, 402
+  orig: 526, 402
+  offset: 0, 0
+  index: -1
+PAN_B_1
+  rotate: true
+  xy: 933, 715
+  size: 302, 81
+  orig: 302, 81
+  offset: 0, 0
+  index: -1
+PAN_C_2
+  rotate: false
+  xy: 2, 53
+  size: 526, 475
+  orig: 526, 475
+  offset: 0, 0
+  index: -1
+card_B
+  rotate: false
+  xy: 692, 764
+  size: 239, 253
+  orig: 239, 253
+  offset: 0, 0
+  index: -1
+card_C
+  rotate: true
+  xy: 692, 546
+  size: 216, 236
+  orig: 216, 236
+  offset: 0, 0
+  index: -1
+smoke_A
+  rotate: false
+  xy: 2, 530
+  size: 688, 487
+  orig: 688, 487
+  offset: 0, 0
+  index: -1
+
+Deselect115.png
+size: 903,829
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG1
+  rotate: false
+  xy: 2, 425
+  size: 495, 402
+  orig: 495, 402
+  offset: 0, 0
+  index: -1
+PAN_B_2
+  rotate: true
+  xy: 499, 301
+  size: 526, 402
+  orig: 526, 402
+  offset: 0, 0
+  index: -1
+smoke_B
+  rotate: true
+  xy: 2, 2
+  size: 421, 433
+  orig: 421, 433
+  offset: 0, 0
+  index: -1
+"/><string name="Deselect11.json" value=""/><canvas name="0" width="1019" height="1023"><vector name="origin" x="509" y="511"/><int name="z" value="0"/><string name="_hash" value="49c965f6275682aa9d983573e82cfce455156507a8ca414e60b05b5d26bf3f45"/></canvas><canvas name="Deselect112.png" width="1016" height="1022"><vector name="origin" x="508" y="511"/><int name="z" value="0"/><string name="_hash" value="29add19fc73daeda865a3e8fda4377ef7d220708075835b1b60bf4f343477bc9"/></canvas><canvas name="Deselect113.png" width="999" height="1018"><vector name="origin" x="499" y="509"/><int name="z" value="0"/><string name="_hash" value="d014dad124294471a177c10a8304397676eb51b79eb6b6088d95c1952d11ff3d"/></canvas><canvas name="Deselect114.png" width="1016" height="1019"><vector name="origin" x="508" y="509"/><int name="z" value="0"/><string name="_hash" value="f286e40c3db5f095e9e97df1784bf6a5f6596c908426e8156e70929ef5d2895d"/></canvas><canvas name="Deselect115.png" width="903" height="829"><vector name="origin" x="451" y="414"/><int name="z" value="0"/><string name="_hash" value="0c81544f8edc987e81af52f624ef7f995aa57b0e2088a1289e3ee5e5f9c6f771"/></canvas><string name="spine" value="Deselect11"/></imgdir></imgdir><imgdir name="acc"><imgdir name="0"><canvas name="0" width="1024" height="354"><vector name="origin" x="512" y="177"/><int name="z" value="0"/><string name="_hash" value="687eb12eb86cb45edcf6163cb674689bfdf2ebc97c3e33b95bf48e6fa127b6b5"/></canvas></imgdir><imgdir name="1"><canvas name="0" width="337" height="237"><vector name="origin" x="168" y="118"/><int name="z" value="0"/><string name="_hash" value="6e31f4c0086812aa33bf0cae96c5e2cc0d41dfd95d0e1e33fce9ad1d3db0c14d"/></canvas></imgdir><imgdir name="2"><canvas name="0" width="1024" height="622"><vector name="origin" x="512" y="311"/><int name="z" value="0"/><string name="_hash" value="0cfa16485892d106e78a993f238a3ae9a7723345c18996e76918a325f860d123"/></canvas></imgdir><imgdir name="3"><canvas name="0" width="1024" height="157"><vector name="origin" x="512" y="78"/><int name="z" value="0"/><string name="_hash" value="a6daa8f3d4a42bdd554aaee552fe6c2b036da2259216283d8129c33d1fdfa31c"/></canvas></imgdir></imgdir></imgdir></imgdir>

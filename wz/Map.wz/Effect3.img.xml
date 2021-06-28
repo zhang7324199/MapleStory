@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="Effect3.img"><imgdir name="hungryMuto"><imgdir name="perfect"><canvas name="0" width="355" height="114"><vector name="origin" x="177" y="313"/><int name="z" value="0"/><string name="_hash" value="673f1282aaf65d7feb9dd3a8dd0135c195695431c998686a59835d4e3f8ef583"/></canvas><canvas name="1" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="53c4f1c65325d1c4501cbcb760dce32506cf167977ab2e9f02c1637887b30683"/></canvas><canvas name="2" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="6bd5a3b825fe2a29e8b1a03c2f0e5b848aab6065291fbfbe5c8682749bc64a54"/></canvas><canvas name="3" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="6476dc010ad2c6e0a67f6ce22c9791561ef9f332531d1218775590ecefafb9a3"/></canvas><canvas name="4" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="b09cafb30ab3f9e6711a72c9bf52e230cd5da1407b87c116d70482a0c92ec34c"/></canvas><canvas name="5" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="94923749b502c3d2ee49c989ccbf7e192c06f54548d4ece273aa8d9adc23dff7"/></canvas><canvas name="6" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="87e49d11cfbd6f6e5a90eca882e08bcdd160e9a86414d33b671f181076d988e3"/></canvas><canvas name="7" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="229905253b88d01a873771426b4f749f4d9caf7b544ca8570dcabb1c7f8be7bc"/></canvas><canvas name="8" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="8ae2a3ff4beaee89a40f64004088b05698ef0468e5b0739b75b15a6001058a5d"/></canvas><canvas name="9" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="6685abc8331ea91ac2963a974f06c632456f81286aee7cd0fc22fe81af0bd018"/></canvas><canvas name="10" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="898424e641fe77516bbba2c4000b74748bc7a5acf991b4279cda3b37e183987e"/></canvas><canvas name="11" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/perfect/5"/></canvas><canvas name="12" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="82af36386a9d18f483ac25fd27351a8ac8cd1991b6ee53ecb625e439d5d31759"/></canvas><canvas name="13" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="a3ab3bf8515d11e7c1f022e63c5a9cba98951f3cc0ed6feea0bff8af10e7fa5a"/></canvas><canvas name="14" width="349" height="93"><vector name="origin" x="174" y="295"/><int name="z" value="0"/><string name="_hash" value="a1c0043fafd32371df7004e5a6af7db3042398e1f36dd63d151716f2b7470262"/></canvas></imgdir><imgdir name="good"><canvas name="0" width="354" height="123"><vector name="origin" x="177" y="322"/><int name="z" value="0"/><string name="_hash" value="edc46631e09dbb6558e256a94d7d74d3d8727f716361cc296f389a5c45c688e2"/></canvas><canvas name="1" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="1eccb3f244a6dbf3722ef994f4cea2790a6457750a2d99b128bec2e25b70f6fc"/></canvas><canvas name="2" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="3d9f7dbff5fc3ad6eb16f5d058a5954a69676b8391462b2bfe8302b9a91493ce"/></canvas><canvas name="3" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="0f7e85f669a9b34bb5f28da636f451cd0df493ed520572f485c5604d0f2e221e"/></canvas><canvas name="4" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="15db12d1dc3797a8a764547a9e790962b420d5ab824dc14666100fe4fb12edbc"/></canvas><canvas name="5" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="c8c697acac97da469c626af4885ff046e3c8fdce9dd0f685a93928f3fae61a8b"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/good/5"/></canvas><canvas name="7" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/good/5"/></canvas><canvas name="8" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/good/5"/></canvas><canvas name="9" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/good/5"/></canvas><canvas name="10" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="205b0a46907e26b6a5224be1996924f668445f002ca6f2632b25845193f20416"/></canvas><canvas name="11" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/good/5"/></canvas><canvas name="12" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="a5776d261e69c03dd03ae66a44d7b30e4916d6af582b0b70792119645210c76f"/></canvas><canvas name="13" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="e12375bfc8915a379e9b9d2f91c22e9ab92b8f6e93fa2b00298cbbe77e47fc52"/></canvas><canvas name="14" width="349" height="93"><vector name="origin" x="174" y="295"/><int name="z" value="0"/><string name="_hash" value="7763fb9fda0f6cff07d9bd0cfb22a6e310be6d314f25704bec3a23418643e9b7"/></canvas><canvas name="15" width="343" height="93"><vector name="origin" x="171" y="295"/><int name="z" value="0"/><string name="_hash" value="05bf52f2ce5b6b31384aa567f04aaed6e2c0bf4b393927541a47dff534d28bea"/></canvas></imgdir><imgdir name="failed"><canvas name="0" width="354" height="146"><vector name="origin" x="177" y="348"/><int name="z" value="0"/><string name="_hash" value="1295e5834e266732976bea6e80f41cc150d835725ca412e027ea0b3e8dfd5d9a"/></canvas><canvas name="1" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="6985b2551ec3c23f4a16a08434a63066f0491473c6b85e9c260fa981df1ffbc1"/></canvas><canvas name="2" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="9c942ed6455cc04e22f2ae7bb7449b0f42f38d6a45fa6f53487c57e64f44c572"/></canvas><canvas name="3" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="02ae08c821fa66b56bfa752b840be77cc9249005c66e11ad75600fb56bc6b588"/></canvas><canvas name="4" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="a0c19642658715f40fd0c843280e37fdc3c765957c344a0f55fda2d1cd1d6cb2"/></canvas><canvas name="5" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="50d1a29ae1527f5dd3e303dc6f09553a0554dbbfe6c3b263cf6e07c00ddf64e3"/></canvas><canvas name="6" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="b025fcea6ea2eab9eb967942247d93309649867ff3f00200e4cba7abf71f4db9"/></canvas><canvas name="7" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/failed/6"/></canvas><canvas name="8" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/failed/6"/></canvas><canvas name="9" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="2206eb12e315cd361bb605009880afdb3f1f300748c9f541c0bdbe19db2ad4bf"/></canvas><canvas name="10" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/failed/6"/></canvas><canvas name="11" width="1" height="1"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_inlink" value="hungryMuto/failed/9"/></canvas><canvas name="12" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="8d368fd5b28f691b1b95d5b312cddfe13263410c72f4f00d35e681ca6e405099"/></canvas><canvas name="13" width="354" height="93"><vector name="origin" x="177" y="295"/><int name="z" value="0"/><string name="_hash" value="593b5d1263980146cb679256d90804579cf0fd80ba93e5a1aaff367fdc92a7cc"/></canvas><canvas name="14" width="349" height="93"><vector name="origin" x="174" y="295"/><int name="z" value="0"/><string name="_hash" value="bae906313973b39207f092c6f5beef854d422e32dd6e68f4b88c1ce516235464"/></canvas><canvas name="15" width="343" height="93"><vector name="origin" x="171" y="295"/><int name="z" value="0"/><string name="_hash" value="d156c33a4943bc09c6a8ae259413b0a0e7b719335c7b4e75bcf031e95fd52b4b"/></canvas></imgdir><imgdir name="TimeOver"><canvas name="0" width="621" height="384"><vector name="origin" x="315" y="175"/><int name="z" value="0"/><string name="_hash" value="3ac37376d13bd149575fc1643eb35b79022b1cfb0aaeab5990b2a2c5b74dfaaa"/></canvas><canvas name="1" width="575" height="205"><vector name="origin" x="290" y="68"/><int name="z" value="0"/><string name="_hash" value="41d8eb4bedcff11a69d29be2c195112d540bf2a8b796a91ef86c19a55459104e"/></canvas><canvas name="2" width="1024" height="728"><vector name="origin" x="512" y="354"/><int name="z" value="0"/><string name="_hash" value="afda92c1a75b5086df4b4346c4b7fb253e64d7164911513fd17ff78fd4175b1b"/></canvas><canvas name="3" width="468" height="131"><vector name="origin" x="231" y="29"/><int name="z" value="0"/><string name="_hash" value="6d88cf7abd538ca4e37436c25bb9402aa21d3685d30e2ba87a6a0ba8873b03d3"/></canvas><canvas name="4" width="487" height="127"><vector name="origin" x="241" y="27"/><int name="z" value="0"/><string name="_hash" value="66651eb35d37c64ae1330b5007a5dae4af06c933b6e98586371ec63cafe4236b"/></canvas><canvas name="5" width="491" height="127"><vector name="origin" x="243" y="27"/><int name="z" value="0"/><string name="_hash" value="d62b7dae5f4a527c7ef400e456da1b3aa6b9efee076fd935aa41acfa45c0b95b"/></canvas><canvas name="6" width="491" height="127"><vector name="origin" x="243" y="27"/><int name="z" value="0"/><string name="_hash" value="d19702e08ee929bb464a440139582a3777f3e327f51e10d870c6d37694ba032b"/></canvas><canvas name="7" width="491" height="127"><vector name="origin" x="243" y="27"/><int name="z" value="0"/><string name="_hash" value="f1058f6dff73abe9c02433b09e4a32ac58907335a9183899a3168120c85469d4"/></canvas><canvas name="8" width="491" height="127"><vector name="origin" x="243" y="27"/><int name="z" value="0"/><string name="_hash" value="530734ad2d50dc64678fbdb73cbb2d8af84348c1b883f32491ede4fa17b674a2"/></canvas><canvas name="9" width="491" height="127"><vector name="origin" x="243" y="27"/><int name="z" value="0"/><string name="_hash" value="6127795bd86623591298c5a7a808ca216cde2f1e565a72ccad65ab8ef549cb82"/></canvas><canvas name="10" width="491" height="127"><vector name="origin" x="243" y="27"/><int name="z" value="0"/><string name="_hash" value="c9706d062bbd706fdcd20ef50e4fd84b2b47f42cb6aa7194f3d3fedd2598bfb3"/></canvas><canvas name="11" width="491" height="127"><vector name="origin" x="243" y="27"/><int name="z" value="0"/><string name="_hash" value="ac91ea06803748923647f4a7a34a803f19cf91b5a2f9125259d4aa19dbc4b2f5"/></canvas><canvas name="12" width="491" height="127"><vector name="origin" x="243" y="27"/><int name="z" value="0"/><string name="_hash" value="1b3e7336ae0cd50028b3a6a9c1ac40fdfb9bdbab56594b25a7c3d90fcc496494"/></canvas><canvas name="13" width="490" height="125"><vector name="origin" x="242" y="26"/><int name="z" value="0"/><string name="_hash" value="d6095f6aa7536aa595643eb58abc0a5b8711a83458ac1b6f2ab30f81587d84b0"/></canvas><canvas name="14" width="487" height="123"><vector name="origin" x="241" y="25"/><int name="z" value="0"/><string name="_hash" value="706887ac2102134ed7413f688bdbf785367a10f2db403c9ba2fbe19a6e8530e9"/></canvas></imgdir><imgdir name="Clear"><canvas name="0" width="409" height="172"><vector name="origin" x="209" y="183"/><int name="z" value="0"/><string name="_hash" value="dfee438980aefbc1d337f9f9cb19e25b9f6a9ef0c0bbc2760b764111daff418f"/></canvas><canvas name="1" width="409" height="175"><vector name="origin" x="209" y="114"/><int name="z" value="0"/><string name="_hash" value="f72db7375ab755e3834431d2cb1f8db29d85a1b9d2399b557dd6c0039210a919"/></canvas><canvas name="2" width="409" height="155"><vector name="origin" x="209" y="39"/><int name="z" value="0"/><string name="_hash" value="2b9fcde00fb677d218501fb0508c4e1229a74d870326a862241c07aae0e13f00"/></canvas><canvas name="3" width="524" height="182"><vector name="origin" x="255" y="56"/><int name="z" value="0"/><string name="_hash" value="86f9cc635ada73e6526938a94228633e5e42d17045472c61b4cdb7be4d62dfaf"/></canvas><canvas name="4" width="562" height="200"><vector name="origin" x="276" y="65"/><int name="z" value="0"/><string name="_hash" value="7b62c944d9422da00906ebe0fa5c5366ae9136772d803352ade59734d651af4b"/></canvas><canvas name="5" width="569" height="215"><vector name="origin" x="282" y="73"/><int name="z" value="0"/><string name="_hash" value="7e34e5643c211df2a49bd1e099003f73876976ccd3bed5e4a4b2295366b7bc13"/></canvas><canvas name="6" width="574" height="219"><vector name="origin" x="286" y="75"/><int name="z" value="0"/><string name="_hash" value="2ffc5e840bdea0a51b85f620ee4a1bc0ab5f3b3c5a6ae35a616c3ec5a77046dc"/></canvas><canvas name="7" width="575" height="221"><vector name="origin" x="286" y="76"/><int name="z" value="0"/><string name="_hash" value="5f49bb8cce80fbdd9800b5e6e376e80a6f04f41bd8ed6e20a03607d18605fcb1"/></canvas><canvas name="8" width="551" height="223"><vector name="origin" x="288" y="77"/><int name="z" value="0"/><string name="_hash" value="bef167715befd5f437b98e736a2d052f084dbfc34b3f0bbd8bad65ab5707e190"/></canvas><canvas name="9" width="502" height="218"><vector name="origin" x="252" y="74"/><int name="z" value="0"/><string name="_hash" value="1d9e0ac0f99ee5286913be98652341b0abffb7c077825cabd1d057f33bf3a43e"/></canvas><canvas name="10" width="409" height="149"><vector name="origin" x="209" y="41"/><int name="z" value="0"/><string name="_hash" value="5f4dfc6211696d18f1acb7957322f44e7482344002771fc0b2f67c0e7289e462"/></canvas><canvas name="11" width="409" height="149"><vector name="origin" x="209" y="41"/><int name="z" value="0"/><string name="_hash" value="d40a92ab62065c259808b67f5f07d62573501717d060caf7b1d62d4e4f8d805b"/></canvas><canvas name="12" width="409" height="147"><vector name="origin" x="209" y="40"/><int name="z" value="0"/><string name="_hash" value="c64d034a3370a45cb30e7dea9a978e4916dc9a4b80939c5ac144c07ea6a6cf5b"/></canvas><canvas name="13" width="409" height="147"><vector name="origin" x="209" y="40"/><int name="z" value="0"/><string name="_hash" value="fd9a7290949d709a8713bec6e6b0e71903384d2daf43a5fbb18e5e54e9e2f691"/></canvas><canvas name="14" width="407" height="145"><vector name="origin" x="208" y="39"/><int name="z" value="0"/><string name="_hash" value="6c8744cb38a013e1bb3460892c7d961857f3472c49e6a1c63f8d0cc3aabf3900"/></canvas></imgdir></imgdir><imgdir name="hungryMutoMsg"><imgdir name="msg1"><canvas name="0" width="659" height="95"><vector name="origin" x="315" y="135"/><int name="z" value="0"/><int name="delay" value="1500"/><string name="_hash" value="2762f371f2330d8f5638a2227103af69718efcc8ea60b40be8ca7003ce7d8b88"/></canvas></imgdir><imgdir name="msg2"><canvas name="0" width="659" height="95"><vector name="origin" x="315" y="135"/><int name="z" value="0"/><int name="delay" value="1500"/><string name="_hash" value="dae19a6e17b90326a182ae9b2465c0376468d7e2bc67cf7085b5c60099544c49"/></canvas></imgdir><imgdir name="msg3"><canvas name="0" width="659" height="95"><vector name="origin" x="315" y="135"/><int name="z" value="0"/><int name="delay" value="1500"/><string name="_hash" value="3e46a24123cc45401456fa5c0b954a88368bc30851cba30764d8fb0ba415e1f7"/></canvas></imgdir><imgdir name="msg4"><canvas name="0" width="659" height="95"><vector name="origin" x="315" y="135"/><int name="z" value="0"/><int name="delay" value="1500"/><string name="_hash" value="bbeed2daf847c616699a5a09a7404af29fe43a0d42131d6e5e89bc90ee89a8b4"/></canvas></imgdir><imgdir name="msg5"><canvas name="0" width="659" height="95"><vector name="origin" x="315" y="135"/><int name="z" value="0"/><int name="delay" value="1500"/><string name="_hash" value="82ccc8bf1caa452633ce50769329ed2ef2947a313125c407576ee0294eb4d0ca"/></canvas></imgdir><imgdir name="msg6"><canvas name="0" width="659" height="95"><vector name="origin" x="315" y="135"/><int name="z" value="0"/><int name="delay" value="1500"/><string name="_hash" value="c95c3f59ef88c564b87dd53189cf387376bd47b1347848dc09eed8b79e79e320"/></canvas></imgdir><imgdir name="msg7"><canvas name="0" width="659" height="95"><vector name="origin" x="315" y="135"/><int name="z" value="0"/><int name="delay" value="1500"/><string name="_hash" value="81cfc0f5dad9f2e39dbaf84b827c2b16dc21bbee727bc752cb75ecc15baac62b"/></canvas></imgdir><imgdir name="msg8"><canvas name="0" width="659" height="95"><vector name="origin" x="315" y="135"/><int name="z" value="0"/><int name="delay" value="1500"/><string name="_hash" value="6960903a5d794fb6be719ad9e0481aa2002c91320bbcb2dc5e65daeda833d1ef"/></canvas></imgdir></imgdir><imgdir name="Lacheln"><imgdir name="episode"><canvas name="0" width="800" height="600"><vector name="origin" x="400" y="300"/><int name="z" value="0"/><string name="_hash" value="e95e76b25575fd05357d29eead859fa3e8d37e193e4d42cd7301e1a1ff20fe0b"/></canvas></imgdir><imgdir name="episode2"><canvas name="0" width="1366" height="768"><vector name="origin" x="683" y="384"/><int name="z" value="0"/><string name="_hash" value="001c70ca8d49240f89752812eb0518e0cef0e6d221903132146543c42523f772"/></canvas></imgdir><imgdir name="episode3"><canvas name="0" width="800" height="600"><vector name="origin" x="400" y="300"/><int name="z" value="0"/><string name="_hash" value="2ecdb563783a652765ae6d8722c579a98d61463a6700de931e49c17e4752e2b3"/></canvas></imgdir><imgdir name="smallB"><canvas name="0" width="34" height="24"><vector name="origin" x="-33" y="85"/><int name="z" value="0"/><string name="_hash" value="dffddd9ebe3e6c5d4610453383f93ee0bb43484d2148e723afc04c7a1725be98"/></canvas><canvas name="1" width="36" height="30"><vector name="origin" x="-26" y="89"/><int name="z" value="0"/><string name="_hash" value="68cb332ea3cf0b40f3ffcf76233399a5a390947605110826802fb46b23884287"/></canvas><canvas name="2" width="45" height="35"><vector name="origin" x="-21" y="89"/><int name="z" value="0"/><string name="_hash" value="357256e1780810354b8078cfbfbab2d1e377a7258c6356cafa7c90f9e103baaf"/></canvas><canvas name="3" width="59" height="42"><vector name="origin" x="-10" y="92"/><int name="z" value="0"/><string name="_hash" value="9b84736fdaa02f8a96398e2f13285ddab5aa0a4e9068e8f9ba8c56659fcc4766"/></canvas><canvas name="4" width="61" height="48"><vector name="origin" x="-5" y="89"/><int name="z" value="0"/><string name="_hash" value="83aa310d17dd00b6f7585a330d0f31590b044344a04c8b9d52d9394cb1639729"/></canvas><canvas name="5" width="67" height="52"><vector name="origin" x="5" y="86"/><int name="z" value="0"/><string name="_hash" value="6a448ad028407382a880e30f6b8b452a30dc3a57affb4d718e32ce02960541a9"/></canvas><canvas name="6" width="63" height="42"><vector name="origin" x="10" y="72"/><int name="z" value="0"/><string name="_hash" value="ca75ed606f6816843341dede48e1aeda552880c1c39d75ad359ceb34bf8991b3"/></canvas><canvas name="7" width="49" height="36"><vector name="origin" x="12" y="62"/><int name="z" value="0"/><string name="_hash" value="9b2d3a9695846a24d1ad1a236eea46532d709383ae74f5f1937939fad56af54b"/></canvas><canvas name="8" width="38" height="30"><vector name="origin" x="17" y="56"/><int name="z" value="0"/><string name="_hash" value="bb1d417ea4c6fbf67aa89001a83c1a5ad8898bbe5903389e1b6be4e588b7e296"/></canvas><canvas name="9" width="40" height="31"><vector name="origin" x="19" y="56"/><int name="z" value="0"/><string name="_hash" value="ca01e7cd4a88385f028d443f394ff01b7ce5ab2166533bc8b02d53200dcafedb"/></canvas><canvas name="10" width="42" height="27"><vector name="origin" x="19" y="53"/><int name="z" value="0"/><string name="_hash" value="ae88c59e6f13d649e434f38239f8c677674a0e938a977fa2d425f6c94b88ec3f"/></canvas><canvas name="11" width="41" height="23"><vector name="origin" x="19" y="48"/><int name="z" value="0"/><string name="_hash" value="614a1adbbcba45393c2bce7be11b9457503eaae13b600e532c1160020ec6fb93"/></canvas><canvas name="12" width="39" height="23"><vector name="origin" x="17" y="48"/><int name="z" value="0"/><string name="_hash" value="5741ae0c3e9a18b7819a70ad7ebbf0054a90b14e1bbdffe5a0397da1a658e8f6"/></canvas><canvas name="13" width="1" height="1"><vector name="origin" x="19" y="48"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/11"/></canvas><canvas name="14" width="42" height="34"><vector name="origin" x="19" y="54"/><int name="z" value="0"/><string name="_hash" value="2b3cd668fa6a634b2be2cab131a31e34d681209f53f60d9607c38e76135f4840"/></canvas><canvas name="15" width="40" height="40"><vector name="origin" x="19" y="59"/><int name="z" value="0"/><string name="_hash" value="b17037e79c268a3c629851ddcfad256278edb5acdfa05d0427681ec70800e1b7"/></canvas><canvas name="16" width="38" height="42"><vector name="origin" x="17" y="60"/><int name="z" value="0"/><string name="_hash" value="6bf5b3d68b2f4e7534e02db83ec3d3f8844483247a999e99ccb1ed6dc0d53bef"/></canvas><canvas name="17" width="40" height="43"><vector name="origin" x="19" y="61"/><int name="z" value="0"/><string name="_hash" value="269e6b0a441206c2d5f5a6b01d687abbd5958400e694a72b7e990dee496fcf8f"/></canvas><canvas name="18" width="42" height="43"><vector name="origin" x="19" y="61"/><int name="z" value="0"/><string name="_hash" value="6577846674bad3d8123210ec1e2f3c35338237cbcfe3e13a24e95de40d6bbefe"/></canvas><canvas name="19" width="41" height="42"><vector name="origin" x="19" y="61"/><int name="z" value="0"/><string name="_hash" value="42a2ba644633e307ffac4842ae2b9c5874e97dc83e575ab7d5936bbf794b36fc"/></canvas><canvas name="20" width="39" height="41"><vector name="origin" x="17" y="60"/><int name="z" value="0"/><string name="_hash" value="30cd9c49f75d296727e1992481ea94f3190adb6c8082dfa5f3a0c47234f26178"/></canvas><canvas name="21" width="41" height="40"><vector name="origin" x="19" y="59"/><int name="z" value="0"/><string name="_hash" value="210ccbce631d4f5d036058e8f43fec9ff194ff2ee9d1b66f5967745f7bc6f252"/></canvas><canvas name="22" width="42" height="36"><vector name="origin" x="19" y="56"/><int name="z" value="0"/><string name="_hash" value="cc33c2d7f2677758db31a66328fbbd34e91a884028d75dae6ccdabfc95cafd75"/></canvas><canvas name="23" width="40" height="35"><vector name="origin" x="19" y="56"/><int name="z" value="0"/><string name="_hash" value="931e3cd05543f953dd0af726d9b414a72ec6f41ab1a8cb3fcddcc450902638d5"/></canvas><canvas name="24" width="36" height="26"><vector name="origin" x="21" y="55"/><int name="z" value="0"/><string name="_hash" value="b6e911bbb0d34f9c4fa211c4102fbb3eb0d29a83e37d90695ade968ab585b677"/></canvas><canvas name="25" width="38" height="30"><vector name="origin" x="29" y="67"/><int name="z" value="0"/><string name="_hash" value="3f6f36dd03f9ed6868e43b2b1a92356d576d21df573e7c72a6e546f677c40472"/></canvas><canvas name="26" width="39" height="27"><vector name="origin" x="32" y="63"/><int name="z" value="0"/><string name="_hash" value="737e15f1bd15fbb05dbe274a3502aec3f0946b331869a2c2cfb4178ea26ba183"/></canvas><canvas name="27" width="48" height="41"><vector name="origin" x="38" y="74"/><int name="z" value="0"/><string name="_hash" value="4879f14b1c64c4c4c76cb982dea66e2ed5fbf1ca7c9c2b81e7e8e0810f33beb2"/></canvas><canvas name="28" width="49" height="36"><vector name="origin" x="42" y="72"/><int name="z" value="0"/><string name="_hash" value="29b575c3c9186f40fa8a5eaee7973bb4f7ec03319953274978a1aa038334d01c"/></canvas><canvas name="29" width="52" height="45"><vector name="origin" x="49" y="84"/><int name="z" value="0"/><string name="_hash" value="533356a8921c1b725809f53495c0f4546d69efc906043b179efb8fdfa5c4e2a6"/></canvas><canvas name="30" width="47" height="47"><vector name="origin" x="53" y="89"/><int name="z" value="0"/><string name="_hash" value="32dfbab353f03a5fafc23a9a51d73dd8f84b8c1c52a9dc16bb8d3bad6f2aad49"/></canvas><canvas name="31" width="17" height="17"><vector name="origin" x="27" y="62"/><int name="z" value="0"/><string name="_hash" value="4d9ac6faaeb72010f8857c1c40c4425320d991b34e1e174ab7c9f2999814d2e8"/></canvas></imgdir><imgdir name="0"><canvas name="0" width="800" height="600"><vector name="origin" x="400" y="300"/><int name="z" value="0"/><string name="_hash" value="d790a6bec287913235fda92feb1c02a718f0240c5ee15fc4b7bdce8e0d4217d6"/></canvas></imgdir><imgdir name="1"><canvas name="0" width="800" height="600"><vector name="origin" x="400" y="300"/><int name="z" value="0"/><string name="_hash" value="9482c248f0020ef62280ac02004098da1b3204b0a6670d47f3d3932cc0906213"/></canvas></imgdir><imgdir name="2"><canvas name="0" width="434" height="391"><vector name="origin" x="91" y="284"/><int name="z" value="0"/><string name="_hash" value="62836d7ccf2de33131bb00c4fd1f584550c91c2de84a9fae0dcc4a955030e4a7"/></canvas></imgdir><imgdir name="3"><canvas name="0" width="800" height="593"><vector name="origin" x="400" y="306"/><int name="z" value="0"/><string name="_hash" value="abe075235421119298f3e958808624691a33a51c65468696b79d9ff915eb40ba"/></canvas></imgdir><imgdir name="4"><canvas name="0" width="800" height="600"><vector name="origin" x="400" y="300"/><int name="z" value="0"/><string name="_hash" value="5f4ada21abb2251a5279bd0c787f58eb62da50227eca6e548ff485beacc14d85"/></canvas></imgdir><imgdir name="pung"><canvas name="0" width="216" height="212"><vector name="origin" x="97" y="103"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="e70777ba9da550d186afcc8f8e54202fd5ffc6f207dd6aa3a9c1d0a72857754d"/></canvas><canvas name="1" width="288" height="288"><vector name="origin" x="142" y="142"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="baf8e0824a745d49872e4ec2bfe42928560bb57a7d39e1ed0da393837f16a676"/></canvas><canvas name="2" width="256" height="256"><vector name="origin" x="125" y="127"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="8c1e71f34e5b4c283bf86e5758c0f5297e934eeb03b9da212b871749bf06f1c9"/></canvas><canvas name="3" width="228" height="244"><vector name="origin" x="110" y="121"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="8b8a20f5bb3e1dd316ce2272bea89a42cb06c52b26eb80ee6c400200dcae7ef2"/></canvas><canvas name="4" width="228" height="232"><vector name="origin" x="107" y="122"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="5c3be5c7acc3b9fc3c5331873026857848bfd85dbe7838a3fc4b43fe5908def9"/></canvas><canvas name="5" width="204" height="220"><vector name="origin" x="109" y="123"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="906b2fa7e3bd8c0136f794b9093890f9b3fe092667fff1e65ba24e64ae4ebc51"/></canvas><canvas name="6" width="152" height="168"><vector name="origin" x="73" y="71"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="d4b096c369626d196162e6cb8bb898dde17e17671c9ef3e8910c65164b67cfa0"/></canvas></imgdir><imgdir name="pung2"><canvas name="0" width="1" height="1"><vector name="origin" x="19" y="56"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/23"/></canvas><canvas name="1" width="1" height="1"><vector name="origin" x="21" y="55"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/24"/></canvas><canvas name="2" width="1" height="1"><vector name="origin" x="29" y="67"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/25"/></canvas><canvas name="3" width="1" height="1"><vector name="origin" x="32" y="63"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/26"/></canvas><canvas name="4" width="1" height="1"><vector name="origin" x="38" y="74"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/27"/></canvas><canvas name="5" width="1" height="1"><vector name="origin" x="42" y="72"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/28"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="49" y="84"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/29"/></canvas><canvas name="7" width="1" height="1"><vector name="origin" x="53" y="89"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/30"/></canvas><canvas name="8" width="1" height="1"><vector name="origin" x="27" y="62"/><int name="z" value="0"/><string name="_inlink" value="Lacheln/smallB/31"/></canvas></imgdir><imgdir name="pung3"><canvas name="0" width="264" height="244"><vector name="origin" x="126" y="107"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="66e7dc57c5f352213922e9e16ba372644afb8bb3efc7706bdfdaec3d57a9e427"/></canvas><canvas name="1" width="268" height="228"><vector name="origin" x="126" y="100"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="e5edf44191452f2b621085f427dc2e1d1efdf0b2baa4e91239344af466d4a623"/></canvas><canvas name="2" width="260" height="216"><vector name="origin" x="122" y="98"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="ec5cfcfae261bb751f002f9ec3e7d2518d7a17fd065579268db2dd94a933b3a4"/></canvas><canvas name="3" width="268" height="220"><vector name="origin" x="120" y="99"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="e3a46b7de55b5c7befa9ab76d50b223b581a832a129d76a574c2568b1e411d71"/></canvas><canvas name="4" width="244" height="216"><vector name="origin" x="117" y="93"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="324094f4b7885c9b5078c3e605d21a564b689bf710a6c4f07105fe0d7cccad18"/></canvas><canvas name="5" width="244" height="204"><vector name="origin" x="116" y="93"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="7733a9b11b03e29fbe26bdf83d6a323bf681da73900722696dcd5682d6b80d8f"/></canvas><canvas name="6" width="244" height="192"><vector name="origin" x="114" y="86"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="6c50c48da1f822de9301e2430c64c4c7c04dbc770304e94e7406e97abb8f810b"/></canvas><canvas name="7" width="244" height="184"><vector name="origin" x="114" y="81"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="8cdab3ba9e6db3119bcb8a23a31f85bb8b15cf4d761cdf2de8d73f807e271b3b"/></canvas><canvas name="8" width="232" height="180"><vector name="origin" x="114" y="79"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="8429ed09e0afde68cd0bc6dfbaff7fd622401934718ea26b3a1592c08aaa1744"/></canvas><canvas name="9" width="228" height="176"><vector name="origin" x="115" y="75"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="05ae17828163b690bf1e145282ff813afd50e3618e8f168ba4a0c34f37a99089"/></canvas><canvas name="10" width="220" height="176"><vector name="origin" x="111" y="74"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="279fb147f7173c6d99ef3a724968303d151e40d1b3cb67b186f58120e4613d80"/></canvas><canvas name="11" width="216" height="176"><vector name="origin" x="111" y="71"/><int name="z" value="0"/><int name="delay" value="75"/><string name="_hash" value="d45217d3b9662baac34eff4f621f0edee1fe3804948d2d5438621ba52f3492ca"/></canvas></imgdir><imgdir name="Sense"><sound name="002"/><string name="002.atlas" value="
+0
+size: 1024,1010
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1366_S
+  rotate: true
+  xy: 617, 2
+  size: 572, 401
+  orig: 572, 401
+  offset: 0, 0
+  index: -1
+LINE SMOKE_A
+  rotate: true
+  xy: 2, 33
+  size: 541, 613
+  orig: 541, 613
+  offset: 0, 0
+  index: -1
+sa3
+  rotate: false
+  xy: 2, 576
+  size: 1020, 432
+  orig: 1020, 432
+  offset: 0, 0
+  index: -1
+
+0022.png
+size: 1000,833
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+buter_a
+  rotate: false
+  xy: 2, 2
+  size: 169, 151
+  orig: 169, 151
+  offset: 0, 0
+  index: -1
+buter_b
+  rotate: false
+  xy: 882, 728
+  size: 116, 103
+  orig: 116, 103
+  offset: 0, 0
+  index: -1
+smoke_A
+  rotate: false
+  xy: 2, 155
+  size: 878, 676
+  orig: 878, 676
+  offset: 0, 0
+  index: -1
+
+0023.png
+size: 687,843
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+LINE
+  rotate: false
+  xy: 2, 2
+  size: 683, 422
+  orig: 683, 422
+  offset: 0, 0
+  index: -1
+LINE copy
+  rotate: false
+  xy: 2, 426
+  size: 674, 415
+  orig: 674, 415
+  offset: 0, 0
+  index: -1
+
+0024.png
+size: 729,891
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+sa1
+  rotate: false
+  xy: 2, 448
+  size: 725, 441
+  orig: 725, 441
+  offset: 0, 0
+  index: -1
+sa2
+  rotate: false
+  xy: 2, 2
+  size: 718, 444
+  orig: 718, 444
+  offset: 0, 0
+  index: -1
+
+0025.png
+size: 757,689
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_B
+  rotate: false
+  xy: 2, 2
+  size: 753, 685
+  orig: 753, 685
+  offset: 0, 0
+  index: -1
+
+0026.png
+size: 545,617
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+LINE SMOKE_B
+  rotate: false
+  xy: 2, 2
+  size: 541, 613
+  orig: 541, 613
+  offset: 0, 0
+  index: -1
+
+0027.png
+size: 545,617
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+LINE SMOKE_C
+  rotate: false
+  xy: 2, 2
+  size: 541, 613
+  orig: 541, 613
+  offset: 0, 0
+  index: -1
+
+0028.png
+size: 518,522
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+LINE SMOKE_D
+  rotate: false
+  xy: 2, 2
+  size: 514, 518
+  orig: 514, 518
+  offset: 0, 0
+  index: -1
+"/><canvas name="0" width="1020" height="1006"><vector name="origin" x="510" y="503"/><int name="z" value="0"/><string name="_hash" value="61a20631380896892b905942cbb174fbe5419abaeb53805c1c68eac414f70cb0"/></canvas><canvas name="0022.png" width="994" height="827"><vector name="origin" x="449" y="490"/><int name="z" value="0"/><string name="_hash" value="aa9cb6aab3c06a6a7bce97f48c9187cb00aef70570cf04c5ecdde6455f07b77e"/></canvas><canvas name="0023.png" width="681" height="836"><vector name="origin" x="334" y="632"/><int name="z" value="0"/><string name="_hash" value="35b9d7896a66c2a4d766d3b7f10f0cafb1f31f1c3953f60a85aa0fd58184ded9"/></canvas><canvas name="0024.png" width="718" height="886"><vector name="origin" x="359" y="443"/><int name="z" value="0"/><string name="_hash" value="398a697b6478f0e989cadd0e65032e93654fdf2b13016613a8cda4f28bf18f6e"/></canvas><canvas name="0025.png" width="751" height="683"><vector name="origin" x="375" y="341"/><int name="z" value="0"/><string name="_hash" value="cd40b86787ffe844c73ccb31eb28607a5330795ad30d8f77af8ad368f77edc5f"/></canvas><canvas name="0026.png" width="539" height="611"><vector name="origin" x="269" y="305"/><int name="z" value="0"/><string name="_hash" value="91707f429745bbe18afe0e944a03c21fdf87b979aa1e584f7fef37c7a794fd84"/></canvas><canvas name="0027.png" width="539" height="611"><vector name="origin" x="269" y="305"/><int name="z" value="0"/><string name="_hash" value="ad062ba1b60c660b2e2b56c1783de028d9eaeef0400fe652d7534c91e4d4ec5d"/></canvas><canvas name="0028.png" width="514" height="518"><vector name="origin" x="257" y="259"/><int name="z" value="0"/><string name="_hash" value="2439f6c126ef2b4f1004a4477a7582597e6fbe42beb4d644d08c1502e514f882"/></canvas><string name="spine" value="002"/></imgdir></imgdir><imgdir name="BossLucid"><imgdir name="fog"><string name="002.atlas" value="
+0
+size: 1005,847
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+line_A
+  rotate: false
+  xy: 2, 194
+  size: 1001, 651
+  orig: 1001, 651
+  offset: 0, 0
+  index: -1
+ring_C
+  rotate: false
+  xy: 2, 2
+  size: 682, 190
+  orig: 682, 190
+  offset: 0, 0
+  index: -1
+
+0022.png
+size: 904,970
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CLOUD_A
+  rotate: false
+  xy: 2, 2
+  size: 832, 489
+  orig: 832, 489
+  offset: 0, 0
+  index: -1
+line_B
+  rotate: false
+  xy: 2, 493
+  size: 900, 475
+  orig: 900, 475
+  offset: 0, 0
+  index: -1
+
+0023.png
+size: 863,900
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+line_C
+  rotate: false
+  xy: 2, 456
+  size: 859, 442
+  orig: 859, 442
+  offset: 0, 0
+  index: -1
+ring_A
+  rotate: false
+  xy: 2, 2
+  size: 618, 452
+  orig: 618, 452
+  offset: 0, 0
+  index: -1
+
+0024.png
+size: 803,701
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ring_B
+  rotate: false
+  xy: 2, 2
+  size: 799, 697
+  orig: 799, 697
+  offset: 0, 0
+  index: -1
+
+0025.png
+size: 619,444
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CLOUD_B
+  rotate: false
+  xy: 2, 2
+  size: 615, 440
+  orig: 615, 440
+  offset: 0, 0
+  index: -1
+"/><sound name="002"/><canvas name="0" width="1000" height="842"><vector name="origin" x="500" y="421"/><int name="z" value="0"/><string name="_hash" value="6b03d61dda5a1b1077485ada5184207902a80ca294736386898bd54a78e28490"/></canvas><string name="spine" value="002"/><canvas name="0022.png" width="897" height="965"><vector name="origin" x="448" y="482"/><int name="z" value="0"/><string name="_hash" value="a6b73f3a1c16821cdfd45aa35bffb3377064d8b46346b403397b7f62e65ccba2"/></canvas><canvas name="0023.png" width="857" height="894"><vector name="origin" x="428" y="447"/><int name="z" value="0"/><string name="_hash" value="2250b395927f5934c8564f7bea354d4654f6c9e7e4a32a277e0d079f179ae45d"/></canvas><canvas name="0024.png" width="797" height="695"><vector name="origin" x="398" y="347"/><int name="z" value="0"/><string name="_hash" value="2dd156ab78465bd44e25b703f94072339257c17133fe330d664f3e11e7b830e2"/></canvas><canvas name="0025.png" width="613" height="438"><vector name="origin" x="306" y="219"/><int name="z" value="0"/><string name="_hash" value="ca72bf26d0c4e1a9437188cac17fd1dd1387d3573f9a1eefcef7b693acf07775"/></canvas></imgdir><imgdir name="fog2"><string name="mist_003.atlas" value="
+0
+size: 954,995
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+line_B
+  rotate: false
+  xy: 2, 2
+  size: 859, 442
+  orig: 859, 442
+  offset: 0, 0
+  index: -1
+mist_A copy
+  rotate: false
+  xy: 2, 446
+  size: 950, 547
+  orig: 950, 547
+  offset: 0, 0
+  index: -1
+
+mist_0032.png
+size: 952,978
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mist_A
+  rotate: false
+  xy: 2, 431
+  size: 948, 545
+  orig: 948, 545
+  offset: 0, 0
+  index: -1
+ring_A
+  rotate: true
+  xy: 2, 2
+  size: 427, 172
+  orig: 427, 172
+  offset: 0, 0
+  index: -1
+ring_B
+  rotate: false
+  xy: 348, 229
+  size: 600, 200
+  orig: 600, 200
+  offset: 0, 0
+  index: -1
+ring_D
+  rotate: false
+  xy: 348, 60
+  size: 586, 167
+  orig: 586, 167
+  offset: 0, 0
+  index: -1
+ring_c
+  rotate: true
+  xy: 176, 4
+  size: 425, 170
+  orig: 425, 170
+  offset: 0, 0
+  index: -1
+
+mist_0033.png
+size: 859,392
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+line_A
+  rotate: false
+  xy: 2, 2
+  size: 855, 388
+  orig: 855, 388
+  offset: 0, 0
+  index: -1
+"/><sound name="mist_003"/><canvas name="0" width="948" height="989"><vector name="origin" x="474" y="494"/><int name="z" value="0"/><string name="_hash" value="bcbdb41966a65cdb031363c3fd8e463707f0481c00aa5bf5adf7f0f3529155b2"/></canvas><canvas name="mist_0032.png" width="948" height="973"><vector name="origin" x="622" y="325"/><int name="z" value="0"/><string name="_hash" value="0c8144e495228dcf87900fab147b6d364d6369f7f4ad130a70e3dc997d54ca03"/></canvas><canvas name="mist_0033.png" width="853" height="386"><vector name="origin" x="426" y="193"/><int name="z" value="0"/><string name="_hash" value="ac1e9892e2442d133505c5cfe54e2d81a5f09fbd6603bb0be9e2356802b84d9d"/></canvas><string name="spine" value="mist003"/></imgdir><imgdir name="butterfly"><sound name="005"/><string name="005.atlas" value="
+0
+size: 836,764
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+A_left_wing copy
+  rotate: true
+  xy: 413, 9
+  size: 49, 100
+  orig: 49, 100
+  offset: 0, 0
+  index: -1
+A_light_wing copy
+  rotate: false
+  xy: 718, 171
+  size: 101, 102
+  orig: 101, 102
+  offset: 0, 0
+  index: -1
+B_left_wing copy
+  rotate: true
+  xy: 440, 59
+  size: 73, 145
+  orig: 73, 145
+  offset: 0, 0
+  index: -1
+B_light_wing copy
+  rotate: true
+  xy: 291, 128
+  size: 145, 148
+  orig: 145, 148
+  offset: 0, 0
+  index: -1
+CLOUD_A
+  rotate: false
+  xy: 1, 274
+  size: 832, 489
+  orig: 832, 489
+  offset: 0, 0
+  index: -1
+C_left_wing
+  rotate: true
+  xy: 514, 9
+  size: 49, 100
+  orig: 49, 100
+  offset: 0, 0
+  index: -1
+C_light_wing
+  rotate: false
+  xy: 718, 68
+  size: 101, 102
+  orig: 101, 102
+  offset: 0, 0
+  index: -1
+d_left_wing
+  rotate: true
+  xy: 291, 11
+  size: 116, 121
+  orig: 116, 121
+  offset: 0, 0
+  index: -1
+d_light_wing
+  rotate: true
+  xy: 718, 1
+  size: 66, 117
+  orig: 66, 117
+  offset: 0, 0
+  index: -1
+one_01
+  rotate: true
+  xy: 440, 133
+  size: 140, 145
+  orig: 140, 145
+  offset: 0, 0
+  index: -1
+ring_01
+  rotate: true
+  xy: 586, 59
+  size: 214, 131
+  orig: 214, 131
+  offset: 0, 0
+  index: -1
+ring_03
+  rotate: false
+  xy: 1, 18
+  size: 289, 255
+  orig: 289, 255
+  offset: 0, 0
+  index: -1
+"/><canvas name="0" width="833" height="761"><vector name="origin" x="415" y="135"/><int name="z" value="0"/><string name="_hash" value="f60f4f74ca489c660d12f2194060f8905a63198c5f8a474ea573973df4cd2b1e"/></canvas><string name="spine" value="005"/></imgdir><imgdir name="butterfly2"><sound name="buterfly"/><string name="spine" value="buterfly"/><canvas name="0" width="997" height="1002"><vector name="origin" x="694" y="536"/><int name="z" value="0"/><string name="_hash" value="d6c8d2d949f242860f5fc9a4e0f55ec947089d8f3e6cc3a7d4170a433f4a7cb7"/></canvas><canvas name="buterfly2.png" width="978" height="905"><vector name="origin" x="863" y="801"/><int name="z" value="0"/><string name="_hash" value="ab8c3f8ec27a2631a134a9d63954f4c4f23e5376bc7c9fa4df0fefdfb83c76e2"/></canvas><canvas name="buterfly3.png" width="704" height="698"><vector name="origin" x="562" y="470"/><int name="z" value="0"/><string name="_hash" value="6a5d2b55a7bc073cb6e1098adda899378fcb884825afa16c4a64e6ceb69302aa"/></canvas><string name="buterfly.atlas" value="
+0
+size: 1024,1008
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b_buter1
+  rotate: true
+  xy: 836, 846
+  size: 160, 164
+  orig: 160, 164
+  offset: 0, 0
+  index: -1
+b_buter1_1
+  rotate: true
+  xy: 836, 763
+  size: 81, 160
+  orig: 81, 160
+  offset: 0, 0
+  index: -1
+bgbg
+  rotate: true
+  xy: 2, 53
+  size: 462, 345
+  orig: 462, 345
+  offset: 0, 0
+  index: -1
+buterS
+  rotate: true
+  xy: 349, 176
+  size: 339, 600
+  orig: 339, 600
+  offset: 0, 0
+  index: -1
+s_buter2
+  rotate: true
+  xy: 836, 660
+  size: 101, 102
+  orig: 101, 102
+  offset: 0, 0
+  index: -1
+s_buter2_1
+  rotate: false
+  xy: 951, 661
+  size: 71, 100
+  orig: 71, 100
+  offset: 0, 0
+  index: -1
+s_buter3
+  rotate: false
+  xy: 836, 556
+  size: 101, 102
+  orig: 101, 102
+  offset: 0, 0
+  index: -1
+s_buter3_1
+  rotate: true
+  xy: 2, 2
+  size: 49, 100
+  orig: 49, 100
+  offset: 0, 0
+  index: -1
+s_buter4
+  rotate: false
+  xy: 349, 72
+  size: 101, 102
+  orig: 101, 102
+  offset: 0, 0
+  index: -1
+s_buter4_1
+  rotate: true
+  xy: 104, 2
+  size: 49, 100
+  orig: 49, 100
+  offset: 0, 0
+  index: -1
+smoke_B
+  rotate: false
+  xy: 2, 517
+  size: 832, 489
+  orig: 832, 489
+  offset: 0, 0
+  index: -1
+
+buterfly2.png
+size: 983,910
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+SSSSSS
+  rotate: false
+  xy: 744, 695
+  size: 237, 213
+  orig: 237, 213
+  offset: 0, 0
+  index: -1
+line1
+  rotate: true
+  xy: 2, 2
+  size: 320, 730
+  orig: 320, 730
+  offset: 0, 0
+  index: -1
+smoke_A
+  rotate: false
+  xy: 2, 324
+  size: 740, 584
+  orig: 740, 584
+  offset: 0, 0
+  index: -1
+
+buterfly3.png
+size: 710,703
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+line2
+  rotate: false
+  xy: 2, 2
+  size: 322, 699
+  orig: 322, 699
+  offset: 0, 0
+  index: -1
+ring1
+  rotate: true
+  xy: 326, 290
+  size: 411, 382
+  orig: 411, 382
+  offset: 0, 0
+  index: -1
+"/></imgdir><imgdir name="Lucid"><sound name="lusi"/><string name="lusi.atlas" value="
+lusi.png
+size: 1023,1023
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BODY
+  rotate: false
+  xy: 143, 14
+  size: 628, 265
+  orig: 628, 265
+  offset: 0, 0
+  index: -1
+bg_A
+  rotate: false
+  xy: 2, 281
+  size: 987, 740
+  orig: 987, 740
+  offset: 0, 0
+  index: -1
+face_mouth_A
+  rotate: true
+  xy: 922, 25
+  size: 70, 34
+  orig: 70, 34
+  offset: 0, 0
+  index: -1
+face_mouth_B
+  rotate: false
+  xy: 922, 97
+  size: 99, 48
+  orig: 99, 48
+  offset: 0, 0
+  index: -1
+head_C
+  rotate: false
+  xy: 2, 12
+  size: 139, 267
+  orig: 139, 267
+  offset: 0, 0
+  index: -1
+head_back_A
+  rotate: true
+  xy: 773, 147
+  size: 132, 246
+  orig: 132, 246
+  offset: 0, 0
+  index: -1
+tal_02
+  rotate: false
+  xy: 773, 2
+  size: 147, 143
+  orig: 147, 143
+  offset: 0, 0
+  index: -1
+
+lusi2.png
+size: 991,1005
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bg_B
+  rotate: false
+  xy: 2, 263
+  size: 987, 740
+  orig: 987, 740
+  offset: 0, 0
+  index: -1
+eye light
+  rotate: true
+  xy: 2, 2
+  size: 259, 258
+  orig: 259, 258
+  offset: 0, 0
+  index: -1
+head_B
+  rotate: false
+  xy: 584, 46
+  size: 382, 215
+  orig: 382, 215
+  offset: 0, 0
+  index: -1
+head_back_C
+  rotate: false
+  xy: 262, 19
+  size: 167, 242
+  orig: 167, 242
+  offset: 0, 0
+  index: -1
+tal_01
+  rotate: true
+  xy: 431, 21
+  size: 240, 151
+  orig: 240, 151
+  offset: 0, 0
+  index: -1
+
+lusi3.png
+size: 999,1011
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ARM_A
+  rotate: false
+  xy: 2, 77
+  size: 369, 190
+  orig: 369, 190
+  offset: 0, 0
+  index: -1
+bg_B_
+  rotate: false
+  xy: 2, 269
+  size: 987, 740
+  orig: 987, 740
+  offset: 0, 0
+  index: -1
+buterfly_A
+  rotate: false
+  xy: 740, 103
+  size: 189, 164
+  orig: 189, 164
+  offset: 0, 0
+  index: -1
+face_eye_A
+  rotate: false
+  xy: 373, 2
+  size: 330, 109
+  orig: 330, 109
+  offset: 0, 0
+  index: -1
+face_eye_B
+  rotate: false
+  xy: 373, 113
+  size: 365, 154
+  orig: 365, 154
+  offset: 0, 0
+  index: -1
+face_eyebrow_B
+  rotate: false
+  xy: 705, 8
+  size: 292, 93
+  orig: 292, 93
+  offset: 0, 0
+  index: -1
+
+lusi4.png
+size: 1015,999
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ARM_B
+  rotate: true
+  xy: 824, 391
+  size: 317, 160
+  orig: 317, 160
+  offset: 0, 0
+  index: -1
+buterfly_A_1
+  rotate: false
+  xy: 824, 225
+  size: 189, 164
+  orig: 189, 164
+  offset: 0, 0
+  index: -1
+face_eye_B_GROW
+  rotate: false
+  xy: 302, 2
+  size: 285, 131
+  orig: 285, 131
+  offset: 0, 0
+  index: -1
+face_eye_B_GROW2
+  rotate: false
+  xy: 589, 2
+  size: 285, 131
+  orig: 285, 131
+  offset: 0, 0
+  index: -1
+head_A
+  rotate: true
+  xy: 2, 4
+  size: 129, 298
+  orig: 129, 298
+  offset: 0, 0
+  index: -1
+head_back_B
+  rotate: false
+  xy: 824, 710
+  size: 188, 287
+  orig: 188, 287
+  offset: 0, 0
+  index: -1
+lusid_after
+  rotate: false
+  xy: 2, 135
+  size: 820, 862
+  orig: 820, 862
+  offset: 0, 0
+  index: -1
+rose
+  rotate: true
+  xy: 876, 26
+  size: 197, 134
+  orig: 197, 134
+  offset: 0, 0
+  index: -1
+
+lusi5.png
+size: 1024,1019
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Untitled-8
+  rotate: false
+  xy: 2, 405
+  size: 870, 612
+  orig: 870, 612
+  offset: 0, 0
+  index: -1
+blackk
+  rotate: false
+  xy: 2, 2
+  size: 506, 401
+  orig: 506, 401
+  offset: 0, 0
+  index: -1
+buterfly_B
+  rotate: true
+  xy: 874, 775
+  size: 116, 102
+  orig: 116, 102
+  offset: 0, 0
+  index: -1
+buterfly_C
+  rotate: true
+  xy: 920, 331
+  size: 116, 102
+  orig: 116, 102
+  offset: 0, 0
+  index: -1
+cap
+  rotate: true
+  xy: 510, 53
+  size: 350, 408
+  orig: 350, 408
+  offset: 0, 0
+  index: -1
+face_eyebrow_A
+  rotate: true
+  xy: 874, 449
+  size: 324, 90
+  orig: 324, 90
+  offset: 0, 0
+  index: -1
+head_D
+  rotate: false
+  xy: 874, 893
+  size: 116, 124
+  orig: 116, 124
+  offset: 0, 0
+  index: -1
+
+lusi6.png
+size: 910,957
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Untitled-7 copy
+  rotate: false
+  xy: 2, 343
+  size: 870, 612
+  orig: 870, 612
+  offset: 0, 0
+  index: -1
+buterflys
+  rotate: true
+  xy: 2, 2
+  size: 339, 551
+  orig: 339, 551
+  offset: 0, 0
+  index: -1
+ring_A
+  rotate: false
+  xy: 555, 6
+  size: 353, 335
+  orig: 353, 335
+  offset: 0, 0
+  index: -1
+
+lusi7.png
+size: 1002,965
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+back bg
+  rotate: false
+  xy: 2, 2
+  size: 827, 470
+  orig: 827, 470
+  offset: 0, 0
+  index: -1
+buterfly_A_2
+  rotate: true
+  xy: 836, 774
+  size: 189, 164
+  orig: 189, 164
+  offset: 0, 0
+  index: -1
+smoke
+  rotate: false
+  xy: 2, 474
+  size: 832, 489
+  orig: 832, 489
+  offset: 0, 0
+  index: -1
+
+lusi8.png
+size: 943,924
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+face_BG
+  rotate: false
+  xy: 2, 2
+  size: 573, 337
+  orig: 573, 337
+  offset: 0, 0
+  index: -1
+head_back_BG
+  rotate: false
+  xy: 2, 341
+  size: 617, 581
+  orig: 617, 581
+  offset: 0, 0
+  index: -1
+line_A
+  rotate: false
+  xy: 621, 192
+  size: 320, 730
+  orig: 320, 730
+  offset: 0, 0
+  index: -1
+
+lusi9.png
+size: 703,659
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+line_B
+  rotate: true
+  xy: 2, 335
+  size: 322, 699
+  orig: 322, 699
+  offset: 0, 0
+  index: -1
+ring_B
+  rotate: false
+  xy: 2, 2
+  size: 348, 331
+  orig: 348, 331
+  offset: 0, 0
+  index: -1
+"/><canvas name="lusi8.png" width="943" height="924"><vector name="origin" x="471" y="462"/><int name="z" value="0"/><string name="_hash" value="4630fad7126075507d0e6c8e3b395d04884ee4d69e085bd1a2feba621690865a"/></canvas><canvas name="lusi7.png" width="1002" height="965"><vector name="origin" x="501" y="482"/><int name="z" value="0"/><string name="_hash" value="2f4508680232cfb1e160f6bba3c4980feb3a723da55241ee40c8129d7dda9c39"/></canvas><canvas name="lusi6.png" width="910" height="957"><vector name="origin" x="425" y="172"/><int name="z" value="0"/><string name="_hash" value="a0ed64cb1948fe6870830e7e0488b077d4a47df996813b225f7dc6cdbf7a5cf8"/></canvas><canvas name="lusi5.png" width="1024" height="1019"><vector name="origin" x="512" y="509"/><int name="z" value="0"/><string name="_hash" value="ba2844344753b39219d14ae36e49deb53c0fad4b3035a7cce74e17eb888001f8"/></canvas><canvas name="lusi4.png" width="1015" height="999"><vector name="origin" x="589" y="67"/><int name="z" value="0"/><string name="_hash" value="0dbfd10a03520807f706df8d347e31eaaa9847846c6a1cb84ce88b048601f1d9"/></canvas><canvas name="lusi3.png" width="999" height="1011"><vector name="origin" x="856" y="231"/><int name="z" value="0"/><string name="_hash" value="906fc1bc9a1c4afb3ae4b47251f8f2d749ddfd7c9f0dfc95bd97d22f5598e42a"/></canvas><canvas name="lusi2.png" width="991" height="1005"><vector name="origin" x="130" y="132"/><int name="z" value="0"/><string name="_hash" value="36ca46c8588cb192d73811fded2708e1542c41c59aed1bd67c1f996298a7891b"/></canvas><canvas name="lusi.png" width="1023" height="1023"><vector name="origin" x="511" y="511"/><int name="z" value="0"/><string name="_hash" value="7559ac598b66017a0687b1137c9861f1d2f6e3d277e2f6f9cb1a870dd67351be"/></canvas><canvas name="lusi9.png" width="703" height="659"><vector name="origin" x="351" y="329"/><int name="z" value="0"/><string name="_hash" value="dd04168672f6ec006b7950a2f7fc6e0a25dc65775ea36d9f0f2d40e91d57df94"/></canvas></imgdir><imgdir name="Lucid2"><canvas name="0" width="248" height="500"><vector name="origin" x="114" y="467"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="7e21b1c852e5aba9ffa2e45d52da9a548c40845f11bc620e24f50ea7d954771a"/></canvas><canvas name="1" width="696" height="852"><vector name="origin" x="381" y="819"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="b5aae2d750e4413d31cd011fa2ec543e678f69f2722bfdc556b9fa64034594f3"/></canvas><canvas name="2" width="696" height="852"><vector name="origin" x="381" y="819"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="658f8d13091989b7486611a6d4fa7f1f9b5650b2bf7afc31dda26137f4b7ad90"/></canvas><canvas name="3" width="688" height="852"><vector name="origin" x="375" y="818"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="d86e18f3f8d2ae59d2ab976fe8f28ea167afdd413b312f21582935f78055dcb5"/></canvas><canvas name="4" width="676" height="844"><vector name="origin" x="366" y="811"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="fe9d2a4b7734f07c382043ed89d073edbbfd3bd0d0ec8e876152bf980b78284a"/></canvas><canvas name="5" width="604" height="700"><vector name="origin" x="295" y="665"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="d20dd5d4697431d65bd93fb2a7a35a28dffee07ddfaa5344f27bb4b77d3dbb20"/></canvas><canvas name="6" width="696" height="852"><vector name="origin" x="382" y="819"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="7d5482da235df6a3b7091682ad404a1057550885699756591d41ed0e59754e68"/></canvas><canvas name="7" width="696" height="852"><vector name="origin" x="381" y="819"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="17d1b11f4bf82e806ab141f97d98bcc764d160d3783cf86e35b9b51f1b378fa2"/></canvas><canvas name="8" width="688" height="852"><vector name="origin" x="375" y="818"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="4cb061176d162805042d36502e8a59fa00f3ffc2e935c7f645dc9ad9e330e447"/></canvas><canvas name="9" width="676" height="844"><vector name="origin" x="366" y="811"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="8bb27820a5b6ca1833c5e1ede93772fdbc53ec1eca3ef6928b159e7f2e3b311e"/></canvas><canvas name="10" width="632" height="740"><vector name="origin" x="321" y="706"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="b56630bd2657d58157d12d0ce00fddcc8b9bcd7bca508c9d46b06a23134e749f"/></canvas><canvas name="11" width="696" height="852"><vector name="origin" x="381" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="500e3f83feefdf6229eda38bfc21b4111633af1ee36ca65296e74aecde0b26df"/></canvas><canvas name="12" width="696" height="852"><vector name="origin" x="381" y="819"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="ece033eb6d761f76850fda8c999841989f92f8de987cd9dd7f1e174876dc457f"/></canvas><canvas name="13" width="696" height="852"><vector name="origin" x="386" y="818"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="f05440246e71ce616cc76c4c785ddfeaafb88b348aeb41e89cf4cfc4c2cdd76e"/></canvas><canvas name="14" width="704" height="844"><vector name="origin" x="394" y="811"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="b86dbf48a4efd205aa527b94748290428618381112e46114b3a90b1bd0bc5722"/></canvas><canvas name="15" width="716" height="700"><vector name="origin" x="408" y="665"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="189c43d61dcc11e61c008713e3dbc2d37ec84fe0c16e728d97e30b3543c85758"/></canvas><canvas name="16" width="696" height="852"><vector name="origin" x="381" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="3110c4a5ec35e135a3564991760352be0b8c88c2180541f4a44aae2d30b2a4a4"/></canvas><canvas name="17" width="748" height="852"><vector name="origin" x="434" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="79d6da2087f4215c91fac77d3b145655bfe7ef4ebc475a2961dd15c90f0b3b4b"/></canvas><canvas name="18" width="720" height="852"><vector name="origin" x="405" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="c233b8080433ef3302b1e3474f349bf20a6bba9927273107b28b5cdca471e163"/></canvas><canvas name="19" width="736" height="852"><vector name="origin" x="422" y="819"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="6c2d88eb1a6ec426d314a6d7afcc9566928e0ec61a82a45f8babf0f57048b650"/></canvas><canvas name="20" width="752" height="852"><vector name="origin" x="436" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="5a74aeeb06c9cdfa48bd0a9d31fc347e4ed12f2a95b3d2ddb663bc83a43147a7"/></canvas><canvas name="21" width="696" height="852"><vector name="origin" x="382" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="bca76636ac566abffb52155482226dc216646a82d6c062525cd521caf9b09d07"/></canvas><canvas name="22" width="780" height="852"><vector name="origin" x="464" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="8a0f475a19c2a804c13a6151ee9b186a637604c05697978f65dea45fc6e21ffe"/></canvas><canvas name="23" width="724" height="852"><vector name="origin" x="408" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="976eba94f3e5bff73fe8d3fa964f9cf73adf5dad0d1f5f1add2dd69697fd4a14"/></canvas><canvas name="24" width="704" height="852"><vector name="origin" x="391" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="baf294127b4c13e5e6da876c53733992d29845c4a3c39abef3e6d8b39418b95b"/></canvas><canvas name="25" width="700" height="852"><vector name="origin" x="387" y="820"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="9895820b50cd639cb8664637897108f2125b3c18665325ffc67c8c9c6736dfa7"/></canvas><canvas name="26" width="912" height="956"><vector name="origin" x="467" y="852"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="132dd4f8dce7ad5bacce7fcaf7100e4c9b15f92ca1a0fef21e85034d3807d6a6"/></canvas><canvas name="27" width="1072" height="1004"><vector name="origin" x="562" y="852"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="01a1af3e3922e72727aeee4225721e6d79322fac7e6584a93887c912d3b987ea"/></canvas><canvas name="28" width="1084" height="1004"><vector name="origin" x="553" y="852"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="312091af7e7bf32933019dfb8d9c753cf228c6b928a421be3d54d583fbe51e32"/></canvas><canvas name="29" width="1116" height="1004"><vector name="origin" x="558" y="852"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="56922bc03b0f841132ae089add18fdad3606aae0f851c25225fe6374904e88e1"/></canvas><canvas name="30" width="1140" height="1004"><vector name="origin" x="569" y="852"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="64794594873712fb6c700436e9e986255d55e6098117a64049631080ea2c14bd"/></canvas><canvas name="31" width="1068" height="1004"><vector name="origin" x="543" y="852"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="cf3f8800ac42317c862e9b4b929769a5ca7e6f5822da80d4a38dde35002f1fe8"/></canvas><canvas name="32" width="1016" height="1004"><vector name="origin" x="526" y="852"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="4afac40ed2d620e052fea52f37d8805beb7debdbd1bb008a08a7e4ec7a353758"/></canvas><canvas name="33" width="980" height="968"><vector name="origin" x="515" y="814"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="c8ff17c15dd7f897cef1e6f1d6b160499a1ade14fc6f27844cfd4437f5b3aa01"/></canvas><canvas name="34" width="988" height="968"><vector name="origin" x="510" y="814"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="112a1f3da65df96d8bfdb816f462dc7a7743e043433a307735cd56c1b2d6fbb4"/></canvas><canvas name="35" width="1036" height="792"><vector name="origin" x="532" y="760"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="6e4c1379b4fc43b405bd6ebb1ee909a1048c0354061bf97170632d7221eb1279"/></canvas><canvas name="36" width="1072" height="800"><vector name="origin" x="550" y="767"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="c0139d71def54b88711b6578c238c92b12cf7b96907de669f8975080c806b7c4"/></canvas><canvas name="37" width="968" height="824"><vector name="origin" x="557" y="779"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="d408bb06d3a8d586f7651f410469a3b2a31d0f5f37e6c07637c3aa4298edafa9"/></canvas><canvas name="38" width="1004" height="860"><vector name="origin" x="592" y="793"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="47df64f73919ed43dfd76e4932a85188bc9b62587bd236d5e3c38e37a816c1d1"/></canvas><canvas name="39" width="344" height="552"><vector name="origin" x="146" y="519"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="de8798368aff1ec5f62cc8a6b15eb3c57eb93cfa64ad27edfba133312b1658fb"/></canvas><canvas name="40" width="336" height="552"><vector name="origin" x="143" y="520"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="4fb2c784d259e81ba938a3feb84c244581291404728bdbcc3ae3262c570759ac"/></canvas><canvas name="41" width="324" height="556"><vector name="origin" x="139" y="521"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="f7d82114c6900c651722a446bc5d8c28979ab9004ad95912dbde329a66228099"/></canvas><canvas name="42" width="316" height="552"><vector name="origin" x="137" y="520"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="700e2948f932a207dbcc0808ff6d6c112112d034e66b964299d81fc85540f908"/></canvas><canvas name="43" width="308" height="552"><vector name="origin" x="134" y="519"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="5de8de34b75538c586e4e2ee8e7cb9785247732ad0c76ac8c338e2774ad63065"/></canvas><canvas name="44" width="316" height="552"><vector name="origin" x="137" y="519"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="1f05966502ed134d9b1ea5e902a467faa304a641ee3111261047dcb74ac1c596"/></canvas><canvas name="45" width="340" height="552"><vector name="origin" x="145" y="517"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="903019389650f9ca9cb7044f42fba0001a9eef6ff3b5c90d75e55f427e8149d9"/></canvas><uol name="46" value="39"/><uol name="47" value="40"/><uol name="48" value="41"/><uol name="49" value="42"/><uol name="50" value="43"/><uol name="51" value="44"/><uol name="52" value="45"/></imgdir><imgdir name="Lucid3"><canvas name="0" width="1" height="1"><int name="delay" value="1980"/></canvas><canvas name="1" width="1384" height="1004"><vector name="origin" x="667" y="883"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="44deb56e4fc560e25e7b46b5ee78894417e1d2094bfeaafc5246c72ceb9f13ce"/></canvas><canvas name="2" width="1384" height="1004"><vector name="origin" x="667" y="883"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="6739cc22e14de26815967ccbdc74567aca4209471c768f16a3585b4189c392fa"/></canvas><canvas name="3" width="1384" height="1004"><vector name="origin" x="667" y="883"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="b65c8e08154dc0f5950a1fd002f71d4be7e7fecd2771e40ee5f66f619737e5f6"/></canvas><canvas name="4" width="1384" height="1004"><vector name="origin" x="667" y="883"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="b6f928e428fcd5ab7a79706738027fcf7f2c3c520825137953e43ecfa4371eec"/></canvas></imgdir><imgdir name="Lucid4"><canvas name="0" width="562" height="604"><vector name="origin" x="270" y="651"/><int name="z" value="0"/><int name="delay" value="2250"/><string name="_hash" value="51ee2fcf1e37e987adc790ff0a5ad8ed5aed566f6d6145068d42e012a1d9f8d5"/></canvas><canvas name="1" width="1" height="1"><int name="delay" value="100000"/></canvas></imgdir><imgdir name="Lucid5"><uol name="0" value="../Lucid4/0"/></imgdir></imgdir></imgdir>

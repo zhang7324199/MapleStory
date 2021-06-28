@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="BossDemian.img"><imgdir name="back"><canvas name="0" width="90" height="777"><vector name="origin" x="63" y="391"/><int name="z" value="0"/><string name="_hash" value="705bcc31a197604e8cef49d8e978a20eae909273cde4fa0aa0c42286dcca334a"/></canvas><canvas name="1" width="1805" height="551"><vector name="origin" x="902" y="275"/><int name="z" value="0"/><string name="_hash" value="00fdeca4a0df383172f3788a3a8e4fd122d2265f869089ddba44a46060da0ef7"/></canvas><canvas name="2" width="898" height="492"><vector name="origin" x="369" y="80"/><int name="z" value="0"/><string name="_hash" value="7cf52b1afa0f0df5244f35d06ef48634d8b6aad7ed64e8e17d77da4dc6457ca9"/></canvas><canvas name="3" width="905" height="492"><vector name="origin" x="439" y="62"/><int name="z" value="0"/><string name="_hash" value="79ddc1c39960c66d1d512c54e2917f7fcccf66806854aa53f88d6f1239516d7c"/></canvas><canvas name="4" width="10" height="11"><vector name="origin" x="5" y="5"/><int name="z" value="0"/><string name="_hash" value="fa91c8cf7e1e0ccfff5b8c253c51fa059d41e5283058bc512b851325d3bfda5b"/></canvas><canvas name="5" width="10" height="532"><vector name="origin" x="5" y="266"/><int name="z" value="0"/><string name="_hash" value="67654a2e793e517636208d734c6dd5f321483c9f53f8fcab6c8a0278a62c08e2"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="5" y="5"/><int name="z" value="0"/><string name="_inlink" value="back/4"/></canvas><canvas name="7" width="2084" height="626"><vector name="origin" x="1042" y="313"/><int name="z" value="0"/><string name="_hash" value="c840c9e9d9ced4df292b1cba40c6d5494961cd45c797186ea90a5a5d03013037"/></canvas><canvas name="8" width="806" height="83"><vector name="origin" x="403" y="41"/><int name="z" value="0"/><string name="_hash" value="c6bde0aa27bb3f0184c6085a1f03d7ecbd797f682faff3e73633af93bb2b203e"/></canvas><canvas name="9" width="585" height="171"><vector name="origin" x="292" y="85"/><int name="z" value="0"/><string name="_hash" value="9e8ce99ce05386f6770919e0c82cf84ba6980ca147407de9afbd8763838cf95a"/></canvas><canvas name="10" width="585" height="11"><vector name="origin" x="292" y="5"/><int name="z" value="0"/><string name="_hash" value="aa220a923b6b386cfeddde6dd76844818d086274457817cbefcb2ebaf586a422"/></canvas><canvas name="11" width="619" height="322"><vector name="origin" x="309" y="161"/><int name="z" value="0"/><string name="_hash" value="ebb3c2343088a4d3af64ed4879c49142ee464e5a9f271cfc6fa9ad6c9ee89cd9"/></canvas><canvas name="12" width="301" height="464"><vector name="origin" x="150" y="232"/><int name="z" value="0"/><string name="_hash" value="9ee27403e792dd4c8c6168d6e4ad08f2e9171545b43cbafd5de7e2bd30fcfb6c"/></canvas><canvas name="13" width="837" height="245"><vector name="origin" x="418" y="122"/><int name="z" value="0"/><string name="_hash" value="c75afcaff7e71f2f23421f84eddf64655660d7fe80a46bfad35c4a9916e2c0c8"/></canvas><canvas name="14" width="1260" height="309"><vector name="origin" x="630" y="154"/><int name="z" value="0"/><string name="_hash" value="03a5b1c4c0de90cfa266083574a708472da33fc01e819ccc1795a0ab9b0bdf0d"/></canvas><canvas name="15" width="742" height="573"><vector name="origin" x="371" y="286"/><int name="z" value="0"/><string name="_hash" value="593fed7bd69b71bb1579e353330a50fbc5930535d6ffb01fcdee79c9fee908b8"/></canvas><canvas name="16" width="650" height="482"><vector name="origin" x="293" y="400"/><int name="z" value="0"/><string name="_hash" value="cb96dc98eafb1a4e5e642becdb1a33f966523bdf97c7c577f4fc33b5d2b22976"/></canvas></imgdir><imgdir name="ani"><imgdir name="0"><canvas name="0" width="123" height="131"><vector name="origin" x="86" y="52"/><int name="z" value="0"/><string name="_hash" value="d045b82b1b0370eea2ff65dcc30fd26ac656d21c3d1a442778c4251e8f4b512c"/></canvas><canvas name="1" width="96" height="142"><vector name="origin" x="59" y="56"/><int name="z" value="0"/><string name="_hash" value="fed68bd89a914ecf5a405709bc568a7184c4c3828752ff21448e6c895eb046e6"/></canvas><canvas name="2" width="89" height="182"><vector name="origin" x="53" y="87"/><int name="z" value="0"/><string name="_hash" value="b62f8fba9c30c75c22f20fae4b31a437a06328d85240fc770cb5f42487758e45"/></canvas><canvas name="3" width="71" height="202"><vector name="origin" x="36" y="96"/><int name="z" value="0"/><string name="_hash" value="42a4eeb4da1ac233a99c99112c4368ec1e5a0a6db231a3c032ba8f72c68e3a8d"/></canvas><canvas name="4" width="73" height="199"><vector name="origin" x="38" y="102"/><int name="z" value="0"/><string name="_hash" value="f930ed887fddfb634b092be05b843d9372cf4d02ee49ad5eb32693aa3f702f70"/></canvas><canvas name="5" width="77" height="215"><vector name="origin" x="42" y="113"/><int name="z" value="0"/><string name="_hash" value="e172604c298d9d369de7c0d8bf870020c0eae3b514b3116d1db98bc8eaf12c86"/></canvas><canvas name="6" width="136" height="142"><vector name="origin" x="37" y="107"/><int name="z" value="0"/><string name="_hash" value="5277f335238c500eba6711a15feb80521c8c81506f61e1907f4acd29dddcf46c"/></canvas><canvas name="7" width="134" height="189"><vector name="origin" x="42" y="102"/><int name="z" value="0"/><string name="_hash" value="b61e1ef2d6e9e3e1b782b98369f53a6582dfec3177dc2f2c607caa49e0896e56"/></canvas><canvas name="8" width="188" height="126"><vector name="origin" x="99" y="55"/><int name="z" value="0"/><string name="_hash" value="52763b588af34777fda3153b549709bea8482246a3206afbdffd70086d8cfddc"/></canvas><canvas name="9" width="175" height="124"><vector name="origin" x="87" y="64"/><int name="z" value="0"/><string name="_hash" value="dda0ee37f016c67cf72aa519916a277fcbe3361c368ddd03bf0ad9e51046d54f"/></canvas><canvas name="10" width="168" height="131"><vector name="origin" x="80" y="65"/><int name="z" value="0"/><string name="_hash" value="f5299c889b7d24c572cf1acd68b69c370a9b381677426392065c6b348a6f6e39"/></canvas><canvas name="11" width="160" height="145"><vector name="origin" x="76" y="80"/><int name="z" value="0"/><string name="_hash" value="151d1e89fbfc33c522cd36c6d05dabdc738c2316828a564237694cc84f148310"/></canvas><canvas name="12" width="102" height="156"><vector name="origin" x="67" y="81"/><int name="z" value="0"/><string name="_hash" value="7e468ef9502c3800c46ca5f56c151917da2daccf86f1666bbb132540277a3285"/></canvas><canvas name="13" width="153" height="162"><vector name="origin" x="64" y="87"/><int name="z" value="0"/><string name="_hash" value="ea088dc6ecafb5fe0491dd1efd241c811a1c2670808746ecdf2a41e58eedacd5"/></canvas><canvas name="14" width="180" height="161"><vector name="origin" x="90" y="90"/><int name="z" value="0"/><string name="_hash" value="131dcb2c12924ed217be4f2e9fbb1fb1e3415f13063278c86abf523eb6cf4461"/></canvas><canvas name="15" width="184" height="129"><vector name="origin" x="91" y="94"/><int name="z" value="0"/><string name="_hash" value="3062d651f239a968c9170266efcc5589b6661d8b7819f1f7325256f7aab7d2da"/></canvas><canvas name="16" width="189" height="132"><vector name="origin" x="93" y="98"/><int name="z" value="0"/><string name="_hash" value="e55504ff28273ef3996b2158f4b3d07deeeea2e21a739ab4479c5e8387bfe7fa"/></canvas><canvas name="17" width="190" height="89"><vector name="origin" x="93" y="56"/><int name="z" value="0"/><string name="_hash" value="8b61f80f94b010ec7452a1546783d833404626c4ab473bb023e8819e5ae1f61a"/></canvas></imgdir><imgdir name="1"><canvas name="0" width="305" height="76"><vector name="origin" x="432" y="13"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="af58bcbcafcc42c33f511657c1821a11862bfcebf85f267f8b7f25785af42fa6"/></canvas><canvas name="1" width="592" height="75"><vector name="origin" x="718" y="12"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="63e4c62f0ab821bb5be216789792f9326a459eed4493f403fca7c8828c84edcf"/></canvas><canvas name="2" width="591" height="136"><vector name="origin" x="718" y="70"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="8e8a55ec6b4d64ac2f883606afbfd586c2e5b603d7cc7124d6d64048f44bb140"/></canvas><canvas name="3" width="586" height="138"><vector name="origin" x="715" y="75"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="daac383d484293b1edb9260e03591e5468722e7836d5761591649ea505b4f1e8"/></canvas><canvas name="4" width="567" height="131"><vector name="origin" x="717" y="73"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="30e01afaa0f45e9e112e2cbcdcd636cc6f9bf4501d70a3d96383cf36f307a450"/></canvas><canvas name="5" width="564" height="124"><vector name="origin" x="716" y="68"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="9b6c4f02c06087b71dec8a8c69beca2451db57795a3dfd852927817c5d397fb0"/></canvas><canvas name="6" width="560" height="104"><vector name="origin" x="713" y="73"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="ce2ab0ee3c969c96ffdbdd0587be5f5abe782c3db125978488ab661f5270d399"/></canvas><canvas name="7" width="380" height="102"><vector name="origin" x="633" y="72"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="c46fe038e464f5cc99d6bd4b7368961074e27d2e87b968b555965507f23f2198"/></canvas><canvas name="8" width="492" height="132"><vector name="origin" x="616" y="68"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="1b028e0b8057abce4389e3ff98ee2261d7ecd5cac24510b046595ff7ed7b57d9"/></canvas><canvas name="9" width="195" height="71"><vector name="origin" x="322" y="8"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="0afd3a29145288bce330d0096aa3dfa00f33c94f3974c543273ee026b475b6dc"/></canvas><canvas name="10" width="364" height="36"><vector name="origin" x="488" y="-30"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="4b2fcea31a47d13a6fab110d6720bb4cf3a2afe6ba549027c2cbb379f699cd7a"/></canvas><canvas name="11" width="356" height="63"><vector name="origin" x="485" y="1"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="e832c0c4fbc4cc67d8de834e93d6fdc0e43ad87cbc3375a255b3ff289db7802c"/></canvas><canvas name="12" width="318" height="64"><vector name="origin" x="487" y="-1"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="26fdcc7393fcc8067a12cb1cebd54d8e6e00c5675387101860be89aa6b3dfab3"/></canvas><canvas name="13" width="316" height="58"><vector name="origin" x="484" y="0"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="ffcaf35de47f13473d429df0eadcf5dd92885a2c687a788b0bd7bb1be3021ef8"/></canvas><canvas name="14" width="4" height="3"><vector name="origin" x="174" y="-12"/><int name="z" value="0"/><int name="delay" value="90"/></canvas></imgdir><imgdir name="2"><canvas name="0" width="305" height="76"><vector name="origin" x="-148" y="13"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="816830da982358487b44b85ef8b1dd0e4aa4f0fb5c17f5ab382c4f0955c9d518"/></canvas><canvas name="1" width="592" height="75"><vector name="origin" x="-147" y="12"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="3176862139d51b5476bb759f7b518b2199a52e05de964863a720d449f437bab4"/></canvas><canvas name="2" width="591" height="136"><vector name="origin" x="-148" y="70"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="77100811d6a780bb9254ff99e68fb85cf6ed9cb30dad9c69d2660e725a9fefc6"/></canvas><canvas name="3" width="586" height="138"><vector name="origin" x="-150" y="75"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="5610845751f716bdac5df7af7955aeb2a74370d213f0c1ec8ebc8a6603447f9a"/></canvas><canvas name="4" width="567" height="131"><vector name="origin" x="-171" y="73"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="ef30241acc464c89a4c6c42bba285d10200510a190cd96531b3d44e67b1cb62d"/></canvas><canvas name="5" width="564" height="124"><vector name="origin" x="-173" y="68"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="f309f9188d94af28f5a3fe83ecff2d13244c175f220d54edae66dc921e326084"/></canvas><canvas name="6" width="560" height="111"><vector name="origin" x="-174" y="73"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="e8e2958894264b2b10b368a3b5480942f7c987af5e8d22e58eb2adc2e07cf9a3"/></canvas><canvas name="7" width="380" height="102"><vector name="origin" x="-274" y="72"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="8db1f0d5217e287594c2ea32b00a0158f79cf82985a27395a222d3fc0def813b"/></canvas><canvas name="8" width="492" height="132"><vector name="origin" x="-145" y="68"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="114bfa225c3a5ee0d37289a829ddb3694b029e055ec93a147259ab408ddfd5c9"/></canvas><canvas name="9" width="195" height="71"><vector name="origin" x="-148" y="8"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="7e87a508b31661e54fcd1e21e1b5a7b482a3b445fc04e3d754d4c5c576bbc6da"/></canvas><canvas name="10" width="364" height="36"><vector name="origin" x="-145" y="-30"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="ee42b30739207e37a74f84cf467ca0a98673d6f09a07c10130c45379fa20c1ed"/></canvas><canvas name="11" width="356" height="63"><vector name="origin" x="-150" y="1"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="5746b6e6b6dd0d9532965b522b5886f8313b13ffab792d1f1b10a5b3840428ed"/></canvas><canvas name="12" width="318" height="64"><vector name="origin" x="-190" y="-1"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="fd1dc3e66bf2420b9ba539ef21b47a9ee8342b3297459d38dbad92c04bf247c9"/></canvas><canvas name="13" width="316" height="58"><vector name="origin" x="-189" y="0"/><int name="z" value="0"/><int name="delay" value="90"/><string name="_hash" value="134812959cb048c09f072a9aa2df4346e56f800370ecb78b09309eae67bd6855"/></canvas><canvas name="14" width="4" height="3"><vector name="origin" x="-191" y="-12"/><int name="z" value="0"/><int name="delay" value="90"/></canvas></imgdir><imgdir name="3"><canvas name="0" width="653" height="161"><vector name="origin" x="316" y="80"/><int name="z" value="0"/><int name="delay" value="1200"/><int name="a0" value="255"/><int name="a1" value="130"/><string name="_hash" value="7d901eeeb883b5e1b0ee88d87923fe09332464b2fa62df5e30bec3efa9a2cf4b"/></canvas><canvas name="1" width="1" height="1"><vector name="origin" x="316" y="80"/><int name="z" value="0"/><int name="delay" value="1200"/><int name="a0" value="130"/><int name="a1" value="255"/><string name="_inlink" value="ani/3/0"/></canvas></imgdir></imgdir><imgdir name="spine"><imgdir name="0"><string name="spine" value="spin_cloud"/><canvas name="0" width="1024" height="1024"><vector name="origin" x="512" y="512"/><int name="z" value="0"/><string name="_hash" value="b6661426b0f4975ae81d3e3fff3b98a4e216d97ad14c1688655eb73701afb173"/></canvas><string name="spin_cloud.atlas" value="
+0
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+00
+  rotate: false
+  xy: 2, 2
+  size: 1020, 1020
+  orig: 1020, 1020
+  offset: 0, 0
+  index: -1
+
+spin_cloud2.png
+size: 978,1020
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+background
+  rotate: false
+  xy: 2, 2
+  size: 974, 1016
+  orig: 974, 1016
+  offset: 0, 0
+  index: -1
+
+spin_cloud3.png
+size: 1022,929
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+03
+  rotate: false
+  xy: 585, 279
+  size: 435, 456
+  orig: 435, 456
+  offset: 0, 0
+  index: -1
+_yellow_light
+  rotate: false
+  xy: 255, 414
+  size: 328, 328
+  orig: 328, 328
+  offset: 0, 0
+  index: -1
+light_02
+  rotate: false
+  xy: 2, 2
+  size: 581, 410
+  orig: 581, 410
+  offset: 0, 0
+  index: -1
+lightning_01
+  rotate: true
+  xy: 2, 586
+  size: 224, 251
+  orig: 224, 251
+  offset: 0, 0
+  index: -1
+lightning_02
+  rotate: false
+  xy: 525, 744
+  size: 186, 183
+  orig: 186, 183
+  offset: 0, 0
+  index: -1
+lightning_cloud_01_01
+  rotate: false
+  xy: 183, 812
+  size: 154, 115
+  orig: 154, 115
+  offset: 0, 0
+  index: -1
+lightning_cloud_02
+  rotate: false
+  xy: 2, 873
+  size: 179, 54
+  orig: 179, 54
+  offset: 0, 0
+  index: -1
+mauntain_lightning1
+  rotate: false
+  xy: 713, 737
+  size: 241, 190
+  orig: 241, 190
+  offset: 0, 0
+  index: -1
+mauntain_lightning2
+  rotate: false
+  xy: 339, 754
+  size: 184, 173
+  orig: 184, 173
+  offset: 0, 0
+  index: -1
+
+spin_cloud4.png
+size: 1020,878
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+big_light
+  rotate: true
+  xy: 2, 2
+  size: 446, 570
+  orig: 446, 570
+  offset: 0, 0
+  index: -1
+light_01
+  rotate: false
+  xy: 2, 454
+  size: 462, 422
+  orig: 462, 422
+  offset: 0, 0
+  index: -1
+light_03
+  rotate: true
+  xy: 466, 450
+  size: 426, 552
+  orig: 426, 552
+  offset: 0, 0
+  index: -1
+
+spin_cloud5.png
+size: 956,960
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+04
+  rotate: false
+  xy: 2, 500
+  size: 492, 458
+  orig: 492, 458
+  offset: 0, 0
+  index: -1
+in_light
+  rotate: false
+  xy: 496, 500
+  size: 458, 458
+  orig: 458, 458
+  offset: 0, 0
+  index: -1
+light_04
+  rotate: true
+  xy: 2, 2
+  size: 496, 505
+  orig: 496, 505
+  offset: 0, 0
+  index: -1
+
+spin_cloud6.png
+size: 665,664
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+02
+  rotate: false
+  xy: 2, 2
+  size: 661, 660
+  orig: 661, 660
+  offset: 0, 0
+  index: -1
+"/><string name="spin_cloud.json" value=""/><canvas name="spin_cloud2.png" width="978" height="1020"><vector name="origin" x="489" y="510"/><int name="z" value="0"/><string name="_hash" value="1dab7fe6d6b857ff3bd76a4e3b82369a8c98d42ed8ef862c795c9b5b50bd8136"/></canvas><canvas name="spin_cloud3.png" width="1022" height="929"><vector name="origin" x="511" y="464"/><int name="z" value="0"/><string name="_hash" value="39f64b7a4803aa9339ec3b9994e1c7739c98f4ce3cdcfac91a989a74113f77d7"/></canvas><canvas name="spin_cloud4.png" width="1020" height="878"><vector name="origin" x="510" y="439"/><int name="z" value="0"/><string name="_hash" value="6154da30e23cf5df95c4781c8853c295f63c2937c55657a5ea1d454318130341"/></canvas><canvas name="spin_cloud5.png" width="956" height="960"><vector name="origin" x="478" y="480"/><int name="z" value="0"/><string name="_hash" value="46a06a8d90b58ec97fdbf1724b5f27fe2bda0ceb3e1f5ed4021594539f2c67cd"/></canvas><canvas name="spin_cloud6.png" width="665" height="664"><vector name="origin" x="332" y="332"/><int name="z" value="0"/><string name="_hash" value="a4d115215de4c5cb4b75ad7a37b79b311b3615f63ec3b3519bf39b08cb9d6e50"/></canvas></imgdir><imgdir name="1"><string name="spine" value="cloud_up_leftright"/><canvas name="0" width="891" height="899"><vector name="origin" x="445" y="449"/><int name="z" value="0"/><string name="_hash" value="cfc7c3581b660b0a653ccb1c84a0c0ff861e22bbd3bc4c1ba3764598cfbb5118"/></canvas><string name="cloud_up_leftright.atlas" value="
+0
+size: 891,899
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+cloud_up
+  rotate: true
+  xy: 2, 2
+  size: 895, 483
+  orig: 895, 483
+  offset: 0, 0
+  index: -1
+lightning_01
+  rotate: true
+  xy: 487, 376
+  size: 224, 251
+  orig: 224, 251
+  offset: 0, 0
+  index: -1
+lightning_02
+  rotate: false
+  xy: 703, 135
+  size: 186, 183
+  orig: 186, 183
+  offset: 0, 0
+  index: -1
+lightning_cloud_01
+  rotate: true
+  xy: 740, 320
+  size: 110, 137
+  orig: 110, 137
+  offset: 0, 0
+  index: -1
+lightning_cloud_01_01
+  rotate: false
+  xy: 487, 18
+  size: 154, 115
+  orig: 154, 115
+  offset: 0, 0
+  index: -1
+lightning_cloud_02
+  rotate: false
+  xy: 643, 79
+  size: 179, 54
+  orig: 179, 54
+  offset: 0, 0
+  index: -1
+up_light_01
+  rotate: false
+  xy: 487, 148
+  size: 212, 110
+  orig: 212, 110
+  offset: 0, 0
+  index: -1
+up_light_02
+  rotate: false
+  xy: 487, 260
+  size: 214, 114
+  orig: 214, 114
+  offset: 0, 0
+  index: -1
+up_light_03
+  rotate: true
+  xy: 740, 432
+  size: 168, 147
+  orig: 168, 147
+  offset: 0, 0
+  index: -1
+up_light_04
+  rotate: false
+  xy: 487, 602
+  size: 363, 295
+  orig: 363, 295
+  offset: 0, 0
+  index: -1
+"/><string name="cloud_up_leftright.json" value="{
+&quot;skeleton&quot;: { &quot;hash&quot;: &quot;sIvD2U5iaTV/El2iXGTozIzD8NA&quot;, &quot;spine&quot;: &quot;2.1.27&quot;, &quot;width&quot;: 895, &quot;height&quot;: 521.36 },
+&quot;bones&quot;: [
+	{ &quot;name&quot;: &quot;root&quot; },
+	{ &quot;name&quot;: &quot;cloud_up&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: 107.42, &quot;y&quot;: 295.34 }
+],
+&quot;slots&quot;: [
+	{ &quot;name&quot;: &quot;lightning_cloud_02_02&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;lightning_cloud_01&quot; },
+	{ &quot;name&quot;: &quot;cloud_up2&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;cloud_up&quot; },
+	{ &quot;name&quot;: &quot;lightning_cloud_01&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;lightning_cloud_01&quot; },
+	{ &quot;name&quot;: &quot;lightning_cloud_01_01&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;lightning_cloud_01_01&quot; },
+	{ &quot;name&quot;: &quot;lightning_cloud_02&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;lightning_cloud_02&quot; },
+	{ &quot;name&quot;: &quot;lightning_01&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;lightning_01&quot; },
+	{ &quot;name&quot;: &quot;lightning_02&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;lightning_02&quot; },
+	{ &quot;name&quot;: &quot;up_light_01&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;color&quot;: &quot;ffffff8f&quot;, &quot;attachment&quot;: &quot;up_light_01&quot; },
+	{ &quot;name&quot;: &quot;up_light_02&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;up_light_02&quot; },
+	{ &quot;name&quot;: &quot;up_light_03&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;up_light_03&quot; },
+	{ &quot;name&quot;: &quot;up_light_04&quot;, &quot;bone&quot;: &quot;cloud_up&quot;, &quot;attachment&quot;: &quot;up_light_04&quot; },
+	{ &quot;name&quot;: &quot;B_BOX&quot;, &quot;bone&quot;: &quot;root&quot;, &quot;attachment&quot;: &quot;B_BOX&quot; }
+],
+&quot;skins&quot;: {
+	&quot;default&quot;: {
+		&quot;B_BOX&quot;: {
+			&quot;B_BOX&quot;: {
+				&quot;type&quot;: &quot;boundingbox&quot;,
+				&quot;vertices&quot;: [ -501.9441, 597.1547, -501.9441, -14.10501, 465.03876, -14.10501, 465.03876, 597.15485 ]
+			}
+		},
+		&quot;cloud_up2&quot;: {
+			&quot;cloud_up&quot;: { &quot;x&quot;: -120.05, &quot;y&quot;: -31.52, &quot;width&quot;: 895, &quot;height&quot;: 483 }
+		},
+		&quot;lightning_01&quot;: {
+			&quot;lightning_01&quot;: { &quot;x&quot;: 52.64, &quot;y&quot;: -119.48, &quot;scaleX&quot;: 0.54, &quot;scaleY&quot;: 0.54, &quot;rotation&quot;: 28.49, &quot;width&quot;: 224, &quot;height&quot;: 251 }
+		},
+		&quot;lightning_02&quot;: {
+			&quot;lightning_02&quot;: { &quot;x&quot;: -109.64, &quot;y&quot;: -220.14, &quot;scaleX&quot;: 0.54, &quot;scaleY&quot;: 0.54, &quot;width&quot;: 186, &quot;height&quot;: 183 }
+		},
+		&quot;lightning_cloud_01&quot;: {
+			&quot;lightning_cloud_01&quot;: { &quot;x&quot;: -29, &quot;y&quot;: 36.94, &quot;rotation&quot;: 1.8, &quot;width&quot;: 110, &quot;height&quot;: 137 }
+		},
+		&quot;lightning_cloud_01_01&quot;: {
+			&quot;lightning_cloud_01_01&quot;: { &quot;x&quot;: 30.54, &quot;y&quot;: -37.07, &quot;rotation&quot;: 19.11, &quot;width&quot;: 154, &quot;height&quot;: 115 }
+		},
+		&quot;lightning_cloud_02&quot;: {
+			&quot;lightning_cloud_02&quot;: { &quot;x&quot;: -147.4, &quot;y&quot;: -189.46, &quot;rotation&quot;: 9.98, &quot;width&quot;: 179, &quot;height&quot;: 54 }
+		},
+		&quot;lightning_cloud_02_02&quot;: {
+			&quot;lightning_cloud_01&quot;: { &quot;x&quot;: -160.29, &quot;y&quot;: -136.42, &quot;rotation&quot;: -30.97, &quot;width&quot;: 110, &quot;height&quot;: 137 }
+		},
+		&quot;up_light_01&quot;: {
+			&quot;up_light_01&quot;: { &quot;x&quot;: -206.35, &quot;y&quot;: 178.13, &quot;rotation&quot;: 8.58, &quot;width&quot;: 212, &quot;height&quot;: 110 }
+		},
+		&quot;up_light_02&quot;: {
+			&quot;up_light_02&quot;: { &quot;x&quot;: -283.25, &quot;y&quot;: -193.16, &quot;rotation&quot;: 10.74, &quot;width&quot;: 214, &quot;height&quot;: 114 }
+		},
+		&quot;up_light_03&quot;: {
+			&quot;up_light_03&quot;: { &quot;x&quot;: 122.35, &quot;y&quot;: -79.47, &quot;width&quot;: 168, &quot;height&quot;: 147 }
+		},
+		&quot;up_light_04&quot;: {
+			&quot;up_light_04&quot;: { &quot;x&quot;: -165.6, &quot;y&quot;: -75.12, &quot;rotation&quot;: 15.62, &quot;width&quot;: 363, &quot;height&quot;: 295 }
+		}
+	}
+},
+&quot;animations&quot;: {
+	&quot;left&quot;: {
+		&quot;slots&quot;: {
+			&quot;cloud_up2&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;cloud_up&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: &quot;cloud_up&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: &quot;cloud_up&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;lightning_01&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.2, &quot;name&quot;: &quot;lightning_01&quot; },
+					{ &quot;time&quot;: 1.2666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.3333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.3666, &quot;name&quot;: &quot;lightning_01&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.3666, &quot;name&quot;: &quot;lightning_01&quot; },
+					{ &quot;time&quot;: 5.4333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.5333, &quot;name&quot;: &quot;lightning_01&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 1.3666, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 2, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 5.5333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 6.1666, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffff00&quot; }
+				]
+			},
+			&quot;lightning_02&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.3666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.4666, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 0.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.6, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 0.6333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.7, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 2, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.5333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.6333, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 4.6666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.7666, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 4.8, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.8666, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 6.1666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.6333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 1.3666, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 4.8, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 5.5333, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffff00&quot; }
+				]
+			},
+			&quot;lightning_cloud_01&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.2, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 1.2666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.3333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.3666, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 3.5333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.3666, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 5.4333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.5333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 7.7, &quot;name&quot;: null },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 1.3666, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 3.5333, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5.5333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 7.7, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;lightning_cloud_02&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.3666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.4666, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 0.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.6, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 0.6333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.7, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 2, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.5333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.6333, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 4.6666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.7666, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 4.8, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.8666, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 6.1666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.4666, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 2.3333, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 4.6333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 6.5, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;lightning_cloud_01_01&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.2, &quot;name&quot;: &quot;lightning_cloud_01_01&quot; },
+					{ &quot;time&quot;: 1.2666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.3333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.3666, &quot;name&quot;: &quot;lightning_cloud_01_01&quot; },
+					{ &quot;time&quot;: 2.8, &quot;name&quot;: null },
+					{ &quot;time&quot;: 3.5333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.3666, &quot;name&quot;: &quot;lightning_cloud_01_01&quot; },
+					{ &quot;time&quot;: 5.4333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.5333, &quot;name&quot;: &quot;lightning_cloud_01_01&quot; },
+					{ &quot;time&quot;: 6.9666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 7.7, &quot;name&quot;: null },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 1.2, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 1.3666, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 2.8, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 5.3666, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5.5333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 6.9666, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffff00&quot; }
+				]
+			},
+			&quot;lightning_cloud_02_02&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 0.3666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.4666, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 0.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.6, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 0.6333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.7, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 4.5333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.6333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 4.6666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.7666, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 4.8, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.8666, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: &quot;lightning_cloud_01&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.7, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 2.3333, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 4.8666, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 6.5, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;up_light_01&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;up_light_01&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: &quot;up_light_01&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: &quot;up_light_01&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 1.8, &quot;color&quot;: &quot;ffffff10&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 5.9666, &quot;color&quot;: &quot;ffffff10&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;up_light_02&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;up_light_02&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: &quot;up_light_02&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: &quot;up_light_02&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff61&quot; },
+					{ &quot;time&quot;: 2.6666, &quot;color&quot;: &quot;ffffff1d&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffff61&quot; },
+					{ &quot;time&quot;: 6.8333, &quot;color&quot;: &quot;ffffff1d&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffff61&quot; }
+				]
+			},
+			&quot;up_light_03&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;up_light_03&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: &quot;up_light_03&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: &quot;up_light_03&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff62&quot; },
+					{ &quot;time&quot;: 1, &quot;color&quot;: &quot;ffffff29&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffff62&quot; },
+					{ &quot;time&quot;: 5.3333, &quot;color&quot;: &quot;ffffff29&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffff62&quot; }
+				]
+			},
+			&quot;up_light_04&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;up_light_04&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;name&quot;: &quot;up_light_04&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: &quot;up_light_04&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 3.2666, &quot;color&quot;: &quot;ffffff4b&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 7.4333, &quot;color&quot;: &quot;ffffff4b&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			}
+		},
+		&quot;bones&quot;: {
+			&quot;root&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				],
+				&quot;flipX&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: true }
+				]
+			},
+			&quot;cloud_up&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 4.1666, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			}
+		}
+	},
+	&quot;right&quot;: {
+		&quot;slots&quot;: {
+			&quot;cloud_up2&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;cloud_up&quot; },
+					{ &quot;time&quot;: 5, &quot;name&quot;: &quot;cloud_up&quot; },
+					{ &quot;time&quot;: 10, &quot;name&quot;: &quot;cloud_up&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;lightning_01&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.4333, &quot;name&quot;: &quot;lightning_01&quot; },
+					{ &quot;time&quot;: 1.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.6333, &quot;name&quot;: &quot;lightning_01&quot; },
+					{ &quot;time&quot;: 5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 6.4333, &quot;name&quot;: &quot;lightning_01&quot; },
+					{ &quot;time&quot;: 6.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 6.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 6.6333, &quot;name&quot;: &quot;lightning_01&quot; },
+					{ &quot;time&quot;: 10, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 1.6333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 2.4, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 6.6333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 7.4, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 9.9333, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffff00&quot; }
+				]
+			},
+			&quot;lightning_02&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.4333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.5333, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 0.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.7, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 0.7333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.8333, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 2.6666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.4333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.5333, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 5.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.7, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 5.7333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.8333, &quot;name&quot;: &quot;lightning_02&quot; },
+					{ &quot;time&quot;: 7.6666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 10, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.7333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 1.6333, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 5.7333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 6.6333, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffff00&quot; }
+				]
+			},
+			&quot;lightning_cloud_01&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.4333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 1.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.6333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 4.2333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 6.4333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 6.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 6.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 6.6333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 9.2333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 10, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 1.6333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 4.2333, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 6.6333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 9.2333, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;lightning_cloud_02&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.4333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.5333, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 0.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.7, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 0.7333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.8333, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 2.6666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.4333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.5333, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 5.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.7, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 5.7333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.8333, &quot;name&quot;: &quot;lightning_cloud_02&quot; },
+					{ &quot;time&quot;: 7.6666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 10, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.5333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 2.8, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5.5333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 7.8, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;lightning_cloud_01_01&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.4333, &quot;name&quot;: &quot;lightning_cloud_01_01&quot; },
+					{ &quot;time&quot;: 1.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 1.6333, &quot;name&quot;: &quot;lightning_cloud_01_01&quot; },
+					{ &quot;time&quot;: 3.3333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 4.2333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 6.4333, &quot;name&quot;: &quot;lightning_cloud_01_01&quot; },
+					{ &quot;time&quot;: 6.5, &quot;name&quot;: null },
+					{ &quot;time&quot;: 6.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 6.6333, &quot;name&quot;: &quot;lightning_cloud_01_01&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 9.2333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 10, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 1.4333, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 1.6333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 3.3333, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 6.4333, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 6.6333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 8.3333, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffff00&quot; }
+				]
+			},
+			&quot;lightning_cloud_02_02&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 0.4333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.5333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 0.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.7, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 0.7333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 0.8333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 5.4333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.5333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 5.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.7, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 5.7333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 5.8333, &quot;name&quot;: &quot;lightning_cloud_01&quot; },
+					{ &quot;time&quot;: 10, &quot;name&quot;: &quot;lightning_cloud_01&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 0.8333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 2.8, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5.8333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 7.8, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;up_light_01&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;up_light_01&quot; },
+					{ &quot;time&quot;: 5, &quot;name&quot;: &quot;up_light_01&quot; },
+					{ &quot;time&quot;: 10, &quot;name&quot;: &quot;up_light_01&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 2.1333, &quot;color&quot;: &quot;ffffff10&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 7.1333, &quot;color&quot;: &quot;ffffff10&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;up_light_02&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;up_light_02&quot; },
+					{ &quot;time&quot;: 5, &quot;name&quot;: &quot;up_light_02&quot; },
+					{ &quot;time&quot;: 10, &quot;name&quot;: &quot;up_light_02&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff61&quot; },
+					{ &quot;time&quot;: 3.2, &quot;color&quot;: &quot;ffffff1d&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffff61&quot; },
+					{ &quot;time&quot;: 8.2, &quot;color&quot;: &quot;ffffff1d&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffff61&quot; }
+				]
+			},
+			&quot;up_light_03&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;up_light_03&quot; },
+					{ &quot;time&quot;: 5, &quot;name&quot;: &quot;up_light_03&quot; },
+					{ &quot;time&quot;: 10, &quot;name&quot;: &quot;up_light_03&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff62&quot; },
+					{ &quot;time&quot;: 1.3333, &quot;color&quot;: &quot;ffffff29&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffff62&quot; },
+					{ &quot;time&quot;: 6.3333, &quot;color&quot;: &quot;ffffff29&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffff62&quot; }
+				]
+			},
+			&quot;up_light_04&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;up_light_04&quot; },
+					{ &quot;time&quot;: 5, &quot;name&quot;: &quot;up_light_04&quot; },
+					{ &quot;time&quot;: 10, &quot;name&quot;: &quot;up_light_04&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 3.9, &quot;color&quot;: &quot;ffffff4b&quot; },
+					{ &quot;time&quot;: 5, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 8.9, &quot;color&quot;: &quot;ffffff4b&quot; },
+					{ &quot;time&quot;: 10, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			}
+		},
+		&quot;bones&quot;: {
+			&quot;cloud_up&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 10, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 10, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 10, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			}
+		}
+	}
+}
+}"/></imgdir><imgdir name="2"><string name="spine" value="particle_leftright"/><canvas name="0" width="26" height="30"><vector name="origin" x="13" y="15"/><int name="z" value="0"/><string name="_hash" value="aae27431ca3a9d8ff84fb272a37020cbec008786ca01aed854f41b23236d5302"/></canvas><string name="particle_leftright.atlas" value="
+0
+size: 26,30
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+particle 02
+  rotate: false
+  xy: 2, 2
+  size: 22, 26
+  orig: 22, 26
+  offset: 0, 0
+  index: -1
+"/><string name="particle_leftright.json" value=""/></imgdir><imgdir name="3"><string name="spine" value="3th_mauntain"/><canvas name="0" width="967" height="296"><vector name="origin" x="483" y="148"/><int name="z" value="0"/><string name="_hash" value="a52915ac2cf321ce094f4050595c9b5e603d8f65cdffb396710793218bc5f75d"/></canvas><string name="3th_mauntain.atlas" value="
+0
+size: 967,296
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+far_mauntain 02
+  rotate: false
+  xy: 2, 2
+  size: 963, 292
+  orig: 963, 292
+  offset: 0, 0
+  index: -1
+"/><string name="3th_mauntain.json" value="{
+&quot;skeleton&quot;: { &quot;hash&quot;: &quot;mNK7SAvjXK9Za3GFOxEi3VHMzNk&quot;, &quot;spine&quot;: &quot;2.1.27&quot;, &quot;width&quot;: 3368.99, &quot;height&quot;: 292 },
+&quot;bones&quot;: [
+	{ &quot;name&quot;: &quot;root&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_2&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: 1.74, &quot;y&quot;: 102.44 }
+],
+&quot;slots&quot;: [
+	{ &quot;name&quot;: &quot;far_mauntain_02_1&quot;, &quot;bone&quot;: &quot;far_mauntain_2&quot;, &quot;attachment&quot;: &quot;far_mauntain 02&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_02_2&quot;, &quot;bone&quot;: &quot;far_mauntain_2&quot;, &quot;attachment&quot;: &quot;far_mauntain 02&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_03_3&quot;, &quot;bone&quot;: &quot;far_mauntain_2&quot;, &quot;attachment&quot;: &quot;far_mauntain 02&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_03_4&quot;, &quot;bone&quot;: &quot;far_mauntain_2&quot;, &quot;attachment&quot;: &quot;far_mauntain 02&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_03_5&quot;, &quot;bone&quot;: &quot;far_mauntain_2&quot;, &quot;attachment&quot;: &quot;far_mauntain 02&quot; },
+	{ &quot;name&quot;: &quot;B_BOX&quot;, &quot;bone&quot;: &quot;root&quot;, &quot;attachment&quot;: &quot;B_BOX&quot; }
+],
+&quot;skins&quot;: {
+	&quot;default&quot;: {
+		&quot;B_BOX&quot;: {
+			&quot;B_BOX&quot;: {
+				&quot;type&quot;: &quot;boundingbox&quot;,
+				&quot;vertices&quot;: [ -1542.706, 301.1188, -1542.706, -19.59092, 1699.4865, -19.59092, 1699.4865, 301.1188 ]
+			}
+		},
+		&quot;far_mauntain_02_1&quot;: {
+			&quot;far_mauntain 02&quot;: { &quot;x&quot;: 74.38, &quot;y&quot;: 64.28, &quot;width&quot;: 963, &quot;height&quot;: 292 }
+		},
+		&quot;far_mauntain_02_2&quot;: {
+			&quot;far_mauntain 02&quot;: { &quot;x&quot;: -527.16, &quot;y&quot;: 64.28, &quot;width&quot;: 963, &quot;height&quot;: 292 }
+		},
+		&quot;far_mauntain_03_3&quot;: {
+			&quot;far_mauntain 02&quot;: { &quot;x&quot;: -1126.93, &quot;y&quot;: 64.28, &quot;width&quot;: 963, &quot;height&quot;: 292 }
+		},
+		&quot;far_mauntain_03_4&quot;: {
+			&quot;far_mauntain 02&quot;: { &quot;x&quot;: 1279.06, &quot;y&quot;: 64.28, &quot;width&quot;: 963, &quot;height&quot;: 292 }
+		},
+		&quot;far_mauntain_03_5&quot;: {
+			&quot;far_mauntain 02&quot;: { &quot;x&quot;: 675.88, &quot;y&quot;: 64.28, &quot;width&quot;: 963, &quot;height&quot;: 292 }
+		}
+	}
+},
+&quot;animations&quot;: {
+	&quot;animation&quot;: {
+		&quot;slots&quot;: {
+			&quot;far_mauntain_02_1&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 02&quot; }
+				]
+			},
+			&quot;far_mauntain_02_2&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 02&quot; }
+				]
+			},
+			&quot;far_mauntain_03_3&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 02&quot; }
+				]
+			},
+			&quot;far_mauntain_03_4&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 02&quot; }
+				]
+			},
+			&quot;far_mauntain_03_5&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 02&quot; }
+				]
+			}
+		},
+		&quot;bones&quot;: {
+			&quot;root&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: -5.88 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;far_mauntain_2&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			}
+		}
+	}
+}
+}"/></imgdir><imgdir name="4"><string name="spine" value="2th_mauntain"/><canvas name="0" width="940" height="238"><vector name="origin" x="470" y="119"/><int name="z" value="0"/><string name="_hash" value="ab2f0e02a9551033bf337dd160cb38abf389c970cea935575b09039813f5e22b"/></canvas><string name="2th_mauntain.atlas" value="
+0
+size: 940,238
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+far_mauntain 01
+  rotate: false
+  xy: 2, 2
+  size: 936, 234
+  orig: 936, 234
+  offset: 0, 0
+  index: -1
+"/><string name="2th_mauntain.json" value="{
+&quot;skeleton&quot;: { &quot;hash&quot;: &quot;HkyHtbSpLLfQmBklRuHIp/VGV34&quot;, &quot;spine&quot;: &quot;2.1.27&quot;, &quot;width&quot;: 3340.86, &quot;height&quot;: 234 },
+&quot;bones&quot;: [
+	{ &quot;name&quot;: &quot;root&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_1&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: -146.37, &quot;y&quot;: 175.47 }
+],
+&quot;slots&quot;: [
+	{ &quot;name&quot;: &quot;far_mauntain 01_1&quot;, &quot;bone&quot;: &quot;far_mauntain_1&quot;, &quot;attachment&quot;: &quot;far_mauntain 01&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_01_2&quot;, &quot;bone&quot;: &quot;far_mauntain_1&quot;, &quot;attachment&quot;: &quot;far_mauntain 01&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_01_3&quot;, &quot;bone&quot;: &quot;far_mauntain_1&quot;, &quot;attachment&quot;: &quot;far_mauntain 01&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_01_4&quot;, &quot;bone&quot;: &quot;far_mauntain_1&quot;, &quot;attachment&quot;: &quot;far_mauntain 01&quot; },
+	{ &quot;name&quot;: &quot;far_mauntain_01_5&quot;, &quot;bone&quot;: &quot;far_mauntain_1&quot;, &quot;attachment&quot;: &quot;far_mauntain 01&quot; },
+	{ &quot;name&quot;: &quot;B_BOX&quot;, &quot;bone&quot;: &quot;root&quot;, &quot;attachment&quot;: &quot;B_BOX&quot; }
+],
+&quot;skins&quot;: {
+	&quot;default&quot;: {
+		&quot;B_BOX&quot;: {
+			&quot;B_BOX&quot;: {
+				&quot;type&quot;: &quot;boundingbox&quot;,
+				&quot;vertices&quot;: [ -1598.0892, 307.02658, -1597.9485, -15.80386, 1736.9424, -15.80386, 1736.9424, 306.95438 ]
+			}
+		},
+		&quot;far_mauntain 01_1&quot;: {
+			&quot;far_mauntain 01&quot;: { &quot;x&quot;: 177.16, &quot;y&quot;: -24.3, &quot;width&quot;: 936, &quot;height&quot;: 234 }
+		},
+		&quot;far_mauntain_01_2&quot;: {
+			&quot;far_mauntain 01&quot;: { &quot;x&quot;: 778.75, &quot;y&quot;: -24.3, &quot;width&quot;: 936, &quot;height&quot;: 234 }
+		},
+		&quot;far_mauntain_01_3&quot;: {
+			&quot;far_mauntain 01&quot;: { &quot;x&quot;: -1023.8, &quot;y&quot;: -24.3, &quot;width&quot;: 936, &quot;height&quot;: 234 }
+		},
+		&quot;far_mauntain_01_4&quot;: {
+			&quot;far_mauntain 01&quot;: { &quot;x&quot;: 1381.05, &quot;y&quot;: -24.3, &quot;width&quot;: 936, &quot;height&quot;: 234 }
+		},
+		&quot;far_mauntain_01_5&quot;: {
+			&quot;far_mauntain 01&quot;: { &quot;x&quot;: -424.42, &quot;y&quot;: -24.3, &quot;width&quot;: 936, &quot;height&quot;: 234 }
+		}
+	}
+},
+&quot;animations&quot;: {
+	&quot;animation&quot;: {
+		&quot;slots&quot;: {
+			&quot;far_mauntain 01_1&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 01&quot; },
+					{ &quot;time&quot;: 166.6666, &quot;name&quot;: &quot;far_mauntain 01&quot; }
+				]
+			},
+			&quot;far_mauntain_01_2&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 01&quot; },
+					{ &quot;time&quot;: 166.6666, &quot;name&quot;: &quot;far_mauntain 01&quot; }
+				]
+			},
+			&quot;far_mauntain_01_3&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 01&quot; },
+					{ &quot;time&quot;: 166.6666, &quot;name&quot;: &quot;far_mauntain 01&quot; }
+				]
+			},
+			&quot;far_mauntain_01_4&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 01&quot; },
+					{ &quot;time&quot;: 166.6666, &quot;name&quot;: &quot;far_mauntain 01&quot; }
+				]
+			},
+			&quot;far_mauntain_01_5&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_mauntain 01&quot; },
+					{ &quot;time&quot;: 166.6666, &quot;name&quot;: &quot;far_mauntain 01&quot; }
+				]
+			}
+		},
+		&quot;bones&quot;: {
+			&quot;root&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: -5.88 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;far_mauntain_1&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 166.6666, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 166.6666, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 166.6666, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			}
+		}
+	}
+}
+}"/></imgdir><imgdir name="5"><string name="spine" value="1th_mauntain"/><canvas name="0" width="877" height="341"><vector name="origin" x="438" y="170"/><int name="z" value="0"/><string name="_hash" value="74160cec81db03df9e6c0f9f3943aa48de062c79f17246283afb4f70ddf17a61"/></canvas><string name="1th_mauntain.atlas" value="
+0
+size: 877,341
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+main_front
+  rotate: false
+  xy: 2, 2
+  size: 873, 337
+  orig: 873, 337
+  offset: 0, 0
+  index: -1
+"/><string name="1th_mauntain.json" value="{
+&quot;skeleton&quot;: { &quot;hash&quot;: &quot;sMf+Wo8XEn7lwSg1Z7gb9dS+JFM&quot;, &quot;spine&quot;: &quot;2.1.27&quot;, &quot;width&quot;: 3347.82, &quot;height&quot;: 337 },
+&quot;bones&quot;: [
+	{ &quot;name&quot;: &quot;root&quot;, &quot;y&quot;: -29 },
+	{ &quot;name&quot;: &quot;main_front&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: -3.87, &quot;y&quot;: 186.34 }
+],
+&quot;slots&quot;: [
+	{ &quot;name&quot;: &quot;main_front&quot;, &quot;bone&quot;: &quot;main_front&quot;, &quot;attachment&quot;: &quot;main_front&quot; },
+	{ &quot;name&quot;: &quot;main_front2&quot;, &quot;bone&quot;: &quot;main_front&quot;, &quot;attachment&quot;: &quot;main_front&quot; },
+	{ &quot;name&quot;: &quot;main_front3&quot;, &quot;bone&quot;: &quot;main_front&quot;, &quot;attachment&quot;: &quot;main_front&quot; },
+	{ &quot;name&quot;: &quot;main_front4&quot;, &quot;bone&quot;: &quot;main_front&quot;, &quot;attachment&quot;: &quot;main_front&quot; },
+	{ &quot;name&quot;: &quot;main_front5&quot;, &quot;bone&quot;: &quot;main_front&quot;, &quot;attachment&quot;: &quot;main_front&quot; },
+	{ &quot;name&quot;: &quot;B_BOX&quot;, &quot;bone&quot;: &quot;root&quot;, &quot;attachment&quot;: &quot;B_BOX&quot; }
+],
+&quot;skins&quot;: {
+	&quot;default&quot;: {
+		&quot;B_BOX&quot;: {
+			&quot;B_BOX&quot;: {
+				&quot;type&quot;: &quot;boundingbox&quot;,
+				&quot;vertices&quot;: [ -1743.65, 427.67816, -1743.65, -55.90144, 1676.0474, -55.90144, 1676.0474, 427.67816 ]
+			}
+		},
+		&quot;main_front&quot;: {
+			&quot;main_front&quot;: { &quot;x&quot;: -17.16, &quot;y&quot;: -34.65, &quot;width&quot;: 873, &quot;height&quot;: 337 }
+		},
+		&quot;main_front2&quot;: {
+			&quot;main_front&quot;: { &quot;x&quot;: 599.71, &quot;y&quot;: -34.65, &quot;width&quot;: 873, &quot;height&quot;: 337 }
+		},
+		&quot;main_front3&quot;: {
+			&quot;main_front&quot;: { &quot;x&quot;: -1255.13, &quot;y&quot;: -34.65, &quot;width&quot;: 873, &quot;height&quot;: 337 }
+		},
+		&quot;main_front4&quot;: {
+			&quot;main_front&quot;: { &quot;x&quot;: 1219.68, &quot;y&quot;: -34.65, &quot;width&quot;: 873, &quot;height&quot;: 337 }
+		},
+		&quot;main_front5&quot;: {
+			&quot;main_front&quot;: { &quot;x&quot;: -635.59, &quot;y&quot;: -34.65, &quot;width&quot;: 873, &quot;height&quot;: 337 }
+		}
+	}
+},
+&quot;animations&quot;: {
+	&quot;animation&quot;: {
+		&quot;slots&quot;: {
+			&quot;main_front&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;main_front&quot; }
+				]
+			},
+			&quot;main_front2&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;main_front&quot; }
+				]
+			},
+			&quot;main_front3&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;main_front&quot; }
+				]
+			},
+			&quot;main_front4&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;main_front&quot; }
+				]
+			},
+			&quot;main_front5&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;main_front&quot; }
+				]
+			}
+		},
+		&quot;bones&quot;: {
+			&quot;root&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: -5.88 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;main_front&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0.48 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			}
+		}
+	}
+}
+}"/></imgdir><imgdir name="6"><string name="spine" value="dawnback_cloud"/><canvas name="0" width="951" height="852"><vector name="origin" x="475" y="426"/><int name="z" value="0"/><string name="_hash" value="9c5e934b24e9b99e13012dd242b02cd977976eb3fff1780d6d505592173ca865"/></canvas><string name="dawnback_cloud.atlas" value="
+0
+size: 951,852
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dawn_up_cloud1
+  rotate: true
+  xy: 301, 169
+  size: 681, 360
+  orig: 681, 360
+  offset: 0, 0
+  index: -1
+dawn_up_cloud2
+  rotate: true
+  xy: 2, 2
+  size: 848, 297
+  orig: 848, 297
+  offset: 0, 0
+  index: -1
+far_cloud
+  rotate: true
+  xy: 663, 101
+  size: 749, 286
+  orig: 749, 286
+  offset: 0, 0
+  index: -1
+"/><string name="dawnback_cloud.json" value="{
+&quot;skeleton&quot;: { &quot;hash&quot;: &quot;nXbW4mq20uFgQfbH+Wmeqrserh8&quot;, &quot;spine&quot;: &quot;2.1.27&quot;, &quot;width&quot;: 1151.02, &quot;height&quot;: 248.16 },
+&quot;bones&quot;: [
+	{ &quot;name&quot;: &quot;root&quot;, &quot;y&quot;: 5.27 },
+	{ &quot;name&quot;: &quot;dawn_back_cloud3&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: 350.31, &quot;y&quot;: 120.04 },
+	{ &quot;name&quot;: &quot;dawn_back_cloud4&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: -269.55, &quot;y&quot;: 133.15 },
+	{ &quot;name&quot;: &quot;far_cloud(dawn_back)2&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: 149.03, &quot;y&quot;: 150.32 }
+],
+&quot;slots&quot;: [
+	{ &quot;name&quot;: &quot;far_cloud2&quot;, &quot;bone&quot;: &quot;far_cloud(dawn_back)2&quot;, &quot;attachment&quot;: &quot;far_cloud&quot; },
+	{ &quot;name&quot;: &quot;dawn_up_cloud3&quot;, &quot;bone&quot;: &quot;dawn_back_cloud3&quot;, &quot;color&quot;: &quot;ffffffb0&quot;, &quot;attachment&quot;: &quot;dawn_up_cloud1&quot; },
+	{ &quot;name&quot;: &quot;dawn_up_cloud4&quot;, &quot;bone&quot;: &quot;dawn_back_cloud4&quot;, &quot;color&quot;: &quot;ffffffb0&quot;, &quot;attachment&quot;: &quot;dawn_up_cloud2&quot; },
+	{ &quot;name&quot;: &quot;B_BOX&quot;, &quot;bone&quot;: &quot;root&quot;, &quot;attachment&quot;: &quot;B_BOX&quot; }
+],
+&quot;skins&quot;: {
+	&quot;default&quot;: {
+		&quot;B_BOX&quot;: {
+			&quot;B_BOX&quot;: {
+				&quot;type&quot;: &quot;boundingbox&quot;,
+				&quot;vertices&quot;: [ -588.2303, 335.5841, -588.2303, -13.96673, 584.1625, -13.96673, 584.1625, 335.5841 ]
+			}
+		},
+		&quot;dawn_up_cloud3&quot;: {
+			&quot;dawn_up_cloud1&quot;: { &quot;x&quot;: -3.76, &quot;y&quot;: 33.56, &quot;scaleX&quot;: 0.672, &quot;scaleY&quot;: 0.672, &quot;width&quot;: 681, &quot;height&quot;: 360 }
+		},
+		&quot;dawn_up_cloud4&quot;: {
+			&quot;dawn_up_cloud2&quot;: { &quot;x&quot;: -30.64, &quot;y&quot;: -10.23, &quot;scaleX&quot;: 0.649, &quot;scaleY&quot;: 0.649, &quot;width&quot;: 848, &quot;height&quot;: 297 }
+		},
+		&quot;far_cloud2&quot;: {
+			&quot;far_cloud&quot;: { &quot;x&quot;: -1.63, &quot;y&quot;: 2.96, &quot;scaleX&quot;: 0.659, &quot;scaleY&quot;: 0.659, &quot;width&quot;: 749, &quot;height&quot;: 286 }
+		}
+	}
+},
+&quot;animations&quot;: {
+	&quot;animation&quot;: {
+		&quot;slots&quot;: {
+			&quot;dawn_up_cloud3&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;dawn_up_cloud1&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;name&quot;: &quot;dawn_up_cloud1&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 5.7, &quot;color&quot;: &quot;ffffffb0&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 73.9333, &quot;color&quot;: &quot;ffffffb0&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;color&quot;: &quot;ffffff00&quot; }
+				]
+			},
+			&quot;dawn_up_cloud4&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;dawn_up_cloud2&quot; },
+					{ &quot;time&quot;: 34.1333, &quot;name&quot;: null },
+					{ &quot;time&quot;: 36.4333, &quot;name&quot;: &quot;dawn_up_cloud2&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;name&quot;: &quot;dawn_up_cloud2&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffb0&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 30.7333, &quot;color&quot;: &quot;ffffffb0&quot; },
+					{ &quot;time&quot;: 34.1333, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 36.4333, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 42.1, &quot;color&quot;: &quot;ffffffb0&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;color&quot;: &quot;ffffffb0&quot; }
+				]
+			},
+			&quot;far_cloud2&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_cloud&quot; },
+					{ &quot;time&quot;: 81.2, &quot;name&quot;: null },
+					{ &quot;time&quot;: 83.3333, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 3.3333, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 77.9333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 81.2, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;color&quot;: &quot;ffffff00&quot; }
+				]
+			}
+		},
+		&quot;bones&quot;: {
+			&quot;root&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: -5.88, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 0, &quot;y&quot;: -5.88 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;far_cloud(dawn_back)2&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0.48, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0.48 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1059.81, &quot;y&quot;: 9.14 },
+					{ &quot;time&quot;: 81.2, &quot;x&quot;: -1872.45, &quot;y&quot;: -16.15 },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1062.81, &quot;y&quot;: 9.17 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;dawn_back_cloud3&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 163.73, &quot;y&quot;: 0 },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: -1364.47, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;dawn_back_cloud4&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: 0 },
+					{ &quot;time&quot;: 34.1333, &quot;x&quot;: -1062.99, &quot;y&quot;: 0 },
+					{ &quot;time&quot;: 36.4333, &quot;x&quot;: 1439.95, &quot;y&quot;: 0 },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			}
+		}
+	}
+}
+}"/></imgdir><imgdir name="7"><string name="spine" value="dawn_up_cloud"/><canvas name="0" width="1" height="1"><vector name="origin" x="475" y="426"/><int name="z" value="0"/><string name="_inlink" value="spine/6/0"/></canvas><string name="dawn_up_cloud.atlas" value="
+0
+size: 951,852
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dawn_up_cloud1
+  rotate: true
+  xy: 301, 169
+  size: 681, 360
+  orig: 681, 360
+  offset: 0, 0
+  index: -1
+dawn_up_cloud2
+  rotate: true
+  xy: 2, 2
+  size: 848, 297
+  orig: 848, 297
+  offset: 0, 0
+  index: -1
+far_cloud
+  rotate: true
+  xy: 663, 101
+  size: 749, 286
+  orig: 749, 286
+  offset: 0, 0
+  index: -1
+"/><string name="dawn_up_cloud.json" value="{
+&quot;skeleton&quot;: { &quot;hash&quot;: &quot;5sJ50B17JeHfGUjsTFQtsoKLtOs&quot;, &quot;spine&quot;: &quot;2.1.27&quot;, &quot;width&quot;: 2608.77, &quot;height&quot;: 399.4 },
+&quot;bones&quot;: [
+	{ &quot;name&quot;: &quot;root&quot; },
+	{ &quot;name&quot;: &quot;dawn_up_cloud1&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: 595.43, &quot;y&quot;: 186.58 },
+	{ &quot;name&quot;: &quot;dawn_up_cloud2&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: -219.57, &quot;y&quot;: 200.37 },
+	{ &quot;name&quot;: &quot;dawn_up_cloud3&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: -1060.35, &quot;y&quot;: 186.58 },
+	{ &quot;name&quot;: &quot;dawn_up_cloud4&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: 839.38, &quot;y&quot;: 200.37 },
+	{ &quot;name&quot;: &quot;far_cloud&quot;, &quot;parent&quot;: &quot;root&quot;, &quot;x&quot;: 315.03, &quot;y&quot;: 140.43 }
+],
+&quot;slots&quot;: [
+	{ &quot;name&quot;: &quot;far_cloud&quot;, &quot;bone&quot;: &quot;far_cloud&quot;, &quot;attachment&quot;: &quot;far_cloud&quot; },
+	{ &quot;name&quot;: &quot;dawn_up_cloud1&quot;, &quot;bone&quot;: &quot;dawn_up_cloud1&quot;, &quot;attachment&quot;: &quot;dawn_up_cloud1&quot; },
+	{ &quot;name&quot;: &quot;dawn_up_cloud5&quot;, &quot;bone&quot;: &quot;dawn_up_cloud3&quot;, &quot;attachment&quot;: &quot;dawn_up_cloud1&quot; },
+	{ &quot;name&quot;: &quot;dawn_up_cloud2&quot;, &quot;bone&quot;: &quot;dawn_up_cloud2&quot;, &quot;attachment&quot;: &quot;dawn_up_cloud2&quot; },
+	{ &quot;name&quot;: &quot;dawn_up_cloud6&quot;, &quot;bone&quot;: &quot;dawn_up_cloud4&quot;, &quot;attachment&quot;: &quot;dawn_up_cloud2&quot; },
+	{ &quot;name&quot;: &quot;b_box&quot;, &quot;bone&quot;: &quot;root&quot;, &quot;attachment&quot;: &quot;b_box&quot; }
+],
+&quot;skins&quot;: {
+	&quot;default&quot;: {
+		&quot;b_box&quot;: {
+			&quot;b_box&quot;: {
+				&quot;type&quot;: &quot;boundingbox&quot;,
+				&quot;vertices&quot;: [ -1467.7777, 435.6742, -1467.7316, -53.63635, 1378.2241, -53.63635, 1378.2241, 435.70044 ]
+			}
+		},
+		&quot;dawn_up_cloud1&quot;: {
+			&quot;dawn_up_cloud1&quot;: { &quot;x&quot;: 7.95, &quot;y&quot;: 39.12, &quot;width&quot;: 681, &quot;height&quot;: 360 }
+		},
+		&quot;dawn_up_cloud2&quot;: {
+			&quot;dawn_up_cloud2&quot;: { &quot;x&quot;: -47.5, &quot;y&quot;: -3.43, &quot;width&quot;: 848, &quot;height&quot;: 297 }
+		},
+		&quot;dawn_up_cloud5&quot;: {
+			&quot;dawn_up_cloud1&quot;: { &quot;x&quot;: 7.95, &quot;y&quot;: 39.12, &quot;width&quot;: 681, &quot;height&quot;: 360 }
+		},
+		&quot;dawn_up_cloud6&quot;: {
+			&quot;dawn_up_cloud2&quot;: { &quot;x&quot;: -47.5, &quot;y&quot;: -3.43, &quot;width&quot;: 848, &quot;height&quot;: 297 }
+		},
+		&quot;far_cloud&quot;: {
+			&quot;far_cloud&quot;: { &quot;x&quot;: 8.33, &quot;y&quot;: 8.86, &quot;width&quot;: 749, &quot;height&quot;: 286 }
+		}
+	}
+},
+&quot;animations&quot;: {
+	&quot;animation&quot;: {
+		&quot;slots&quot;: {
+			&quot;dawn_up_cloud1&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;dawn_up_cloud1&quot; },
+					{ &quot;time&quot;: 47.3666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 47.7666, &quot;name&quot;: &quot;dawn_up_cloud1&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;name&quot;: &quot;dawn_up_cloud1&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 39.9, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 47.7666, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 50.6, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;dawn_up_cloud2&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;dawn_up_cloud2&quot; },
+					{ &quot;time&quot;: 29.6, &quot;name&quot;: null },
+					{ &quot;time&quot;: 42.2333, &quot;name&quot;: &quot;dawn_up_cloud2&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;name&quot;: &quot;dawn_up_cloud2&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 25.8333, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 29.6, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 42.2333, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 46.0333, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;dawn_up_cloud5&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;dawn_up_cloud1&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;name&quot;: &quot;dawn_up_cloud1&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 5.7, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 22.7666, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 47.7666, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 51.2666, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 80.2, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;dawn_up_cloud6&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;dawn_up_cloud2&quot; },
+					{ &quot;time&quot;: 82.7, &quot;name&quot;: null },
+					{ &quot;time&quot;: 83.3333, &quot;name&quot;: null }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 3.4, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 43.2666, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 82.7, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;color&quot;: &quot;ffffffff&quot; }
+				]
+			},
+			&quot;far_cloud&quot;: {
+				&quot;attachment&quot;: [
+					{ &quot;time&quot;: 0, &quot;name&quot;: &quot;far_cloud&quot; },
+					{ &quot;time&quot;: 79.6666, &quot;name&quot;: null },
+					{ &quot;time&quot;: 83.3333, &quot;name&quot;: &quot;far_cloud&quot; }
+				],
+				&quot;color&quot;: [
+					{ &quot;time&quot;: 0, &quot;color&quot;: &quot;ffffff00&quot; },
+					{ &quot;time&quot;: 11.3666, &quot;color&quot;: &quot;ffffffff&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 68.3, &quot;color&quot;: &quot;ffffffff&quot; },
+					{ &quot;time&quot;: 79.6666, &quot;color&quot;: &quot;ffffff00&quot;, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;color&quot;: &quot;ffffff00&quot; }
+				]
+			}
+		},
+		&quot;bones&quot;: {
+			&quot;root&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 0, &quot;y&quot;: -5.88, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 0, &quot;y&quot;: -5.88 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;dawn_up_cloud1&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0.48, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0.48 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 115.56, &quot;y&quot;: 0.99 },
+					{ &quot;time&quot;: 47.3666, &quot;x&quot;: -1475.42, &quot;y&quot;: -12.73 },
+					{ &quot;time&quot;: 47.7666, &quot;x&quot;: 1274.13, &quot;y&quot;: 10.99 },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 116.56, &quot;y&quot;: 1 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;dawn_up_cloud2&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 29.6, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: -2.33, &quot;y&quot;: 0 },
+					{ &quot;time&quot;: 29.6, &quot;x&quot;: -1209.59, &quot;y&quot;: 0 },
+					{ &quot;time&quot;: 42.2333, &quot;x&quot;: 1928.02, &quot;y&quot;: 0 },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 29.6, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;dawn_up_cloud3&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0.48, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0.48 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 115.56, &quot;y&quot;: 0.99 },
+					{ &quot;time&quot;: 47.3666, &quot;x&quot;: -1475.42, &quot;y&quot;: -12.73 },
+					{ &quot;time&quot;: 47.7666, &quot;x&quot;: 1274.13, &quot;y&quot;: 10.99 },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 116.56, &quot;y&quot;: 1 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;dawn_up_cloud4&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 82.7, &quot;angle&quot;: 0, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: -2.33, &quot;y&quot;: 0 },
+					{ &quot;time&quot;: 82.7, &quot;x&quot;: -2686.92, &quot;y&quot;: 0 },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 0, &quot;y&quot;: 0 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 82.7, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			},
+			&quot;far_cloud&quot;: {
+				&quot;rotate&quot;: [
+					{ &quot;time&quot;: 0, &quot;angle&quot;: 0.48, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;angle&quot;: 0.48 }
+				],
+				&quot;translate&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1632.34, &quot;y&quot;: 14.08 },
+					{ &quot;time&quot;: 79.6666, &quot;x&quot;: -1872.45, &quot;y&quot;: -16.15 },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 857.98, &quot;y&quot;: 7.4 }
+				],
+				&quot;scale&quot;: [
+					{ &quot;time&quot;: 0, &quot;x&quot;: 1, &quot;y&quot;: 1, &quot;curve&quot;: &quot;stepped&quot; },
+					{ &quot;time&quot;: 83.3333, &quot;x&quot;: 1, &quot;y&quot;: 1 }
+				]
+			}
+		}
+	}
+}
+}"/></imgdir></imgdir></imgdir>

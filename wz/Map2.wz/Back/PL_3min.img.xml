@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="PL_3min.img"><imgdir name="back"><canvas name="0" width="614" height="238"><vector name="origin" x="307" y="119"/><int name="z" value="0"/><string name="_hash" value="1781c1c50e2078cd8863ee52025dd17dba619e42a04ccea34470e8d38c30b5ba"/></canvas><canvas name="1" width="236" height="247"><vector name="origin" x="118" y="123"/><int name="z" value="0"/><string name="_hash" value="66cb558168987e30d45fc2d5b703e784db3aa8c95fcdb5c3883b53e8965e8b82"/></canvas><canvas name="2" width="236" height="247"><vector name="origin" x="118" y="123"/><int name="z" value="0"/><string name="_hash" value="d8eaa9faebbbdb8b26f0d6a2758b51f340ae2199231ab79607734f7dbbfc9d73"/></canvas><canvas name="3" width="236" height="247"><vector name="origin" x="118" y="123"/><int name="z" value="0"/><string name="_hash" value="9e6f2535aebddb37e6d385657b6b3158e113a7a5630c113b9a1d8125e7b43c27"/></canvas><canvas name="4" width="236" height="247"><vector name="origin" x="118" y="123"/><int name="z" value="0"/><string name="_hash" value="1be4c66b7f419285f46b0dd870c458c2209c97ecc1f2ea259a4b0d5a5b7bd7b5"/></canvas></imgdir><imgdir name="spine"><imgdir name="0"><canvas name="0" width="1009" height="702"><vector name="origin" x="504" y="351"/><int name="z" value="0"/><string name="_hash" value="193341911c6d69d77ba0395bed09535c881bdc22995d0933ba553d8d4134eb08"/></canvas><string name="spine" value="mreactor"/><imgdir name="RelBone"><imgdir name="0"><string name="name" value="handle"/><float name="rx" value="17.22421"/><float name="ry" value="-20.86144"/></imgdir><imgdir name="1"><string name="name" value="handle2"/><float name="rx" value="40.53571"/><float name="ry" value="-25.30823"/></imgdir><imgdir name="2"><string name="name" value="handle3"/><float name="rx" value="60.01984"/><float name="ry" value="-30.37148"/></imgdir><imgdir name="3"><string name="name" value="mReactorHandle"/><float name="rx" value="0.0"/><float name="ry" value="18.5743"/></imgdir><imgdir name="4"><string name="name" value="mReactorHandle2"/><float name="rx" value="0.0"/><float name="ry" value="18.5743"/></imgdir><imgdir name="5"><string name="name" value="mReactorHandle3"/><float name="rx" value="0.0"/><float name="ry" value="15.61245"/></imgdir><imgdir name="6"><string name="name" value="mReactorHandle4"/><float name="rx" value="0.0"/><float name="ry" value="15.61245"/></imgdir><imgdir name="7"><string name="name" value="mReactorHandle5"/><float name="rx" value="0.0"/><float name="ry" value="12.82129"/></imgdir><imgdir name="8"><string name="name" value="mReactorHandle6"/><float name="rx" value="0.0"/><float name="ry" value="12.82129"/></imgdir></imgdir><string name="mreactor.json" value=""/><string name="mreactor.atlas" value="0
+size: 1009,702
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/body
+  rotate: true
+  xy: 2, 431
+  size: 269, 1005
+  orig: 269, 1005
+  offset: 0, 0
+  index: -1
+image/cover
+  rotate: true
+  xy: 2, 160
+  size: 269, 1005
+  orig: 269, 1005
+  offset: 0, 0
+  index: -1
+image/monster00
+  rotate: false
+  xy: 593, 2
+  size: 165, 156
+  orig: 165, 156
+  offset: 0, 0
+  index: -1
+image/monster01
+  rotate: true
+  xy: 208, 15
+  size: 143, 207
+  orig: 143, 207
+  offset: 0, 0
+  index: -1
+image/monster02
+  rotate: true
+  xy: 2, 4
+  size: 154, 204
+  orig: 154, 204
+  offset: 0, 0
+  index: -1
+image/monster03
+  rotate: true
+  xy: 417, 10
+  size: 148, 174
+  orig: 148, 174
+  offset: 0, 0
+  index: -1
+image/opt0
+  rotate: false
+  xy: 760, 111
+  size: 77, 47
+  orig: 77, 47
+  offset: 0, 0
+  index: -1
+"/></imgdir><imgdir name="1"><canvas name="0" width="968" height="1008"><vector name="origin" x="484" y="504"/><int name="z" value="0"/><string name="_hash" value="fdd04c3305ea3b6df62b3618ff0512986d652323bfc445c428260968b51ba81c"/></canvas><canvas name="cube2.png" width="854" height="601"><vector name="origin" x="427" y="300"/><int name="z" value="0"/><string name="_hash" value="a2143f5e9851d532a9471ce45e1447da5e7226972dd0b4974b6fdfd773bbbbef"/></canvas><canvas name="cube3.png" width="854" height="601"><vector name="origin" x="427" y="300"/><int name="z" value="0"/><string name="_hash" value="2db8163653df0b90ed59e2e047ca641a8670c51280f4c1b6d73c51628a7da441"/></canvas><canvas name="cube4.png" width="548" height="517"><vector name="origin" x="274" y="258"/><int name="z" value="0"/><string name="_hash" value="e133e3105eae5b5fe19ed1b3bb896a1ab52978ff1a43fb621e30195e5acee43e"/></canvas><canvas name="cube5.png" width="548" height="517"><vector name="origin" x="274" y="258"/><int name="z" value="0"/><string name="_hash" value="f59d453e200fcc02e1011f178dd7ef0dbdd3c0ed0e7ab8f7e7c34c6663360cf7"/></canvas><string name="spine" value="cube"/><string name="cube.atlas" value="0
+size: 968,1008
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/frame_b
+  rotate: false
+  xy: 2, 256
+  size: 726, 66
+  orig: 726, 66
+  offset: 0, 0
+  index: -1
+image/frame_connnect0
+  rotate: false
+  xy: 2, 2
+  size: 78, 94
+  orig: 78, 94
+  offset: 0, 0
+  index: -1
+image/frame_connnect1
+  rotate: true
+  xy: 549, 176
+  size: 78, 98
+  orig: 78, 98
+  offset: 0, 0
+  index: -1
+image/frame_r
+  rotate: true
+  xy: 2, 98
+  size: 62, 409
+  orig: 62, 409
+  offset: 0, 0
+  index: -1
+image/frame_side_b
+  rotate: true
+  xy: 854, 452
+  size: 554, 112
+  orig: 554, 112
+  offset: 0, 0
+  index: -1
+image/frame_side_t
+  rotate: false
+  xy: 2, 162
+  size: 545, 92
+  orig: 545, 92
+  offset: 0, 0
+  index: -1
+image/frame_t
+  rotate: false
+  xy: 2, 324
+  size: 726, 83
+  orig: 726, 83
+  offset: 0, 0
+  index: -1
+image/front
+  rotate: false
+  xy: 2, 409
+  size: 850, 597
+  orig: 850, 597
+  offset: 0, 0
+  index: -1
+image/triangle_connector
+  rotate: false
+  xy: 730, 307
+  size: 82, 100
+  orig: 82, 100
+  offset: 0, 0
+  index: -1
+
+cube2.png
+size: 854,601
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/bot
+  rotate: false
+  xy: 2, 2
+  size: 850, 597
+  orig: 850, 597
+  offset: 0, 0
+  index: -1
+
+cube3.png
+size: 854,601
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/top
+  rotate: false
+  xy: 2, 2
+  size: 850, 597
+  orig: 850, 597
+  offset: 0, 0
+  index: -1
+
+cube4.png
+size: 548,517
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/left
+  rotate: false
+  xy: 2, 2
+  size: 544, 513
+  orig: 544, 513
+  offset: 0, 0
+  index: -1
+
+cube5.png
+size: 548,517
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/right
+  rotate: false
+  xy: 2, 2
+  size: 544, 513
+  orig: 544, 513
+  offset: 0, 0
+  index: -1
+"/><string name="cube.json" value=""/><imgdir name="RelBone"><imgdir name="0"><string name="name" value="handle"/><float name="rx" value="117.2619"/><float name="ry" value="-50.85843"/></imgdir></imgdir></imgdir><imgdir name="2"><canvas name="0" width="1019" height="1023"><vector name="origin" x="509" y="511"/><int name="z" value="0"/><string name="_hash" value="8431dd0389484143e0e015fe84965536ed8ca474596a5306818acdc3b0861fc7"/></canvas><canvas name="energy_core13.png" width="428" height="428"><vector name="origin" x="214" y="214"/><int name="z" value="0"/><string name="_hash" value="1e758a88fbd7164fd6638954edc72bb5aabe8471e66e28c1b6ba7d779f5c43d9"/></canvas><canvas name="energy_core12.png" width="724" height="966"><vector name="origin" x="362" y="483"/><int name="z" value="0"/><string name="_hash" value="d7875ee80b9aeaf197221b1cbc55e2389ecf5a8e7a1a39a3bd1efd2bb935c81f"/></canvas><canvas name="energy_core11.png" width="724" height="966"><vector name="origin" x="362" y="483"/><int name="z" value="0"/><string name="_hash" value="6a029325383e23dcd871c1127b44144b1036f175b089ad25e38a8c4fe716a059"/></canvas><canvas name="energy_core10.png" width="724" height="966"><vector name="origin" x="362" y="483"/><int name="z" value="0"/><string name="_hash" value="578ab10484a77693c04ef6c370f5df30c4fea6b1e1177b1d2c8ef23a36574c49"/></canvas><canvas name="energy_core9.png" width="724" height="966"><vector name="origin" x="362" y="483"/><int name="z" value="0"/><string name="_hash" value="c1887bbf7c8154ee6f941c088966b4eb90fbe9001f5af38fae6a3363def4aac5"/></canvas><canvas name="energy_core8.png" width="724" height="966"><vector name="origin" x="362" y="483"/><int name="z" value="0"/><string name="_hash" value="60ad195bc0ea212b12b7eddae9097da354d3604c7af71db95e42ff5b5f1aa3d6"/></canvas><canvas name="energy_core7.png" width="813" height="966"><vector name="origin" x="406" y="483"/><int name="z" value="0"/><string name="_hash" value="35c69e512dc0df37709354c20bd85835024a0da19a92a23b377b9f9a8409e477"/></canvas><canvas name="energy_core6.png" width="991" height="966"><vector name="origin" x="495" y="483"/><int name="z" value="0"/><string name="_hash" value="3f9c23d6ddf937599ca1fcbb86b85c677932cebd74b71a1c988f174f33b0d26c"/></canvas><canvas name="energy_core5.png" width="1007" height="1010"><vector name="origin" x="503" y="505"/><int name="z" value="0"/><string name="_hash" value="e7f0355695a58022a8fe989857547f16e5fae446da2037d210f334423ef33235"/></canvas><canvas name="energy_core4.png" width="1002" height="1012"><vector name="origin" x="501" y="506"/><int name="z" value="0"/><string name="_hash" value="572432bc1e94d5dffc75f21147bba6cbaa337c5363379273535cdc05bdedd423"/></canvas><canvas name="energy_core3.png" width="1007" height="1012"><vector name="origin" x="503" y="506"/><int name="z" value="0"/><string name="_hash" value="253063eed9b9288cb1a74beebf2613871c03ccc5d68d670fa1794384dd0d4801"/></canvas><canvas name="energy_core2.png" width="1011" height="1004"><vector name="origin" x="505" y="502"/><int name="z" value="0"/><string name="_hash" value="769a646dcd1357d543156bbdce3081909137433f98bd69220b02d6a3e02e84db"/></canvas><string name="spine" value="energy_core"/><imgdir name="RelBone"><imgdir name="0"><string name="name" value="eHandle"/><float name="rx" value="117.2619"/><float name="ry" value="-50.85843"/></imgdir><imgdir name="1"><string name="name" value="eHandle2"/><float name="rx" value="-117.2619"/><float name="ry" value="-50.85843"/></imgdir></imgdir><string name="energy_core.atlas" value="0
+size: 1019,1023
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/03
+  rotate: false
+  xy: 2, 541
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/04
+  rotate: false
+  xy: 2, 59
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff0_0
+  rotate: false
+  xy: 724, 22
+  size: 281, 275
+  orig: 281, 275
+  offset: 0, 0
+  index: -1
+image/energe_f
+  rotate: false
+  xy: 724, 299
+  size: 293, 722
+  orig: 293, 722
+  offset: 0, 0
+  index: -1
+image/energe_fl
+  rotate: true
+  xy: 2, 21
+  size: 36, 719
+  orig: 36, 719
+  offset: 0, 0
+  index: -1
+image/gauge
+  rotate: false
+  xy: 2, 2
+  size: 94, 17
+  orig: 94, 17
+  offset: 0, 0
+  index: -1
+
+energy_core2.png
+size: 1011,1004
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/05
+  rotate: false
+  xy: 2, 522
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/06
+  rotate: false
+  xy: 2, 40
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff1_0
+  rotate: true
+  xy: 965, 726
+  size: 276, 44
+  orig: 276, 44
+  offset: 0, 0
+  index: -1
+image/eff1_1
+  rotate: true
+  xy: 965, 448
+  size: 276, 44
+  orig: 276, 44
+  offset: 0, 0
+  index: -1
+image/eff2_0
+  rotate: true
+  xy: 799, 74
+  size: 265, 104
+  orig: 265, 104
+  offset: 0, 0
+  index: -1
+image/eff2_1
+  rotate: true
+  xy: 905, 61
+  size: 265, 104
+  orig: 265, 104
+  offset: 0, 0
+  index: -1
+image/energe_b_connector
+  rotate: true
+  xy: 799, 24
+  size: 48, 101
+  orig: 48, 101
+  offset: 0, 0
+  index: -1
+image/energe_b_f
+  rotate: true
+  xy: 724, 17
+  size: 332, 73
+  orig: 332, 73
+  offset: 0, 0
+  index: -1
+image/energe_fb
+  rotate: false
+  xy: 927, 328
+  size: 36, 674
+  orig: 36, 674
+  offset: 0, 0
+  index: -1
+image/energe_fr
+  rotate: true
+  xy: 2, 2
+  size: 36, 719
+  orig: 36, 719
+  offset: 0, 0
+  index: -1
+image/energe_t_b
+  rotate: true
+  xy: 724, 351
+  size: 651, 112
+  orig: 651, 112
+  offset: 0, 0
+  index: -1
+image/energe_t_t
+  rotate: true
+  xy: 838, 341
+  size: 661, 87
+  orig: 661, 87
+  offset: 0, 0
+  index: -1
+
+energy_core3.png
+size: 1007,1012
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/07
+  rotate: false
+  xy: 2, 530
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/08
+  rotate: false
+  xy: 2, 48
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff0_1
+  rotate: false
+  xy: 724, 735
+  size: 281, 275
+  orig: 281, 275
+  offset: 0, 0
+  index: -1
+image/eff0_2
+  rotate: false
+  xy: 724, 458
+  size: 281, 275
+  orig: 281, 275
+  offset: 0, 0
+  index: -1
+image/eff1_2
+  rotate: false
+  xy: 2, 2
+  size: 276, 44
+  orig: 276, 44
+  offset: 0, 0
+  index: -1
+image/eff1_3
+  rotate: false
+  xy: 280, 2
+  size: 276, 44
+  orig: 276, 44
+  offset: 0, 0
+  index: -1
+image/eff1_4
+  rotate: false
+  xy: 558, 2
+  size: 276, 44
+  orig: 276, 44
+  offset: 0, 0
+  index: -1
+image/energe_t_sub_b
+  rotate: true
+  xy: 724, 60
+  size: 396, 97
+  orig: 396, 97
+  offset: 0, 0
+  index: -1
+image/energe_t_sub_f
+  rotate: true
+  xy: 836, 22
+  size: 434, 96
+  orig: 434, 96
+  offset: 0, 0
+  index: -1
+image/energe_t_sub_s
+  rotate: true
+  xy: 934, 152
+  size: 304, 64
+  orig: 304, 64
+  offset: 0, 0
+  index: -1
+
+energy_core4.png
+size: 1002,1012
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/09
+  rotate: false
+  xy: 2, 530
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/10
+  rotate: false
+  xy: 2, 530
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/11
+  rotate: false
+  xy: 2, 48
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff0_3
+  rotate: true
+  xy: 724, 729
+  size: 281, 275
+  orig: 281, 275
+  offset: 0, 0
+  index: -1
+image/eff0_4
+  rotate: true
+  xy: 724, 446
+  size: 281, 275
+  orig: 281, 275
+  offset: 0, 0
+  index: -1
+image/eff0_5
+  rotate: true
+  xy: 724, 163
+  size: 281, 275
+  orig: 281, 275
+  offset: 0, 0
+  index: -1
+image/eff1_5
+  rotate: false
+  xy: 724, 117
+  size: 276, 44
+  orig: 276, 44
+  offset: 0, 0
+  index: -1
+image/eff1_6
+  rotate: false
+  xy: 2, 2
+  size: 276, 44
+  orig: 276, 44
+  offset: 0, 0
+  index: -1
+image/eff1_7
+  rotate: false
+  xy: 280, 2
+  size: 276, 44
+  orig: 276, 44
+  offset: 0, 0
+  index: -1
+image/eff2_2
+  rotate: false
+  xy: 724, 11
+  size: 265, 104
+  orig: 265, 104
+  offset: 0, 0
+  index: -1
+
+energy_core5.png
+size: 1007,1010
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/12
+  rotate: false
+  xy: 2, 528
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/13
+  rotate: false
+  xy: 2, 46
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff0_6
+  rotate: false
+  xy: 724, 733
+  size: 281, 275
+  orig: 281, 275
+  offset: 0, 0
+  index: -1
+image/eff0_7
+  rotate: false
+  xy: 724, 456
+  size: 281, 275
+  orig: 281, 275
+  offset: 0, 0
+  index: -1
+image/eff2_3
+  rotate: false
+  xy: 724, 350
+  size: 265, 104
+  orig: 265, 104
+  offset: 0, 0
+  index: -1
+image/eff2_4
+  rotate: false
+  xy: 724, 244
+  size: 265, 104
+  orig: 265, 104
+  offset: 0, 0
+  index: -1
+image/energe_f_cover
+  rotate: false
+  xy: 724, 2
+  size: 262, 240
+  orig: 262, 240
+  offset: 0, 0
+  index: -1
+
+energy_core6.png
+size: 991,966
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/14
+  rotate: false
+  xy: 2, 484
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/15
+  rotate: false
+  xy: 2, 2
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff2_5
+  rotate: false
+  xy: 724, 15
+  size: 265, 104
+  orig: 265, 104
+  offset: 0, 0
+  index: -1
+image/eff2_6
+  rotate: true
+  xy: 876, 699
+  size: 265, 104
+  orig: 265, 104
+  offset: 0, 0
+  index: -1
+image/eff2_7
+  rotate: true
+  xy: 876, 432
+  size: 265, 104
+  orig: 265, 104
+  offset: 0, 0
+  index: -1
+image/energe_bb_t
+  rotate: true
+  xy: 724, 422
+  size: 542, 150
+  orig: 542, 150
+  offset: 0, 0
+  index: -1
+image/energe_f_in
+  rotate: false
+  xy: 724, 121
+  size: 263, 299
+  orig: 263, 299
+  offset: 0, 0
+  index: -1
+
+energy_core7.png
+size: 813,966
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/16
+  rotate: false
+  xy: 2, 484
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/17
+  rotate: false
+  xy: 2, 2
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/energe_bb_f
+  rotate: true
+  xy: 724, 411
+  size: 553, 87
+  orig: 553, 87
+  offset: 0, 0
+  index: -1
+
+energy_core8.png
+size: 724,966
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/18
+  rotate: false
+  xy: 2, 484
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/19
+  rotate: false
+  xy: 2, 2
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+
+energy_core9.png
+size: 724,966
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/20
+  rotate: false
+  xy: 2, 484
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/21
+  rotate: false
+  xy: 2, 2
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+
+energy_core10.png
+size: 724,966
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/22
+  rotate: false
+  xy: 2, 484
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/23
+  rotate: false
+  xy: 2, 2
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+
+energy_core11.png
+size: 724,966
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/24
+  rotate: false
+  xy: 2, 484
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/25
+  rotate: false
+  xy: 2, 2
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+
+energy_core12.png
+size: 724,966
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff/26
+  rotate: false
+  xy: 2, 484
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+image/eff/27
+  rotate: false
+  xy: 2, 2
+  size: 720, 480
+  orig: 720, 480
+  offset: 0, 0
+  index: -1
+
+energy_core13.png
+size: 428,428
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/energe_b_t
+  rotate: false
+  xy: 2, 2
+  size: 424, 424
+  orig: 424, 424
+  offset: 0, 0
+  index: -1
+"/><string name="energy_core.json" value=""/></imgdir><imgdir name="3"><canvas name="0" width="1009" height="702"><vector name="origin" x="504" y="351"/><int name="z" value="0"/><string name="_hash" value="16f23ffeecb498118a4ea9c4b3cc8b8ffc6d3773c4250bc8fd173cc4a64b5fad"/></canvas><string name="spine" value="mosnter_reactor0"/><string name="mosnter_reactor0.atlas" value="0
+size: 1009,702
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/body
+  rotate: true
+  xy: 2, 431
+  size: 269, 1005
+  orig: 269, 1005
+  offset: 0, 0
+  index: -1
+image/cover
+  rotate: true
+  xy: 2, 160
+  size: 269, 1005
+  orig: 269, 1005
+  offset: 0, 0
+  index: -1
+image/monster00
+  rotate: false
+  xy: 211, 2
+  size: 165, 156
+  orig: 165, 156
+  offset: 0, 0
+  index: -1
+image/monster01
+  rotate: true
+  xy: 2, 15
+  size: 143, 207
+  orig: 143, 207
+  offset: 0, 0
+  index: -1
+image/opt0
+  rotate: false
+  xy: 378, 111
+  size: 77, 47
+  orig: 77, 47
+  offset: 0, 0
+  index: -1
+"/><string name="mosnter_reactor0.json" value=""/><imgdir name="RelBone"><imgdir name="0"><string name="name" value="handle"/><float name="rx" value="25.83631"/><float name="ry" value="-31.29217"/></imgdir><imgdir name="1"><string name="name" value="handle2"/><float name="rx" value="60.80357"/><float name="ry" value="-31.29217"/></imgdir><imgdir name="2"><string name="name" value="handle3"/><float name="rx" value="90.02976"/><float name="ry" value="-45.55723"/></imgdir><imgdir name="3"><string name="name" value="mReactorHandle"/><float name="rx" value="0.0"/><float name="ry" value="27.86145"/></imgdir><imgdir name="4"><string name="name" value="mReactorHandle2"/><float name="rx" value="0.0"/><float name="ry" value="27.86145"/></imgdir><imgdir name="5"><string name="name" value="mReactorHandle3"/><float name="rx" value="0.0"/><float name="ry" value="23.41867"/></imgdir><imgdir name="6"><string name="name" value="mReactorHandle4"/><float name="rx" value="0.0"/><float name="ry" value="23.41867"/></imgdir><imgdir name="7"><string name="name" value="mReactorHandle5"/><float name="rx" value="0.0"/><float name="ry" value="19.23193"/></imgdir><imgdir name="8"><string name="name" value="mReactorHandle6"/><float name="rx" value="0.0"/><float name="ry" value="19.23193"/></imgdir></imgdir></imgdir><imgdir name="4"><canvas name="0" width="1009" height="700"><vector name="origin" x="504" y="350"/><int name="z" value="0"/><string name="_hash" value="ced9a56de53c6e64343ffd7bbda28b246dacab8151ece518990f6e31e49168b5"/></canvas><string name="spine" value="mosnter_reactor1"/><string name="mosnter_reactor1.json" value=""/><imgdir name="RelBone"><imgdir name="0"><string name="name" value="handle"/><float name="rx" value="25.83631"/><float name="ry" value="-31.29217"/></imgdir><imgdir name="1"><string name="name" value="handle2"/><float name="rx" value="60.80357"/><float name="ry" value="-31.29217"/></imgdir><imgdir name="2"><string name="name" value="handle3"/><float name="rx" value="90.02976"/><float name="ry" value="-45.55723"/></imgdir><imgdir name="3"><string name="name" value="mReactorHandle"/><float name="rx" value="0.0"/><float name="ry" value="27.86145"/></imgdir><imgdir name="4"><string name="name" value="mReactorHandle2"/><float name="rx" value="0.0"/><float name="ry" value="27.86145"/></imgdir><imgdir name="5"><string name="name" value="mReactorHandle3"/><float name="rx" value="0.0"/><float name="ry" value="23.41867"/></imgdir><imgdir name="6"><string name="name" value="mReactorHandle4"/><float name="rx" value="0.0"/><float name="ry" value="23.41867"/></imgdir><imgdir name="7"><string name="name" value="mReactorHandle5"/><float name="rx" value="0.0"/><float name="ry" value="19.23193"/></imgdir><imgdir name="8"><string name="name" value="mReactorHandle6"/><float name="rx" value="0.0"/><float name="ry" value="19.23193"/></imgdir></imgdir><string name="mosnter_reactor1.atlas" value="0
+size: 1009,700
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/body
+  rotate: true
+  xy: 2, 429
+  size: 269, 1005
+  orig: 269, 1005
+  offset: 0, 0
+  index: -1
+image/cover
+  rotate: true
+  xy: 2, 158
+  size: 269, 1005
+  orig: 269, 1005
+  offset: 0, 0
+  index: -1
+image/monster02
+  rotate: true
+  xy: 2, 2
+  size: 154, 204
+  orig: 154, 204
+  offset: 0, 0
+  index: -1
+image/monster03
+  rotate: true
+  xy: 208, 8
+  size: 148, 174
+  orig: 148, 174
+  offset: 0, 0
+  index: -1
+image/opt0
+  rotate: false
+  xy: 384, 109
+  size: 77, 47
+  orig: 77, 47
+  offset: 0, 0
+  index: -1
+"/></imgdir><imgdir name="5"><canvas name="0" width="1" height="1"><vector name="origin" x="504" y="351"/><int name="z" value="0"/><string name="_inlink" value="spine/3/0"/></canvas><string name="spine" value="mosnter_reactor2"/><imgdir name="RelBone"><imgdir name="0"><string name="name" value="handle"/><float name="rx" value="25.83631"/><float name="ry" value="-31.29217"/></imgdir><imgdir name="1"><string name="name" value="handle2"/><float name="rx" value="60.80357"/><float name="ry" value="-31.29217"/></imgdir><imgdir name="2"><string name="name" value="handle3"/><float name="rx" value="90.02976"/><float name="ry" value="-45.55723"/></imgdir><imgdir name="3"><string name="name" value="mReactorHandle"/><float name="rx" value="0.0"/><float name="ry" value="27.86145"/></imgdir><imgdir name="4"><string name="name" value="mReactorHandle2"/><float name="rx" value="0.0"/><float name="ry" value="27.86145"/></imgdir><imgdir name="5"><string name="name" value="mReactorHandle3"/><float name="rx" value="0.0"/><float name="ry" value="23.41867"/></imgdir><imgdir name="6"><string name="name" value="mReactorHandle4"/><float name="rx" value="0.0"/><float name="ry" value="23.41867"/></imgdir><imgdir name="7"><string name="name" value="mReactorHandle5"/><float name="rx" value="0.0"/><float name="ry" value="19.23193"/></imgdir><imgdir name="8"><string name="name" value="mReactorHandle6"/><float name="rx" value="0.0"/><float name="ry" value="19.23193"/></imgdir></imgdir><string name="mosnter_reactor2.atlas" value="0
+size: 1009,702
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/body
+  rotate: true
+  xy: 2, 431
+  size: 269, 1005
+  orig: 269, 1005
+  offset: 0, 0
+  index: -1
+image/cover
+  rotate: true
+  xy: 2, 160
+  size: 269, 1005
+  orig: 269, 1005
+  offset: 0, 0
+  index: -1
+image/monster00
+  rotate: false
+  xy: 211, 2
+  size: 165, 156
+  orig: 165, 156
+  offset: 0, 0
+  index: -1
+image/monster01
+  rotate: true
+  xy: 2, 15
+  size: 143, 207
+  orig: 143, 207
+  offset: 0, 0
+  index: -1
+image/opt0
+  rotate: false
+  xy: 378, 111
+  size: 77, 47
+  orig: 77, 47
+  offset: 0, 0
+  index: -1
+"/><string name="mosnter_reactor2.json" value=""/></imgdir></imgdir></imgdir>

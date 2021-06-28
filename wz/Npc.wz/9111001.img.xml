@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="9111001.img"><imgdir name="info"><imgdir name="illustration2"><imgdir name="face"><canvas name="talk_illust_takenokonoko.png" width="512" height="512"><vector name="origin" x="256" y="256"/><int name="z" value="0"/><string name="_hash" value="c7ae43e1a1ffabd1699a9febc2af404b0b8073e6bc88f841a899ed6acb886939"/></canvas><string name="spine" value="talk_illust_takenokonoko"/><string name="talk_illust_takenokonoko.atlas" value="
+talk_illust_takenokonoko.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+takenokonoko_body
+  rotate: false
+  xy: 2, 18
+  size: 139, 82
+  orig: 139, 82
+  offset: 0, 0
+  index: -1
+takenokonoko_eye_l0
+  rotate: true
+  xy: 246, 131
+  size: 51, 33
+  orig: 51, 33
+  offset: 0, 0
+  index: -1
+takenokonoko_eye_l0_c
+  rotate: true
+  xy: 486, 461
+  size: 49, 16
+  orig: 49, 16
+  offset: 0, 0
+  index: -1
+takenokonoko_eye_l1
+  rotate: true
+  xy: 246, 184
+  size: 51, 35
+  orig: 51, 35
+  offset: 0, 0
+  index: -1
+takenokonoko_eye_l2
+  rotate: true
+  xy: 403, 333
+  size: 50, 31
+  orig: 50, 31
+  offset: 0, 0
+  index: -1
+takenokonoko_eye_r0
+  rotate: false
+  xy: 436, 379
+  size: 36, 31
+  orig: 36, 31
+  offset: 0, 0
+  index: -1
+takenokonoko_eye_r0_c
+  rotate: false
+  xy: 143, 2
+  size: 38, 17
+  orig: 38, 17
+  offset: 0, 0
+  index: -1
+takenokonoko_eye_r1
+  rotate: true
+  xy: 211, 48
+  size: 36, 33
+  orig: 36, 33
+  offset: 0, 0
+  index: -1
+takenokonoko_eye_r2
+  rotate: true
+  xy: 143, 59
+  size: 41, 28
+  orig: 41, 28
+  offset: 0, 0
+  index: -1
+takenokonoko_eyebrow_l0
+  rotate: true
+  xy: 403, 285
+  size: 46, 12
+  orig: 46, 12
+  offset: 0, 0
+  index: -1
+takenokonoko_eyebrow_l1
+  rotate: false
+  xy: 285, 239
+  size: 49, 19
+  orig: 49, 19
+  offset: 0, 0
+  index: -1
+takenokonoko_eyebrow_l2
+  rotate: true
+  xy: 504, 463
+  size: 47, 6
+  orig: 47, 6
+  offset: 0, 0
+  index: -1
+takenokonoko_eyebrow_l3
+  rotate: true
+  xy: 246, 82
+  size: 47, 15
+  orig: 47, 15
+  offset: 0, 0
+  index: -1
+takenokonoko_eyebrow_r0
+  rotate: false
+  xy: 2, 2
+  size: 28, 14
+  orig: 28, 14
+  offset: 0, 0
+  index: -1
+takenokonoko_eyebrow_r1
+  rotate: false
+  xy: 32, 2
+  size: 25, 14
+  orig: 25, 14
+  offset: 0, 0
+  index: -1
+takenokonoko_eyebrow_r2
+  rotate: true
+  xy: 165, 24
+  size: 33, 8
+  orig: 33, 8
+  offset: 0, 0
+  index: -1
+takenokonoko_eyebrow_r3
+  rotate: true
+  xy: 143, 21
+  size: 36, 20
+  orig: 36, 20
+  offset: 0, 0
+  index: -1
+takenokonoko_face_acc_l
+  rotate: false
+  xy: 486, 448
+  size: 24, 11
+  orig: 24, 11
+  offset: 0, 0
+  index: -1
+takenokonoko_face_acc_r
+  rotate: false
+  xy: 336, 247
+  size: 32, 11
+  orig: 32, 11
+  offset: 0, 0
+  index: -1
+takenokonoko_hair_b
+  rotate: false
+  xy: 2, 237
+  size: 281, 273
+  orig: 281, 273
+  offset: 0, 0
+  index: -1
+takenokonoko_hair_f
+  rotate: false
+  xy: 285, 385
+  size: 149, 125
+  orig: 149, 125
+  offset: 0, 0
+  index: -1
+takenokonoko_hair_l
+  rotate: false
+  xy: 175, 42
+  size: 34, 193
+  orig: 34, 193
+  offset: 0, 0
+  index: -1
+takenokonoko_hair_r
+  rotate: false
+  xy: 211, 86
+  size: 33, 149
+  orig: 33, 149
+  offset: 0, 0
+  index: -1
+takenokonoko_hair_yo_l
+  rotate: false
+  xy: 436, 412
+  size: 48, 98
+  orig: 48, 98
+  offset: 0, 0
+  index: -1
+takenokonoko_hair_yo_r
+  rotate: false
+  xy: 285, 260
+  size: 116, 123
+  orig: 116, 123
+  offset: 0, 0
+  index: -1
+takenokonoko_head
+  rotate: false
+  xy: 2, 102
+  size: 171, 133
+  orig: 171, 133
+  offset: 0, 0
+  index: -1
+takenokonoko_mouth0
+  rotate: false
+  xy: 211, 42
+  size: 11, 4
+  orig: 11, 4
+  offset: 0, 0
+  index: -1
+takenokonoko_mouth1
+  rotate: false
+  xy: 436, 371
+  size: 20, 6
+  orig: 20, 6
+  offset: 0, 0
+  index: -1
+takenokonoko_mouth2
+  rotate: false
+  xy: 246, 75
+  size: 7, 5
+  orig: 7, 5
+  offset: 0, 0
+  index: -1
+takenokonoko_mouth3
+  rotate: true
+  xy: 474, 399
+  size: 11, 6
+  orig: 11, 6
+  offset: 0, 0
+  index: -1
+"/><string name="talk_illust_takenokonoko.json" value=""/></imgdir><canvas name="base" width="1" height="1"><vector name="origin" x="44" y="51"/><int name="delay" value="3000"/><string name="_hash" value="5ccf4a5238e7bfaa40c11bbfbef1ae5b6e454d3ed83b199f184e0cc33695f330"/><string name="_outlink" value="Npc/9111016.img/info/illustration2/base"/></canvas></imgdir><int name="forceMove" value="1"/><int name="hideName" value="1"/></imgdir><imgdir name="stand"><canvas name="0" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="delay" value="180"/><string name="_hash" value="faa454627b9fe79280750ecd7f24aa7ef8b42ff6679a9249f4bc51e424d167af"/><string name="_outlink" value="Npc/9112030.img/stand/0"/></canvas><canvas name="1" width="1" height="1"><vector name="origin" x="26" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="0af88ab3c69bcc5ba790e9b5954436f8fc2dcea0bcbc08a9c7bcaf2947d931be"/><string name="_outlink" value="Npc/9112030.img/stand/1"/></canvas><canvas name="2" width="1" height="1"><vector name="origin" x="27" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="ec8b7a3cdf28bb16a3303ef71b5c879cad7bd3f6f5bdbf348aa0b367b386835b"/><string name="_outlink" value="Npc/9112030.img/stand/2"/></canvas><canvas name="3" width="1" height="1"><vector name="origin" x="26" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="eb7f671b97fa39e2a514c530eff3ac2c152c523b739b1499dcb98760ed3e3722"/><string name="_outlink" value="Npc/9112030.img/stand/3"/></canvas><canvas name="4" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="b5253c4b51208846c74742469ccc1c197054aaf2ef5dd55d8a17b813d5c276fb"/><string name="_outlink" value="Npc/9112030.img/stand/4"/></canvas><canvas name="5" width="1" height="1"><vector name="origin" x="24" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="867c39c16f34401f2a9668dd4be699e5dc455e01866b2e21591df2ff8512e873"/><string name="_outlink" value="Npc/9112030.img/stand/5"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9112030.img/stand/0"/></canvas><canvas name="7" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="91f54df8a64d2c4e2132c7f45e0acff53364d11a7a1033324d302ef85d5a4738"/><string name="_outlink" value="Npc/9112030.img/stand/7"/></canvas><canvas name="8" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="88b77157881a3ab0c82fc4ed04aed89718208844f7d642d9be1ca4503516a739"/><string name="_outlink" value="Npc/9112030.img/stand/8"/></canvas><canvas name="9" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9112030.img/stand/7"/></canvas></imgdir><imgdir name="say"><canvas name="0" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9112030.img/stand/0"/></canvas><canvas name="1" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="f31fab21e6137703fd057d95955e16b858b4b83dbd91ed3daa990e50f7abed61"/><string name="_outlink" value="Npc/9112030.img/say/1"/></canvas><canvas name="2" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9112030.img/stand/0"/></canvas><canvas name="3" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9112030.img/say/1"/></canvas><canvas name="4" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9112030.img/stand/0"/></canvas><canvas name="5" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9112030.img/say/1"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9112030.img/stand/0"/></canvas></imgdir><imgdir name="dance"><int name="special" value="1"/><canvas name="0" width="1" height="1"><vector name="origin" x="41" y="80"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="b0fa0f215339902f55036795dca3c14a878ab8b9b40af375cfd54cd719dbfcea"/><string name="_outlink" value="Npc/9111030.img/stand/0"/></canvas><canvas name="1" width="1" height="1"><vector name="origin" x="39" y="80"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="338dd3e230c8b65c2ff553f6dd6df7433166ac866b080e24c5d495c20a56df47"/><string name="_outlink" value="Npc/9111030.img/stand/1"/></canvas><canvas name="2" width="1" height="1"><vector name="origin" x="37" y="82"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="2116c6b870711f5ee194847885002adaaade0775b2d670d690c1108560b56044"/><string name="_outlink" value="Npc/9111030.img/stand/2"/></canvas><canvas name="3" width="1" height="1"><vector name="origin" x="38" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="4e7e5e35792d3272f966e6f29e9ba190a79b8d1312ed5b371967ffab37be2897"/><string name="_outlink" value="Npc/9111030.img/stand/3"/></canvas><canvas name="4" width="1" height="1"><vector name="origin" x="41" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="aefd135331d42198ccd32ea8bd65565e90bc91179171b424a7372b514c4ba376"/><string name="_outlink" value="Npc/9111030.img/stand/4"/></canvas><canvas name="5" width="1" height="1"><vector name="origin" x="40" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="0aec4b8d225d9eb89bff9d1e3c7323dc44d027b596adee1bd78b13b81d59c281"/><string name="_outlink" value="Npc/9111030.img/stand/5"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="43" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="07d96c91dc10555d60632ca4eecd30000cca690327d9be679379a80f9fcf8842"/><string name="_outlink" value="Npc/9111030.img/stand/6"/></canvas><canvas name="7" width="1" height="1"><vector name="origin" x="43" y="82"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="b9bb2c54b0006d2d26d8497b79e2b3b652fb74988e3412f38a87170e5560a2d4"/><string name="_outlink" value="Npc/9111030.img/stand/7"/></canvas><canvas name="8" width="1" height="1"><vector name="origin" x="42" y="82"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="db3b941b67362e4fd90ce63648834672e30ad54cf4fc7375e3ddfd10086f750c"/><string name="_outlink" value="Npc/9111030.img/stand/8"/></canvas><canvas name="9" width="1" height="1"><vector name="origin" x="41" y="80"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="c49b413c122c36aa5ebce220b9b25d83d68b79ee7dd64fc0f530cd0228acf70d"/><string name="_outlink" value="Npc/9111030.img/stand/9"/></canvas><canvas name="10" width="1" height="1"><vector name="origin" x="39" y="80"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="ee93db8f4c7d8e2bd24508a2764a13a522bd23fe8ee9eb0a69cf2f6e6ae486c7"/><string name="_outlink" value="Npc/9111030.img/stand/10"/></canvas><canvas name="11" width="1" height="1"><vector name="origin" x="37" y="82"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="e78e29dbd3e7fa9dd218742f576860a0e02a47f2573ed5fa576b46de50010da7"/><string name="_outlink" value="Npc/9111030.img/stand/11"/></canvas><canvas name="12" width="1" height="1"><vector name="origin" x="39" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="e6f8d165c3ba9c1094babc12c08a1e9281bf134a74dcd766a00342f2d7eb7b4b"/><string name="_outlink" value="Npc/9111030.img/stand/12"/></canvas><canvas name="13" width="1" height="1"><vector name="origin" x="40" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="5e085be9c62af0f4cd785bc31e8ac218f9b5bfa6007436f85bc1760487f353b3"/><string name="_outlink" value="Npc/9111030.img/stand/13"/></canvas><canvas name="14" width="1" height="1"><vector name="origin" x="39" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="f1658c3e914f6882462296e46094fecba829dc1cb799ac6722321ea3f7efac72"/><string name="_outlink" value="Npc/9111030.img/stand/14"/></canvas><canvas name="15" width="1" height="1"><vector name="origin" x="43" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="1b48b9ca3d351b8a8b90d741092d30db9922f718c0a1532193757c745b632631"/><string name="_outlink" value="Npc/9111030.img/stand/15"/></canvas><canvas name="16" width="1" height="1"><vector name="origin" x="43" y="82"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="be17af9adaa61f0ccf769dbc13aef2606054e8626474fc836e5c22e00b0d2496"/><string name="_outlink" value="Npc/9111030.img/stand/16"/></canvas><canvas name="17" width="1" height="1"><vector name="origin" x="42" y="82"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="e5603107bd70601cd4d3cb232ff462444c13531fe1f3562879c88fa4f19f54fd"/><string name="_outlink" value="Npc/9111030.img/stand/17"/></canvas></imgdir><imgdir name="move"><canvas name="0" width="1" height="1"><vector name="origin" x="25" y="75"/><vector name="lt" x="-30" y="-66"/><vector name="rb" x="34" y="0"/><vector name="head" x="-12" y="-55"/><int name="delay" value="180"/><string name="_hash" value="3c6fb2494e13f57f1d85e22cc6963c4e7afb2a12871edf1cc7d0fb5196db476c"/><string name="_outlink" value="Npc/9111031.img/move/0"/></canvas><canvas name="1" width="1" height="1"><vector name="origin" x="23" y="75"/><vector name="lt" x="-30" y="-66"/><vector name="rb" x="34" y="0"/><vector name="head" x="-12" y="-55"/><int name="delay" value="180"/><string name="_hash" value="ca0c6a74c1467b4f872b5cb6290d5bd0d7bd0757aeb9267ba58d26cf2a891721"/><string name="_outlink" value="Npc/9111031.img/move/1"/></canvas><canvas name="2" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="566431fda7c9ec19b1e2dcd346b3801ec626076271459984ca4c25cf3820421e"/><string name="_outlink" value="Npc/9111031.img/move/2"/></canvas><canvas name="3" width="1" height="1"><vector name="origin" x="27" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="bb45dd2ba1aeeadc347fc99c44a3b4fe946f99b046932103f6ca10f00e2ad431"/><string name="_outlink" value="Npc/9111031.img/move/3"/></canvas><canvas name="4" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="36b02375a6938152b039159741f32cd765523e61492fe015385a1b0c91b6aa15"/><string name="_outlink" value="Npc/9111031.img/move/4"/></canvas><canvas name="5" width="1" height="1"><vector name="origin" x="23" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="e9e308043c8d1e0aab73d95778eb626bf6922e15c84e1b01a784a115915b5572"/><string name="_outlink" value="Npc/9111031.img/move/5"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/move/2"/></canvas><canvas name="7" width="1" height="1"><vector name="origin" x="27" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="322c0d8178abbdf9e2b59e2558e8a2807cc2cea76444b3fa420eac5a5420cee8"/><string name="_outlink" value="Npc/9111031.img/move/7"/></canvas></imgdir><imgdir name="die1"><int name="special" value="1"/><canvas name="0" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9112030.img/stand/0"/></canvas><canvas name="1" width="58" height="77"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="99f009962950fa3cacb1f76d6dc1cf082564d584266c8d7ed2c8f9aab3d0a5a1"/></canvas><canvas name="2" width="65" height="76"><vector name="origin" x="31" y="74"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="ec9182f31ef865b0440493916dd3556c9fa94d4de85c46a2c245b2b91eee9f5d"/></canvas><canvas name="3" width="90" height="71"><vector name="origin" x="50" y="65"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="0948a7900e1c7aa0a5ced6b51602596b65e4358324a7f616f5e1b454c808e6ec"/></canvas><canvas name="4" width="107" height="49"><vector name="origin" x="66" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="17d8781530584dba7ed2fa093f847e3a6637c4027f7aa754a45f2a86332255f3"/></canvas><canvas name="5" width="107" height="49"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="dac0036ec7488fb632fca1bf6e834cf7daa21a35f78eabdf0255253953dc4ac9"/></canvas><canvas name="6" width="109" height="49"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="8e09344e8d0bc9d5597c6c4252fc61e64d777602849b6d6141d60d94ac09ab12"/></canvas><canvas name="7" width="111" height="49"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="8a807858c57ad88ce07e34a7c18a5767746a53025bedd3f829862896e92bb8dc"/></canvas><canvas name="8" width="111" height="49"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="bb412fe12df8baa17e1f2084eccd3556269478a7163cd25e2875d4dc0b45c817"/></canvas><canvas name="9" width="100" height="49"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="900000"/><string name="_hash" value="c35903552017378e7538c4cbe821197720d2952e6b7cc77813dd38d0debd196a"/></canvas></imgdir><imgdir name="die2"><int name="special" value="1"/><canvas name="0" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="150"/><string name="_hash" value="5f9a11f72546394c59963e5703ca8303695af7d07170f9ca8a94428db4067274"/><string name="_outlink" value="Npc/9111031.img/die1/0"/></canvas><canvas name="1" width="1" height="1"><vector name="origin" x="26" y="74"/><int name="z" value="0"/><int name="delay" value="150"/><string name="_hash" value="1fad46a481ed18b44e31c46edaee622313da726a0058a1bb82721cbd77419dd2"/><string name="_outlink" value="Npc/9111031.img/die1/1"/></canvas><canvas name="2" width="1" height="1"><vector name="origin" x="39" y="107"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="8ad4d58838a11ec7bd2a3c08f520073b762d4a3d53d803e83a071bc6314c84c8"/><string name="_outlink" value="Npc/9111031.img/die1/2"/></canvas><canvas name="3" width="1" height="1"><vector name="origin" x="40" y="112"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="52ac28536bb91a52ac837a8fba90dd8db87be567892e15db04c720c0978a9260"/><string name="_outlink" value="Npc/9111031.img/die1/3"/></canvas><canvas name="4" width="1" height="1"><vector name="origin" x="50" y="109"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="773e9aca155727a44fea6eef14b2b34f1081813b5d7f1f60432a0e62f1dd55e8"/><string name="_outlink" value="Npc/9111031.img/die1/4"/></canvas><canvas name="5" width="1" height="1"><vector name="origin" x="49" y="92"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="e47471ab1450785b7185b8bbce4af17b2b8f3cbf5adb9713e8cd25a8a02a41a2"/><string name="_outlink" value="Npc/9111031.img/die1/5"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="66" y="81"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="1d2333cb653f676e6b48c1445b4d24e56ff0586f2330be87fcfb0fcc5e4da543"/><string name="_outlink" value="Npc/9111031.img/die1/6"/></canvas><canvas name="7" width="1" height="1"><vector name="origin" x="67" y="53"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="6e7b4ec463def0253b574aadafa46af85fb8d61d4a849d59c6823989c3b18be7"/><string name="_outlink" value="Npc/9111031.img/die1/7"/></canvas><canvas name="8" width="1" height="1"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="e6427c3fdd24e255b96be5bbd58818321f4841c842aa57a69390904d7b8b25a3"/><string name="_outlink" value="Npc/9111031.img/die1/8"/></canvas><canvas name="9" width="1" height="1"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="953362f2066075f6cbc50a012198023575c692450fb5504a3c47b8927aed197a"/><string name="_outlink" value="Npc/9111031.img/die1/9"/></canvas><canvas name="10" width="1" height="1"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="bed86d1606b921ed860443fae9965ccde5ee5b619e3cb87dbd080d8d76309ca7"/><string name="_outlink" value="Npc/9111031.img/die1/10"/></canvas><canvas name="11" width="1" height="1"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="900000"/><string name="_hash" value="eefaf5cdce586b8923cc022ac9993ca6a5145705bec6a49763f15a9a42095f2e"/><string name="_outlink" value="Npc/9111031.img/die1/11"/></canvas></imgdir><imgdir name="overpower1"><int name="special" value="1"/><canvas name="0" width="1" height="1"><vector name="origin" x="25" y="75"/><int name="z" value="0"/><int name="delay" value="150"/><string name="_outlink" value="Npc/9111031.img/die1/0"/></canvas><canvas name="1" width="1" height="1"><vector name="origin" x="26" y="74"/><int name="z" value="0"/><int name="delay" value="150"/><string name="_outlink" value="Npc/9111031.img/die1/1"/></canvas><canvas name="2" width="1" height="1"><vector name="origin" x="39" y="107"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/die1/2"/></canvas><canvas name="3" width="1" height="1"><vector name="origin" x="40" y="112"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/die1/3"/></canvas><canvas name="4" width="1" height="1"><vector name="origin" x="50" y="109"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/die1/4"/></canvas><canvas name="5" width="1" height="1"><vector name="origin" x="49" y="92"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/die1/5"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="66" y="81"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/die1/6"/></canvas><canvas name="7" width="1" height="1"><vector name="origin" x="67" y="53"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/die1/7"/></canvas><canvas name="8" width="1" height="1"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/die1/8"/></canvas><canvas name="9" width="1" height="1"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/die1/9"/></canvas><canvas name="10" width="1" height="1"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/die1/10"/></canvas><canvas name="11" width="1" height="1"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="510"/><string name="_outlink" value="Npc/9111031.img/die1/11"/></canvas><canvas name="12" width="1" height="1"><vector name="origin" x="50" y="63"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="4e9cdb7c54018d9ad0b6af3315bc29b24fe5d053a2313b0bdb342af137386a65"/><string name="_outlink" value="Npc/9111031.img/overpower/1"/></canvas><canvas name="13" width="1" height="1"><vector name="origin" x="32" y="74"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="85546a2d54077924d712afb0e8d142042bf1f1fbbba63e176b99b47c136bcbc3"/><string name="_outlink" value="Npc/9111031.img/overpower/2"/></canvas><canvas name="14" width="1" height="1"><vector name="origin" x="26" y="75"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="fde9c1ff2ea06e42b9401eaceba11fe175b3384ae27220c6d516dc8f5af6d24a"/><string name="_outlink" value="Npc/9111031.img/overpower/3"/></canvas><canvas name="15" width="1" height="1"><vector name="origin" x="41" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="c3a19e8617eab2649f8b214322f3a593bc4a7ecf267068a5d583ee80936a7d7d"/><string name="_outlink" value="Npc/9111031.img/overpower/4"/></canvas><canvas name="16" width="1" height="1"><vector name="origin" x="52" y="101"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="4edca575b77ca6844f177efaa18b6e71ef827fe58e29bc27f9bf57ce42726170"/><string name="_outlink" value="Npc/9111031.img/overpower/5"/></canvas><canvas name="17" width="1" height="1"><vector name="origin" x="56" y="105"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_hash" value="c223b3df2d66aea51b8965047ffe4a276c9d32e63171302bbc2f4d7e507b5abc"/><string name="_outlink" value="Npc/9111031.img/stand/0"/></canvas><canvas name="18" width="1" height="1"><vector name="origin" x="50" y="97"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="e44082fc1aed2dae7f064213990b1aa0fa6f72134dfb2b8bc6d77a923e3fc35d"/><string name="_outlink" value="Npc/9111031.img/stand/1"/></canvas><canvas name="19" width="1" height="1"><vector name="origin" x="53" y="102"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="67c71b14add96646d792d50f6c759573eb16551e62b7af2ee0ea98ce4c156365"/><string name="_outlink" value="Npc/9111031.img/stand/2"/></canvas><canvas name="20" width="1" height="1"><vector name="origin" x="56" y="105"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="acadb3f1a4a081d11ead39423717e2564ec978beb87af778e24bb7f6f1bc47ad"/><string name="_outlink" value="Npc/9111031.img/stand/3"/></canvas><canvas name="21" width="1" height="1"><vector name="origin" x="59" y="104"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="4f23a5cdaadb89c363c080a52df026dc69f05615bd8093efe1fb9648245fc2f1"/><string name="_outlink" value="Npc/9111031.img/stand/4"/></canvas><canvas name="22" width="1" height="1"><vector name="origin" x="60" y="101"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="c024c1226136f110e011c70b06e5e9ac17f757881b862e75fdb114db93192d35"/><string name="_outlink" value="Npc/9111031.img/stand/5"/></canvas><canvas name="23" width="1" height="1"><vector name="origin" x="60" y="103"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="261e4cfe2c782d9397d5d1a43303adffa2dbca087cea35156eeef33d8ca1d92c"/><string name="_outlink" value="Npc/9111031.img/stand/6"/></canvas><canvas name="24" width="1" height="1"><vector name="origin" x="59" y="112"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="85f6cfb8d6e3c26de17d5576ffcc35b87acdfbcd5205ea371b76184086bb04f1"/><string name="_outlink" value="Npc/9111031.img/stand/7"/></canvas><canvas name="25" width="1" height="1"><vector name="origin" x="50" y="111"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="41ccd185ba477c5f50ffc6e035d7acc076ccd9d0d5cbc2370515fc67c9fc6b80"/><string name="_outlink" value="Npc/9111031.img/stand/8"/></canvas><canvas name="26" width="1" height="1"><vector name="origin" x="53" y="108"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="a95b52cf40823f205cd355e8ec41fdfc422c735bbfde0dc9a412891d5d414843"/><string name="_outlink" value="Npc/9111031.img/stand/9"/></canvas><canvas name="27" width="1" height="1"><vector name="origin" x="56" y="106"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="b52368ba5d2c7c9f7b5953ba7cfb2b163e3b054b0550574130177f982fae3911"/><string name="_outlink" value="Npc/9111031.img/stand/10"/></canvas><canvas name="28" width="1" height="1"><vector name="origin" x="56" y="105"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="21f7779c10738b5191652638c62315515b348af4a9002f50d450ced0d66d3aaf"/><string name="_outlink" value="Npc/9111031.img/stand/11"/></canvas><canvas name="29" width="1" height="1"><vector name="origin" x="56" y="105"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_hash" value="895283bbf0a14ecd0410215d36e78c596671e1cd31f67e51da5b622df0eb7169"/><string name="_outlink" value="Npc/9111031.img/stand/12"/></canvas></imgdir><imgdir name="overpower2"><int name="special" value="1"/><canvas name="0" width="1" height="1"><vector name="origin" x="67" y="44"/><int name="z" value="0"/><int name="delay" value="510"/><string name="_outlink" value="Npc/9111031.img/die1/11"/></canvas><canvas name="1" width="1" height="1"><vector name="origin" x="50" y="63"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/overpower/1"/></canvas><canvas name="2" width="1" height="1"><vector name="origin" x="32" y="74"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/overpower/2"/></canvas><canvas name="3" width="1" height="1"><vector name="origin" x="26" y="75"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/overpower/3"/></canvas><canvas name="4" width="1" height="1"><vector name="origin" x="41" y="83"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/overpower/4"/></canvas><canvas name="5" width="1" height="1"><vector name="origin" x="52" y="101"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/overpower/5"/></canvas><canvas name="6" width="1" height="1"><vector name="origin" x="56" y="105"/><int name="z" value="0"/><int name="delay" value="180"/><string name="_outlink" value="Npc/9111031.img/stand/0"/></canvas><canvas name="7" width="1" height="1"><vector name="origin" x="50" y="97"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/1"/></canvas><canvas name="8" width="1" height="1"><vector name="origin" x="53" y="102"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/2"/></canvas><canvas name="9" width="1" height="1"><vector name="origin" x="56" y="105"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/3"/></canvas><canvas name="10" width="1" height="1"><vector name="origin" x="59" y="104"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/4"/></canvas><canvas name="11" width="1" height="1"><vector name="origin" x="60" y="101"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/5"/></canvas><canvas name="12" width="1" height="1"><vector name="origin" x="60" y="103"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/6"/></canvas><canvas name="13" width="1" height="1"><vector name="origin" x="59" y="112"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/7"/></canvas><canvas name="14" width="1" height="1"><vector name="origin" x="50" y="111"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/8"/></canvas><canvas name="15" width="1" height="1"><vector name="origin" x="53" y="108"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/9"/></canvas><canvas name="16" width="1" height="1"><vector name="origin" x="56" y="106"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/10"/></canvas><canvas name="17" width="1" height="1"><vector name="origin" x="56" y="105"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/11"/></canvas><canvas name="18" width="1" height="1"><vector name="origin" x="56" y="105"/><int name="z" value="0"/><int name="delay" value="210"/><string name="_outlink" value="Npc/9111031.img/stand/12"/></canvas></imgdir><imgdir name="preoverpower"><int name="special" value="1"/><uol name="0" value="../overpower1/0"/><uol name="1" value="../overpower1/14"/><uol name="2" value="../overpower1/15"/><uol name="3" value="../overpower1/16"/><uol name="4" value="../overpower1/17"/></imgdir><imgdir name="overpowerloop"><int name="special" value="1"/><uol name="0" value="../overpower1/18"/><uol name="1" value="../overpower1/19"/><uol name="2" value="../overpower1/20"/><uol name="3" value="../overpower1/21"/><uol name="4" value="../overpower1/22"/><uol name="5" value="../overpower1/23"/><uol name="6" value="../overpower1/24"/><uol name="7" value="../overpower1/25"/><uol name="8" value="../overpower1/26"/><uol name="9" value="../overpower1/27"/><uol name="10" value="../overpower1/28"/><uol name="11" value="../overpower1/29"/></imgdir><imgdir name="endoverpower"><int name="special" value="1"/><uol name="0" value="../overpower2/6"/><uol name="1" value="../overpower2/5"/><uol name="2" value="../overpower2/4"/><uol name="3" value="../overpower2/3"/></imgdir></imgdir>

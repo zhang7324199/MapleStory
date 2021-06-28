@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><imgdir name="9410866.img"><imgdir name="info"><int name="useCreateScript" value="1"/><int name="level" value="160"/><int name="skeleton" value="1"/><int name="ignoreFieldOut" value="1"/><int name="ignoreMoveImpact" value="1"/><int name="invincible" value="1"/><int name="firstAttack" value="1"/><int name="bodyAttack" value="1"/><int name="maxHP" value="100000000"/><int name="PADamage" value="10000"/><int name="MADamage" value="10000"/><int name="noFlip" value="1"/><int name="boss" value="1"/><int name="onlyHittedByCommonAttack" value="1"/><int name="hideName" value="1"/><int name="jsonLoad" value="1"/></imgdir><imgdir name="stand"><string name="aniName" value="jumpRope1"/><imgdir name="AttackParts"><imgdir name="info"><int name="fixDamR" value="25"/><int name="knockback" value="1"/></imgdir></imgdir></imgdir><imgdir name="die1"><string name="aniName" value="end"/><imgdir name="AttackParts"><imgdir name="info"><int name="fixDamR" value="25"/><int name="knockback" value="1"/></imgdir></imgdir></imgdir><imgdir name="HitParts"><imgdir name="empty"><string name="info" value="not used"/><imgdir name="0"><imgdir name="stat"><string name="info" value="not used"/><int name="durability" value="0"/><int name="hardness" value="0"/></imgdir></imgdir></imgdir></imgdir><canvas name="whip.png" width="1" height="1"><vector name="origin" x="449" y="79"/><int name="z" value="0"/><string name="_hash" value="17dcb1fddbcffdfb1b42841022150b40f9910b1b05d6d3d2fdfb36e0dcc90d48"/><string name="_outlink" value="Mob/9410868.img/whip.png"/></canvas><string name="9410866.atlas" value="
+whip.png
+size: 898,159
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+image/eff0
+  rotate: false
+  xy: 840, 29
+  size: 47, 46
+  orig: 47, 46
+  offset: 0, 0
+  index: -1
+image/eff1_0
+  rotate: false
+  xy: 2, 2
+  size: 179, 155
+  orig: 179, 155
+  offset: 0, 0
+  index: -1
+image/eff1_1
+  rotate: false
+  xy: 183, 2
+  size: 179, 155
+  orig: 179, 155
+  offset: 0, 0
+  index: -1
+image/eff1_2
+  rotate: false
+  xy: 364, 2
+  size: 179, 155
+  orig: 179, 155
+  offset: 0, 0
+  index: -1
+image/eff1_3
+  rotate: false
+  xy: 545, 2
+  size: 179, 155
+  orig: 179, 155
+  offset: 0, 0
+  index: -1
+image/eff2
+  rotate: false
+  xy: 726, 11
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+image/whip_body
+  rotate: false
+  xy: 726, 77
+  size: 170, 80
+  orig: 170, 80
+  offset: 0, 0
+  index: -1
+image/whip_launcher
+  rotate: true
+  xy: 792, 4
+  size: 71, 46
+  orig: 71, 46
+  offset: 0, 0
+  index: -1
+"/><string name="9410866.json" value=""/></imgdir>
