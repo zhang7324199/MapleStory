@@ -15,7 +15,7 @@ public class AutoRegister {
                 ps.setString(1, login);
                 ps.setString(2, LoginCrypto.hexSha1(pwd));
                 ps.setString(3, "autoregister@mail.com");
-                ps.setString(4, "0000-00-00");
+                ps.setString(4, "1900-01-01");
                 ps.setString(5, "00-00-00-00-00-00");
                 ps.executeUpdate();
             }

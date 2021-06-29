@@ -133,6 +133,7 @@ public class RankingWorker {
     private static void updatePokemon(Connection con) throws Exception {
         String sb = "SELECT count(distinct m.id) AS mc, c.name, c.totalWins, c.totalLosses " + " FROM characters AS c LEFT JOIN accounts AS a ON c.accountid = a.id" +
                 " RIGHT JOIN monsterbook AS m ON m.charid = a.id WHERE c.gm = 0 AND a.banned = 0" +
+                " GROUP BY c.name, c.totalWins, c.totalLosses"+
                 " ORDER BY c.totalWins DESC, c.totalLosses DESC, mc DESC LIMIT 50";
 
         PreparedStatement charSelect = con.prepareStatement(sb);
@@ -165,6 +166,7 @@ public class RankingWorker {
     private static void updatePokemonCaught(Connection con) throws Exception {
         String sb = "SELECT count(DISTINCT m.id) AS mc, c.name " + " FROM characters AS c LEFT JOIN accounts AS a ON c.accountid = a.id" +
                 " RIGHT JOIN monsterbook AS m ON m.charid = a.id WHERE c.gm = 0 AND a.banned = 0" +
+                " GROUP BY c.name"+
                 " ORDER BY mc DESC LIMIT 50";
 
         PreparedStatement charSelect = con.prepareStatement(sb);
