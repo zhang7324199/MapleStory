@@ -55,6 +55,8 @@ public class MapleServerHandler extends ChannelInboundHandlerAdapter {
     }
 
     public static void handlePacket(RecvPacketOpcode header, SeekableLittleEndianAccessor slea, MapleClient c, ServerType type) throws Exception {
+        if(header.getValue()!=RecvPacketOpcode.MOVE_LIFE.getValue() && header.getValue()!=RecvPacketOpcode.CLIENT_AUTH.getValue())
+            log.info("------>{}----{}",header.name(),type.name());
         switch (header) {
             case PONG: // 心跳包
                 c.pongReceived();
@@ -72,7 +74,7 @@ public class MapleServerHandler extends ChannelInboundHandlerAdapter {
                 checkfile = ((clientfile >> 5) << 5) + (((((clientfile & 0x1F) >> 3) ^ 2) << 3) + (7 - (clientfile & 7)));
                 checkfile |= ((clientfile >> 7) << 7);
                 checkfile -= 2;
-                //c.announce(MaplePacketCreator.getClientAuthentication(checkfile));
+//                c.announce(MaplePacketCreator.getClientAuthentication(checkfile));
                 break;
             case CLIENT_ERROR: // 客户端发送过来的错误信息
                 ClientErrorLogHandler.handlePacket(slea, c);
@@ -1154,6 +1156,19 @@ public class MapleServerHandler extends ChannelInboundHandlerAdapter {
                 ctx.channel().attr(MapleClient.CLIENT_KEY).set(null);
                 ctx.channel().attr(MaplePacketDecoder.DECODER_STATE_KEY).set(null);
                 ctx.channel().close();
+
+                StringBuilder sb = new StringBuilder();
+                if (channel > -1) {
+                    sb.append("[Channel Server] Channel ").append(channel).append(" : ");
+                } else if (type == ServerType.商城服务器) {
+                    sb.append("[Cash Server] ");
+                } else if (type == ServerType.聊天服务器) {
+                    sb.append("[Chat Server]");
+                } else {
+                    sb.append("[Login Server] ");
+                }
+                sb.append("离开 ");
+                System.out.println(sb.toString());
             }
         }
     }
