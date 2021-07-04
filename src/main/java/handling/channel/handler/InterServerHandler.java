@@ -349,7 +349,7 @@ public class InterServerHandler {
             log.error("加载好友、家族错误", e);
         }
         //发送游戏顶部公告信息
-        player.getClient().announce(MaplePacketCreator.serverMessage(channelServer.getServerMessage()));
+//        player.getClient().announce(MaplePacketCreator.serverMessage(channelServer.getServerMessage()));
         //显示小字条消息
         player.showNote();
         //道具宝宝的信息

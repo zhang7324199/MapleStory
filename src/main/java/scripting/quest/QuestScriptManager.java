@@ -57,6 +57,7 @@ public class QuestScriptManager extends AbstractScriptManager {
                     c.getPlayer().dropMessage(5, "开始任务脚本不存在 NPC：" + npcId + " Quest：" + questId);
                 }
                 if (!startQuestIds.contains(questId)) {
+                    startQuestIds.add(questId);
                     log.info("开始任务脚本不存在 NPC：" + npcId + " Quest：" + questId);
                 }
                 dispose(c);
