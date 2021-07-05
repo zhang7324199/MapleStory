@@ -55,7 +55,8 @@ public class MapleServerHandler extends ChannelInboundHandlerAdapter {
     }
 
     public static void handlePacket(RecvPacketOpcode header, SeekableLittleEndianAccessor slea, MapleClient c, ServerType type) throws Exception {
-        if(header.getValue()!=RecvPacketOpcode.MOVE_LIFE.getValue() && header.getValue()!=RecvPacketOpcode.CLIENT_AUTH.getValue())
+        if(header.getValue()!=RecvPacketOpcode.MOVE_LIFE.getValue() && header.getValue()!=RecvPacketOpcode.CLIENT_AUTH.getValue()
+        && header.getValue()!=RecvPacketOpcode.NPC_ACTION.getValue() && header.getValue()!=RecvPacketOpcode.QUEST_ACTION.getValue())
             log.info("------>{}----{}",header.name(),type.name());
         switch (header) {
             case PONG: // 心跳包
@@ -1143,6 +1144,7 @@ public class MapleServerHandler extends ChannelInboundHandlerAdapter {
         }
         sb.append("IoSession opened ").append(address);
         System.out.println(sb.toString());
+        log.info("---------->{}",sb.toString());
     }
 
     @Override
@@ -1170,6 +1172,7 @@ public class MapleServerHandler extends ChannelInboundHandlerAdapter {
                 }
                 sb.append("离开 ");
                 System.out.println(sb.toString());
+                log.info("---------->{}",sb.toString());
             }
         }
     }
