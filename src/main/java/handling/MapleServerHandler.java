@@ -1119,6 +1119,7 @@ public class MapleServerHandler extends ChannelInboundHandlerAdapter {
         client.setSessionId(Randomizer.nextLong());
         client.setChannel(channel);
         client.setWorld(world);
+        client.type = type;
 
         ctx.channel().writeAndFlush(LoginPacket.getHello(ServerConfig.LOGIN_MAPLE_VERSION, ivSend, ivRecv, type));
 

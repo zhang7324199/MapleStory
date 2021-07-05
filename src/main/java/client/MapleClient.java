@@ -5,6 +5,7 @@ import configs.ServerConfig;
 import constants.GameConstants;
 import constants.ServerConstants;
 import database.DatabaseConnection;
+import handling.ServerType;
 import handling.cashshop.CashShopServer;
 import handling.channel.ChannelServer;
 import handling.login.LoginServer;
@@ -85,6 +86,7 @@ public class MapleClient implements Serializable {
     private DebugUI debugWindow; //调试封包窗口
     private Triple<String, String, Boolean> tempinfo = null;
 
+    public ServerType type;
     public MapleClient() {
 
     }

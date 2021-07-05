@@ -48,6 +48,7 @@ public class MaplePacketDecoder extends ByteToMessageDecoder {
                 in.readBytes(packet);
                 SeekableLittleEndianAccessor slea = new GenericSeekableLittleEndianAccessor(new ByteArrayByteStream(packet));
                 LoginPasswordHandler.handlePacket(slea, client);
+                log.info("------>{}----{}","DecodeLogin",client.type.name());
                 return;
             }
             if (!client.getReceiveCrypto().checkPacket(packetHeader)) {
