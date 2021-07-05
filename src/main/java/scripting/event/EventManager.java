@@ -703,11 +703,12 @@ public class EventManager {
         if (!weather) {
             getChannelServer().broadcastPacket(MaplePacketCreator.serverNotice(type, msg));
         } else {
-            for (MapleMap load : getMapFactory().getAllMaps()) {
-                if (load.getCharactersSize() > 0) {
-                    load.startMapEffect(msg, type);
-                }
-            }
+            getChannelServer().broadcastPacket(MaplePacketCreator.serverNotice(type, msg));
+//            for (MapleMap load : getMapFactory().getAllMaps()) {
+//                if (load.getCharactersSize() > 0) {
+//                    load.startMapEffect(msg, type);
+//                }
+//            }
         }
     }
 

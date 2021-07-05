@@ -149,7 +149,7 @@ public class Start extends WebFrame {
         progressBarObserver.deleteObserver(progressBarObservable);
         progressBarObservable.deleteObservers();
 
-        setTitle("彩虹冒险岛服务端  当前游戏版本: v." + ServerConfig.LOGIN_MAPLE_VERSION + "." + ServerConfig.LOGIN_MAPLE_PATCH + " 服务端版本: " + server_version);
+        setTitle("小章冒险岛服务端  当前游戏版本: v." + ServerConfig.LOGIN_MAPLE_VERSION + "." + ServerConfig.LOGIN_MAPLE_PATCH + " 服务端版本: " + server_version);
 
         pack();
         setLocationRelativeTo(null);

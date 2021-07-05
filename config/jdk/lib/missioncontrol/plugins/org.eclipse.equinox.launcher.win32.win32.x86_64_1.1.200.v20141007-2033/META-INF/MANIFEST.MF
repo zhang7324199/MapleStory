@@ -27,5 +27,8 @@ Import-Package: org.apache.logging.log4j,
  com.fasterxml.jackson.core,
  javax.crypto,
  javax.script,
- redis.clients.jedis
+ redis.clients.jedis,
+ javax.xml.parsers,
+ org.w3c.dom,
+ org.xml.sax
 

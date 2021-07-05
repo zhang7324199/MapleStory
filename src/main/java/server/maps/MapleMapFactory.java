@@ -1088,7 +1088,9 @@ public class MapleMapFactory {
                 break;
             case 931000501: // 秘密地图 - 美洲豹栖息地
             case 931000503: // 秘密地图 - 美洲豹栖息地
-                mobtime = 2 * 3600; //2小时刷新
+            case 50000:
+            case 1000000:
+                mobtime = 5 * 60; //5分钟刷新
                 monsterid = 9304006;
                 msg = "美洲豹栖息地出现 雪豹 ，喜欢此坐骑的弩豹游侠职业可以前往抓捕。";
                 pos1 = new Point(-872, -332);
