@@ -62,9 +62,9 @@ public final class MapleMap {
     private final ReentrantReadWriteLock charactersLock = new ReentrantReadWriteLock();
     private final Lock runningOidLock = new ReentrantLock();
     private final List<MapleHideNpc> hideNpc = new ArrayList<>();
-    private final List<Spawns> monsterSpawn = new ArrayList<>();
+    private final List<Spawns> monsterSpawn = new ArrayList<>(); //该地图怪物重生点
     private final AtomicInteger runningOid = new AtomicInteger(500000);
-    private final AtomicInteger spawnedMonstersOnMap = new AtomicInteger(0);
+    private final AtomicInteger spawnedMonstersOnMap = new AtomicInteger(0); //当前地图怪物个数
     private final AtomicInteger spawnedForcesOnMap = new AtomicInteger(0);
     private final AtomicInteger spawnedMistOnMap = new AtomicInteger(0);
     private final Map<Integer, MaplePortal> portals = new HashMap<>();
@@ -1278,8 +1278,7 @@ public final class MapleMap {
     }
 
     public void killAllMonsters(boolean animate) {
-        for (MapleMapObject monstermo : getAllMonstersThreadsafe()) {
-            MapleMonster monster = (MapleMonster) monstermo;
+        for (MapleMonster monster : getAllMonstersThreadsafe()) {
             spawnedMonstersOnMap.decrementAndGet();
             monster.setHp(0);
             broadcastMessage(MobPacket.killMonster(monster.getObjectId(), animate ? 1 : 0));
@@ -3203,6 +3202,10 @@ public final class MapleMap {
         return monsterSpawn.size();
     }
 
+    public List<Spawns> getMonsterSpawn() {
+        return monsterSpawn;
+    }
+
     public void loadMonsterRate(boolean first) {
         int spawnSize = monsterSpawn.size();
         if (spawnSize >= 20 || partyBonusRate > 0) {
@@ -3510,7 +3513,7 @@ public final class MapleMap {
     public void respawn(boolean force, long now) {
         lastSpawnTime = now;
         if (force) { //cpq quick hack
-            final int numShouldSpawn = monsterSpawn.size() - spawnedMonstersOnMap.get();
+            final int numShouldSpawn = monsterSpawn.size() - spawnedMonstersOnMap.get(); //当前地图死亡怪物数量
 
             if (numShouldSpawn > 0) {
                 int spawned = 0;

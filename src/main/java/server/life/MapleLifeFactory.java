@@ -14,8 +14,8 @@ import tools.RedisUtil.KEYNAMES;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
 import java.util.List;
+import java.util.*;
 
 public class MapleLifeFactory {
 
@@ -32,13 +32,18 @@ public class MapleLifeFactory {
     private static final Map<Integer, MapleMonsterStats> monsterStats = new HashMap<>();
     private static final Map<Integer, Integer> NPCLoc = new HashMap<>();
 //    private static Map<Integer, List<Integer>> questCount = new HashMap<>();
-private static final Jedis jedis = RedisUtil.getJedis();
+    private static final Jedis jedis = RedisUtil.getJedis();
 
     static {
         // 将怪物名字缓存
-        if (!jedis.exists(KEYNAMES.MOB_NAME.getKeyName())) {
+        if (!jedis.exists(KEYNAMES.MOB_NAME_2_ID.getKeyName())) {
+            String mobName;
             for (MapleData mapleData : mobStringData) {
-                jedis.hset(KEYNAMES.MOB_NAME.getKeyName(), mapleData.getName(), String.valueOf(mapleData.getChildByPath("name").getData()));
+                mobName = String.valueOf(mapleData.getChildByPath("name").getData());
+                if(jedis.hget(KEYNAMES.MOB_NAME_2_ID.getKeyName(), mobName)==null){
+                    jedis.hset(KEYNAMES.MOB_NAME_2_ID.getKeyName(), mobName, mapleData.getName());
+                    jedis.hset(KEYNAMES.MOB_NAME.getKeyName(), mapleData.getName(), mobName);
+                }
             }
         }
 
@@ -52,6 +57,13 @@ private static final Jedis jedis = RedisUtil.getJedis();
                 }
             }
         }
+
+    }
+
+    public static Integer getMobId(String mobName) {
+        String idStr = jedis.hget(RedisUtil.KEYNAMES.MAP_NAME_2_ID.getKeyName(), mobName);
+        if(idStr==null){return null;}
+        return Integer.valueOf(idStr);
     }
 
     public static AbstractLoadedMapleLife getLife(int id, String type, int mapid) {

@@ -2,11 +2,18 @@ package server.commands;
 
 import client.MapleCharacter;
 import client.MapleClient;
+import com.alee.laf.optionpane.WebOptionPane;
 import com.alibaba.druid.pool.DruidPooledConnection;
 import database.DatabaseConnection;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import server.life.MapleLifeFactory;
+import server.life.MapleMonster;
+import server.life.Spawns;
+import server.maps.MapleMap;
+import server.maps.MapleMapFactory;
 
+import java.awt.*;
 import java.lang.reflect.Modifier;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -102,6 +109,94 @@ public class CommandProcessor {
     }
 
     public static boolean processCommand(MapleClient c, String line, CommandType type) {
+        if(line.startsWith("zh")){
+            try {
+                String[] splitted = line.split(" ");
+                if(splitted.length<=1) return false;
+
+                if(splitted[1].equalsIgnoreCase("kill")){
+                    c.getPlayer().getMap().killAllMonsters(true);
+                }else if(splitted[1].equalsIgnoreCase("flushgw")){//在地图刷新已有怪物
+                    int num = 1;
+                    if(splitted.length>=3){
+                        num = Integer.valueOf(splitted[2]);
+                    }
+                    for(Spawns spawns : c.getPlayer().getMap().getMonsterSpawn()){
+                        for(int i=0; i<num; i++){
+                            spawns.spawnMonster(c.getPlayer().getMap());
+                        }
+
+                    }
+                }else if(splitted[1].equalsIgnoreCase("creategwid")){ //在地图创建怪物
+                    int num = 1;
+                    if(splitted.length>=4){
+                        num = Integer.valueOf(splitted[3]);
+                    }
+                    int monsterId = Integer.valueOf(splitted[2]);
+                    Point pos  = c.getPlayer().getPosition();
+                    for(int i=0; i<num; i++){
+                        MapleMonster mapleMonster = MapleLifeFactory.getMonster(monsterId);
+                        if (mapleMonster == null) {
+                            c.getPlayer().dropMessage(6, "输入的怪物不存在.");
+                            return true;
+                        }
+                        mapleMonster.setPosition(pos);
+                        mapleMonster.setCy(pos.y);
+                        mapleMonster.setRx0(pos.x - 50);
+                        mapleMonster.setRx1(pos.x + 50); //these dont matter for mobs
+                        mapleMonster.setFh(i); //是什么高度
+                        mapleMonster.setF(i);
+                        c.getPlayer().getMap().spawnMonster(mapleMonster,-2);
+                    }
+                }else if(splitted[1].equalsIgnoreCase("creategwname")){ //在地图创建怪物
+                    int num = 1;
+                    if(splitted.length>=4){
+                        num = Integer.valueOf(splitted[3]);
+                    }
+                    String monsterName = splitted[2];
+                    Point pos  = c.getPlayer().getPosition();
+                    for(int i=0; i<num; i++){
+                        Integer mobId = MapleLifeFactory.getMobId(monsterName);
+                        if (mobId == null) {
+                            c.getPlayer().dropMessage(6, "输入的怪物不存在.");
+                            return true;
+                        }
+                        MapleMonster mapleMonster = MapleLifeFactory.getMonster(mobId);
+                        if (mapleMonster == null) {
+                            c.getPlayer().dropMessage(6, "输入的怪物不存在.");
+                            return true;
+                        }
+                        mapleMonster.setPosition(pos);
+                        mapleMonster.setCy(pos.y);
+                        mapleMonster.setRx0(pos.x - 50);
+                        mapleMonster.setRx1(pos.x + 50); //these dont matter for mobs
+                        mapleMonster.setFh(i); //是什么高度
+                        mapleMonster.setF(i);
+                        c.getPlayer().getMap().spawnMonster(mapleMonster,-2);
+                    }
+                }else if(splitted[1].equalsIgnoreCase("changemapname")){
+                    MapleMap map = c.getPlayer().getClient().getChannelServer().getMapFactory().getMap(MapleMapFactory.getMapId(splitted[2]));
+                    if (map == null) {
+                        c.getPlayer().dropMessage(6, "输入的地图不存在.");
+                        return true;
+                    }
+                    c.getPlayer().changeMap(map);
+                }else if(splitted[1].equalsIgnoreCase("changemapid")){
+                    MapleMap map = c.getPlayer().getClient().getChannelServer().getMapFactory().getMap(Integer.valueOf(splitted[2]));
+                    if (map == null) {
+                        c.getPlayer().dropMessage(6, "输入的地图不存在.");
+                        return true;
+                    }
+                    c.getPlayer().changeMap(map);
+                }else{
+                    c.getPlayer().dropMessage(6, "输入的玩家命令不存在.");
+                }
+                return true;
+            }catch (Exception e){
+                c.getPlayer().dropMessage(6, "输入的玩家命令不存在.");
+                return true;
+            }
+        }
         if (line.charAt(0) == PlayerGMRank.NORMAL.getCommandPrefix() || (c.getPlayer().getGMLevel() > PlayerGMRank.NORMAL.getLevel() && line.charAt(0) == PlayerGMRank.DONATOR.getCommandPrefix())) {
             line = line.replace('！', '!');
             String[] splitted = line.split(" ");

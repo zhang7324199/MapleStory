@@ -190,7 +190,9 @@ public final class RedisUtil {
         MOBSKILL_DATA("MobSkillData"),
         MOB_NAME("MobName"),
         MOB_ID("MobIDs"),
+        MOB_NAME_2_ID("MobName2Id"),
         MAP_NAME("MapName"),
+        MAP_NAME_2_ID("MapName2Id"),
         MAP_LINKNPC("MapLinkNPC");
 
         public static final boolean DELETECACHE = false;

@@ -7,8 +7,11 @@ import configs.ServerConfig;
 import constants.BattleConstants;
 import constants.GameConstants;
 import database.DatabaseConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import provider.*;
 import redis.clients.jedis.Jedis;
+import scripting.portal.PortalScriptManager;
 import server.MaplePortal;
 import server.life.*;
 import server.maps.MapleNodes.DirectionInfo;
@@ -35,6 +38,7 @@ public class MapleMapFactory {
     private final ReentrantLock lock = new ReentrantLock();
     private int channel;
     private Map<Integer, List<Integer>> linknpcs = new HashMap<>();
+    private static final Logger log = LogManager.getLogger(MapleMapFactory.class.getName());
 
     public MapleMapFactory(int channel) {
         this.channel = channel;
@@ -48,7 +52,10 @@ public class MapleMapFactory {
                     for (MapleData data : mapleData) {
                         for (MapleData subdata : data) {
                             if (subdata.getName().equalsIgnoreCase("mapName")) {
-                                jedis.hset(RedisUtil.KEYNAMES.MAP_NAME.getKeyName(), data.getName(), subdata.getData().toString());
+                                if(jedis.hget(RedisUtil.KEYNAMES.MAP_NAME_2_ID.getKeyName(),subdata.getData().toString())==null){
+                                    jedis.hset(RedisUtil.KEYNAMES.MAP_NAME_2_ID.getKeyName(),subdata.getData().toString(),data.getName());
+                                    jedis.hset(RedisUtil.KEYNAMES.MAP_NAME.getKeyName(), data.getName(), subdata.getData().toString());
+                                }
                             }
                         }
                     }
@@ -57,6 +64,12 @@ public class MapleMapFactory {
         } finally {
             RedisUtil.returnResource(jedis);
         }
+    }
+
+    public static Integer getMapId(String mapName) {
+        String idStr = RedisUtil.hget(RedisUtil.KEYNAMES.MAP_NAME_2_ID.getKeyName(), mapName);
+        if(idStr==null){return null;}
+        return Integer.valueOf(idStr);
     }
 
     public static String getMapName(int mapid) {
