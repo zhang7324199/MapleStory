@@ -32,38 +32,47 @@ public class MapleLifeFactory {
     private static final Map<Integer, MapleMonsterStats> monsterStats = new HashMap<>();
     private static final Map<Integer, Integer> NPCLoc = new HashMap<>();
 //    private static Map<Integer, List<Integer>> questCount = new HashMap<>();
-    private static final Jedis jedis = RedisUtil.getJedis();
+//    private static final Jedis jedis = RedisUtil.getJedis();
 
     static {
-        // 将怪物名字缓存
-        if (!jedis.exists(KEYNAMES.MOB_NAME_2_ID.getKeyName())) {
-            String mobName;
-            for (MapleData mapleData : mobStringData) {
-                mobName = String.valueOf(mapleData.getChildByPath("name").getData());
-                if(jedis.hget(KEYNAMES.MOB_NAME_2_ID.getKeyName(), mobName)==null){
-                    jedis.hset(KEYNAMES.MOB_NAME_2_ID.getKeyName(), mobName, mapleData.getName());
-                    jedis.hset(KEYNAMES.MOB_NAME.getKeyName(), mapleData.getName(), mobName);
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            // 将怪物名字缓存
+            if (!jedis.exists(KEYNAMES.MOB_NAME_2_ID.getKeyName())) {
+                String mobName;
+                for (MapleData mapleData : mobStringData) {
+                    mobName = String.valueOf(mapleData.getChildByPath("name").getData());
+                    if(jedis.hget(KEYNAMES.MOB_NAME_2_ID.getKeyName(), mobName)==null){
+                        jedis.hset(KEYNAMES.MOB_NAME_2_ID.getKeyName(), mobName, mapleData.getName());
+                        jedis.hset(KEYNAMES.MOB_NAME.getKeyName(), mapleData.getName(), mobName);
+                    }
                 }
             }
-        }
 
-        if (!jedis.exists(KEYNAMES.MOB_ID.getKeyName())) {
-            List<MapleDataProvider> datas = Arrays.asList(data, data2);
-            for (MapleDataProvider root : datas) {
-                for (MapleDataFileEntry mapleDataFileEntry : root.getRoot().getFiles()) {
-                    int mobid = Integer.valueOf(mapleDataFileEntry.getName().substring(0, mapleDataFileEntry.getName().indexOf(".img")));
-                    boolean isboss = MapleDataTool.getInt("info/boss", root.getData(mapleDataFileEntry.getName()), 0) > 0;
-                    jedis.hset(KEYNAMES.MOB_ID.getKeyName(), String.valueOf(mobid), String.valueOf(isboss));
+            if (!jedis.exists(KEYNAMES.MOB_ID.getKeyName())) {
+                List<MapleDataProvider> datas = Arrays.asList(data, data2);
+                for (MapleDataProvider root : datas) {
+                    for (MapleDataFileEntry mapleDataFileEntry : root.getRoot().getFiles()) {
+                        int mobid = Integer.valueOf(mapleDataFileEntry.getName().substring(0, mapleDataFileEntry.getName().indexOf(".img")));
+                        boolean isboss = MapleDataTool.getInt("info/boss", root.getData(mapleDataFileEntry.getName()), 0) > 0;
+                        jedis.hset(KEYNAMES.MOB_ID.getKeyName(), String.valueOf(mobid), String.valueOf(isboss));
+                    }
                 }
             }
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-
     }
 
     public static Integer getMobId(String mobName) {
-        String idStr = jedis.hget(RedisUtil.KEYNAMES.MAP_NAME_2_ID.getKeyName(), mobName);
-        if(idStr==null){return null;}
-        return Integer.valueOf(idStr);
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            String idStr = jedis.hget(RedisUtil.KEYNAMES.MAP_NAME_2_ID.getKeyName(), mobName);
+            if(idStr==null){return null;}
+            return Integer.valueOf(idStr);
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public static AbstractLoadedMapleLife getLife(int id, String type, int mapid) {
@@ -78,15 +87,30 @@ public class MapleLifeFactory {
     }
 
     public static String getMonsterName(int mobid) {
-        return jedis.hget(KEYNAMES.MOB_NAME.getKeyName(), String.valueOf(mobid));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hget(KEYNAMES.MOB_NAME.getKeyName(), String.valueOf(mobid));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public static boolean isBoss(int mobid) {
-        return Boolean.valueOf(jedis.hget(KEYNAMES.MOB_ID.getKeyName(), String.valueOf(mobid)));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return Boolean.valueOf(jedis.hget(KEYNAMES.MOB_ID.getKeyName(), String.valueOf(mobid)));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public static boolean checkMonsterIsExist(int mobid) {
-        return jedis.hexists(KEYNAMES.MOB_ID.getKeyName(), String.valueOf(mobid));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hexists(KEYNAMES.MOB_ID.getKeyName(), String.valueOf(mobid));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public static int getNPCLocation(int npcid) {
@@ -99,67 +123,77 @@ public class MapleLifeFactory {
     }
 
     public static void loadQuestCounts() {
-        if (!jedis.exists(KEYNAMES.QUEST_COUNT.getKeyName())) {
-            ObjectMapper mapper = JsonUtil.getMapperInstance();
-            for (int i = 0; i < 2; i++) {
-                for (MapleDataDirectoryEntry mapz : i == 0 ? data.getRoot().getSubdirectories() : data2.getRoot().getSubdirectories()) {
-                    if (mapz.getName().equals("QuestCountGroup")) {
-                        for (MapleDataFileEntry entry : mapz.getFiles()) {
-                            int id = Integer.parseInt(entry.getName().substring(0, entry.getName().length() - 4));
-                            MapleData dat = data.getData("QuestCountGroup/" + entry.getName());
-                            if (dat != null && dat.getChildByPath("info") != null) {
-                                List<Integer> info = new ArrayList<>();
-                                for (MapleData da : dat.getChildByPath("info")) {
-                                    info.add(MapleDataTool.getInt(da, 0));
-                                }
-                                try {
-                                    jedis.hset(KEYNAMES.QUEST_COUNT.getKeyName(), String.valueOf(id), mapper.writeValueAsString(info));
-                                } catch (JsonProcessingException e) {
-                                    log.error("", e);
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            if (!jedis.exists(KEYNAMES.QUEST_COUNT.getKeyName())) {
+                ObjectMapper mapper = JsonUtil.getMapperInstance();
+                for (int i = 0; i < 2; i++) {
+                    for (MapleDataDirectoryEntry mapz : i == 0 ? data.getRoot().getSubdirectories() : data2.getRoot().getSubdirectories()) {
+                        if (mapz.getName().equals("QuestCountGroup")) {
+                            for (MapleDataFileEntry entry : mapz.getFiles()) {
+                                int id = Integer.parseInt(entry.getName().substring(0, entry.getName().length() - 4));
+                                MapleData dat = data.getData("QuestCountGroup/" + entry.getName());
+                                if (dat != null && dat.getChildByPath("info") != null) {
+                                    List<Integer> info = new ArrayList<>();
+                                    for (MapleData da : dat.getChildByPath("info")) {
+                                        info.add(MapleDataTool.getInt(da, 0));
+                                    }
+                                    try {
+                                        jedis.hset(KEYNAMES.QUEST_COUNT.getKeyName(), String.valueOf(id), mapper.writeValueAsString(info));
+                                    } catch (JsonProcessingException e) {
+                                        log.error("", e);
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
-            Map<String, String> npcNames = new HashMap<>();
-            MapleData npcStringData = stringDataWZ.getData("Npc.img");
-            for (MapleData c : npcStringData) {
-                if (c.getName().contains("pack_ignore")) {
-                    continue;
-                }
-                int nid = Integer.parseInt(c.getName());
-                String n = StringUtil.getLeftPaddedStr(nid + ".img", '0', 11);
-                try {
-                    if (npcData.getData(n) != null) { //only thing we really have to do is check if it exists. if we wanted to, we could get the script as well :3
-                        String name = MapleDataTool.getString("name", c, "MISSINGNO");
-                        if (name.contains("MapleTV") || name.contains("婴儿月妙")) {
-                            continue;
-                        }
-                        npcNames.put(String.valueOf(nid), name);
+                Map<String, String> npcNames = new HashMap<>();
+                MapleData npcStringData = stringDataWZ.getData("Npc.img");
+                for (MapleData c : npcStringData) {
+                    if (c.getName().contains("pack_ignore")) {
+                        continue;
                     }
-                } catch (RuntimeException ex) {
-                    log.error("", ex);
+                    int nid = Integer.parseInt(c.getName());
+                    String n = StringUtil.getLeftPaddedStr(nid + ".img", '0', 11);
+                    try {
+                        if (npcData.getData(n) != null) { //only thing we really have to do is check if it exists. if we wanted to, we could get the script as well :3
+                            String name = MapleDataTool.getString("name", c, "MISSINGNO");
+                            if (name.contains("MapleTV") || name.contains("婴儿月妙")) {
+                                continue;
+                            }
+                            npcNames.put(String.valueOf(nid), name);
+                        }
+                    } catch (RuntimeException ex) {
+                        log.error("", ex);
+                    }
                 }
+                jedis.hmset(KEYNAMES.NPC_NAME.getKeyName(), npcNames);
             }
-            jedis.hmset(KEYNAMES.NPC_NAME.getKeyName(), npcNames);
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
     }
 
     public static boolean exitsQuestCount(int mo, int id) {
-        String data = jedis.hget(KEYNAMES.QUEST_COUNT.getKeyName(), String.valueOf(mo));
-        if (data == null) {
-            return false;
-        }
-        List<Integer> ret;
+        Jedis jedis = RedisUtil.getJedis();
         try {
-            ret = JsonUtil.getMapperInstance().readValue(data, new TypeReference<List<Integer>>() {
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
-            return false;
+            String data = jedis.hget(KEYNAMES.QUEST_COUNT.getKeyName(), String.valueOf(mo));
+            if (data == null) {
+                return false;
+            }
+            List<Integer> ret;
+            try {
+                ret = JsonUtil.getMapperInstance().readValue(data, new TypeReference<List<Integer>>() {
+                });
+            } catch (IOException e) {
+                e.printStackTrace();
+                return false;
+            }
+            return ret.contains(id);
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret.contains(id);
     }
 
     public static MapleMonster getMonster(int mobId) {
@@ -460,23 +494,33 @@ public class MapleLifeFactory {
     }
 
     public static String getNpcName(int nid) {
-        return jedis.hget(KEYNAMES.NPC_NAME.getKeyName(), String.valueOf(nid));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hget(KEYNAMES.NPC_NAME.getKeyName(), String.valueOf(nid));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public static int getRandomNPC() {
-        int ret = 0;
-        Map<String, String> data = jedis.hgetAll(KEYNAMES.NPC_NAME.getKeyName());
-        if (data == null) {
-            return ret;
-        }
-        List<String> vals = new ArrayList<>(data.keySet());
-        while (ret <= 0) {
-            ret = Integer.valueOf(vals.get(Randomizer.nextInt(vals.size())));
-            if (data.get(String.valueOf(ret)).contains("MISSINGNO")) {
-                ret = 0;
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            int ret = 0;
+            Map<String, String> data = jedis.hgetAll(KEYNAMES.NPC_NAME.getKeyName());
+            if (data == null) {
+                return ret;
             }
+            List<String> vals = new ArrayList<>(data.keySet());
+            while (ret <= 0) {
+                ret = Integer.valueOf(vals.get(Randomizer.nextInt(vals.size())));
+                if (data.get(String.valueOf(ret)).contains("MISSINGNO")) {
+                    ret = 0;
+                }
+            }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     public static class loseItem {

@@ -1,7 +1,8 @@
 自定义刷怪指令,在聊天框输入:格式:zh operation
 operation类型:
 (1)kill:秒杀地图所有怪物
-(2)flushgw:随机刷新地图怪物
+(2)flushgw [monsterNumber]:随机刷新地图怪物
+    monsterNumber : 怪物数量
 (3)creategwid [monsterId] [monsterNumber]:创建地图怪物
    monsterId：怪物Id
    monsterNumber : 怪物数量

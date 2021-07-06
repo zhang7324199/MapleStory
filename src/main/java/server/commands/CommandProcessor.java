@@ -17,9 +17,7 @@ import java.awt.*;
 import java.lang.reflect.Modifier;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
 
 public class CommandProcessor {
 
@@ -121,7 +119,10 @@ public class CommandProcessor {
                     if(splitted.length>=3){
                         num = Integer.valueOf(splitted[2]);
                     }
+                    Set<Integer> re = new HashSet<>();
                     for(Spawns spawns : c.getPlayer().getMap().getMonsterSpawn()){
+                        if(re.contains(spawns.getMonster().getId())) continue;
+                        re.add(spawns.getMonster().getId());
                         for(int i=0; i<num; i++){
                             spawns.spawnMonster(c.getPlayer().getMap());
                         }

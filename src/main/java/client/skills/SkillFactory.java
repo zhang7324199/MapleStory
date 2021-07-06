@@ -35,211 +35,231 @@ public class SkillFactory {
     private static final Map<Integer, Skill> skills = new HashMap<>();
     private static final Map<Integer, CraftingEntry> craftings = new HashMap<>();
     private static final List<Integer> finalAttackSkills = new LinkedList<>();
-    private static final Jedis jedis = RedisUtil.getJedis();
+//    private static final Jedis jedis = RedisUtil.getJedis();
 
     public static void loadDelays() {
-        if (!jedis.exists(KEYNAMES.DELAYS.getKeyName())) {
-            int del = 0; //buster is 67 but its the 57th one!
-            for (MapleData delay : delayData) {
-                if (!delay.getName().equals("info")) {
-                    jedis.hset(KEYNAMES.DELAYS.getKeyName(), delay.getName(), String.valueOf(del));
-                    del++;
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            if (!jedis.exists(KEYNAMES.DELAYS.getKeyName())) {
+                int del = 0; //buster is 67 but its the 57th one!
+                for (MapleData delay : delayData) {
+                    if (!delay.getName().equals("info")) {
+                        jedis.hset(KEYNAMES.DELAYS.getKeyName(), delay.getName(), String.valueOf(del));
+                        del++;
+                    }
                 }
             }
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
     }
 
     public static void loadSkillData() {
-        if (!jedis.exists(KEYNAMES.SKILL_DATA.getKeyName())) {
-            MapleDataDirectoryEntry root = datasource.getRoot();
-            int skillid;
-            MapleData summon_data;
-            Map<Integer, List<Integer>> skillsByJob = new HashMap<>();
-            for (MapleDataFileEntry topDir : root.getFiles()) { // Loop thru jobs
-                if (topDir.getName().length() <= 10) {
-                    for (MapleData data : datasource.getData(topDir.getName())) { // Loop thru each jobs
-                        if (data.getName().equals("skill")) {
-                            for (MapleData data2 : data) { // Loop thru each jobs
-                                if (data2 != null) {
-                                    skillid = Integer.parseInt(data2.getName());
-                                    Skill skil = Skill.loadFromData(skillid, data2, delayData);
-                                    skills.put(skillid, skil);
-                                    List<Integer> job = skillsByJob.computeIfAbsent(skillid / 10000, k -> new ArrayList<>());
-                                    job.add(skillid);
-                                    try {
-                                        jedis.hset(KEYNAMES.SKILL_DATA.getKeyName(), String.valueOf(skillid), mapper.writeValueAsString(skil));
-                                        jedis.hset(KEYNAMES.SKILL_NAME.getKeyName(), String.valueOf(skillid), getName(skillid, stringData));
-                                    } catch (JsonProcessingException e) {
-                                        log.error("", e);
-                                    }
-
-                                    summon_data = data2.getChildByPath("summon/attack1/info");
-                                    if (summon_data != null) {
-                                        SummonSkillEntry sse = new SummonSkillEntry();
-                                        sse.type = (byte) MapleDataTool.getInt("type", summon_data, 0);
-                                        sse.mobCount = (byte) MapleDataTool.getInt("mobCount", summon_data, 1);
-                                        sse.attackCount = (byte) MapleDataTool.getInt("attackCount", summon_data, 1);
-                                        sse.targetPlus = (byte) MapleDataTool.getInt("targetPlus", summon_data, 1);
-                                        if (summon_data.getChildByPath("range/lt") != null) {
-                                            MapleData ltd = summon_data.getChildByPath("range/lt");
-                                            sse.lt = (Point) ltd.getData();
-                                            sse.rb = (Point) summon_data.getChildByPath("range/rb").getData();
-                                        } else {
-                                            sse.lt = new Point(-100, -100);
-                                            sse.rb = new Point(100, 100);
-                                        }
-//                                        sse.range = (short) MapleDataTool.getInt("range/r", summon_data, 0);
-//                                        sse.delay = MapleDataTool.getInt("effectAfter", summon_data, 0) + MapleDataTool.getInt("attackAfter", summon_data, 0);
-//                                        sse.delay = MapleDataTool.getInt("bulletSpeed", summon_data, 0);
-                                        for (MapleData effect : summon_data) {
-                                            if (effect.getChildren().size() > 0) {
-                                                for (MapleData effectEntry : effect) {
-                                                    sse.delay += MapleDataTool.getIntConvert("delay", effectEntry, 0);
-                                                }
-                                            }
-                                        }
-                                        for (MapleData effect : data2.getChildByPath("summon/attack1")) {
-                                            sse.delay += MapleDataTool.getIntConvert("delay", effect, 0);
-                                        }
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            if (!jedis.exists(KEYNAMES.SKILL_DATA.getKeyName())) {
+                MapleDataDirectoryEntry root = datasource.getRoot();
+                int skillid;
+                MapleData summon_data;
+                Map<Integer, List<Integer>> skillsByJob = new HashMap<>();
+                for (MapleDataFileEntry topDir : root.getFiles()) { // Loop thru jobs
+                    if (topDir.getName().length() <= 10) {
+                        for (MapleData data : datasource.getData(topDir.getName())) { // Loop thru each jobs
+                            if (data.getName().equals("skill")) {
+                                for (MapleData data2 : data) { // Loop thru each jobs
+                                    if (data2 != null) {
+                                        skillid = Integer.parseInt(data2.getName());
+                                        Skill skil = Skill.loadFromData(skillid, data2, delayData);
+                                        skills.put(skillid, skil);
+                                        List<Integer> job = skillsByJob.computeIfAbsent(skillid / 10000, k -> new ArrayList<>());
+                                        job.add(skillid);
                                         try {
-                                            jedis.hset(KEYNAMES.SUMMON_SKILL_DATA.getKeyName(), data2.getName(), mapper.writeValueAsString(sse));
+                                            jedis.hset(KEYNAMES.SKILL_DATA.getKeyName(), String.valueOf(skillid), mapper.writeValueAsString(skil));
+                                            jedis.hset(KEYNAMES.SKILL_NAME.getKeyName(), String.valueOf(skillid), getName(skillid, stringData));
                                         } catch (JsonProcessingException e) {
                                             log.error("", e);
                                         }
-//                                        SummonSkillInformation.put(skillid, sse);
-                                    }
 
-                                    // 查找所有骑宠关联ID
-                                    for (MapleData data3 : data2) {
-                                        if (data3.getName().equals("vehicleID")) {
-                                            jedis.hset(KEYNAMES.MOUNT_ID.getKeyName(), data2.getName(), MapleDataTool.getString("vehicleID", data2, "0"));
+                                        summon_data = data2.getChildByPath("summon/attack1/info");
+                                        if (summon_data != null) {
+                                            SummonSkillEntry sse = new SummonSkillEntry();
+                                            sse.type = (byte) MapleDataTool.getInt("type", summon_data, 0);
+                                            sse.mobCount = (byte) MapleDataTool.getInt("mobCount", summon_data, 1);
+                                            sse.attackCount = (byte) MapleDataTool.getInt("attackCount", summon_data, 1);
+                                            sse.targetPlus = (byte) MapleDataTool.getInt("targetPlus", summon_data, 1);
+                                            if (summon_data.getChildByPath("range/lt") != null) {
+                                                MapleData ltd = summon_data.getChildByPath("range/lt");
+                                                sse.lt = (Point) ltd.getData();
+                                                sse.rb = (Point) summon_data.getChildByPath("range/rb").getData();
+                                            } else {
+                                                sse.lt = new Point(-100, -100);
+                                                sse.rb = new Point(100, 100);
+                                            }
+//                                        sse.range = (short) MapleDataTool.getInt("range/r", summon_data, 0);
+//                                        sse.delay = MapleDataTool.getInt("effectAfter", summon_data, 0) + MapleDataTool.getInt("attackAfter", summon_data, 0);
+//                                        sse.delay = MapleDataTool.getInt("bulletSpeed", summon_data, 0);
+                                            for (MapleData effect : summon_data) {
+                                                if (effect.getChildren().size() > 0) {
+                                                    for (MapleData effectEntry : effect) {
+                                                        sse.delay += MapleDataTool.getIntConvert("delay", effectEntry, 0);
+                                                    }
+                                                }
+                                            }
+                                            for (MapleData effect : data2.getChildByPath("summon/attack1")) {
+                                                sse.delay += MapleDataTool.getIntConvert("delay", effect, 0);
+                                            }
+                                            try {
+                                                jedis.hset(KEYNAMES.SUMMON_SKILL_DATA.getKeyName(), data2.getName(), mapper.writeValueAsString(sse));
+                                            } catch (JsonProcessingException e) {
+                                                log.error("", e);
+                                            }
+//                                        SummonSkillInformation.put(skillid, sse);
+                                        }
+
+                                        // 查找所有骑宠关联ID
+                                        for (MapleData data3 : data2) {
+                                            if (data3.getName().equals("vehicleID")) {
+                                                jedis.hset(KEYNAMES.MOUNT_ID.getKeyName(), data2.getName(), MapleDataTool.getString("vehicleID", data2, "0"));
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
-                    }
-                } else if (topDir.getName().startsWith("Familiar")) {
-                    for (MapleData data : datasource.getData(topDir.getName())) {
-                        FamiliarEntry skil = new FamiliarEntry();
-                        skil.prop = (byte) MapleDataTool.getInt("prop", data, 0);
-                        skil.time = (byte) MapleDataTool.getInt("time", data, 0);
-                        skil.attackCount = (byte) MapleDataTool.getInt("attackCount", data, 1);
-                        skil.targetCount = (byte) MapleDataTool.getInt("targetCount", data, 1);
-                        skil.speed = (byte) MapleDataTool.getInt("speed", data, 1);
-                        skil.knockback = MapleDataTool.getInt("knockback", data, 0) > 0 || MapleDataTool.getInt("attract", data, 0) > 0;
-                        if (data.getChildByPath("lt") != null) {
-                            skil.lt = (Point) data.getChildByPath("lt").getData();
-                            skil.rb = (Point) data.getChildByPath("rb").getData();
+                    } else if (topDir.getName().startsWith("Familiar")) {
+                        for (MapleData data : datasource.getData(topDir.getName())) {
+                            FamiliarEntry skil = new FamiliarEntry();
+                            skil.prop = (byte) MapleDataTool.getInt("prop", data, 0);
+                            skil.time = (byte) MapleDataTool.getInt("time", data, 0);
+                            skil.attackCount = (byte) MapleDataTool.getInt("attackCount", data, 1);
+                            skil.targetCount = (byte) MapleDataTool.getInt("targetCount", data, 1);
+                            skil.speed = (byte) MapleDataTool.getInt("speed", data, 1);
+                            skil.knockback = MapleDataTool.getInt("knockback", data, 0) > 0 || MapleDataTool.getInt("attract", data, 0) > 0;
+                            if (data.getChildByPath("lt") != null) {
+                                skil.lt = (Point) data.getChildByPath("lt").getData();
+                                skil.rb = (Point) data.getChildByPath("rb").getData();
+                            }
+                            if (MapleDataTool.getInt("stun", data, 0) > 0) {
+                                skil.status.add(MonsterStatus.MOB_STAT_Stun);
+                            }
+                            //if (MapleDataTool.getInt("poison", data, 0) > 0) {
+                            //	status.add(MonsterStatus.中毒);
+                            //}
+                            if (MapleDataTool.getInt("slow", data, 0) > 0) {
+                                skil.status.add(MonsterStatus.MOB_STAT_Speed);
+                            }
+                            try {
+                                jedis.hset(KEYNAMES.FAMILIAR_DATA.getKeyName(), data.getName(), mapper.writeValueAsString(skil));
+                            } catch (JsonProcessingException e) {
+                                e.printStackTrace();
+                            }
                         }
-                        if (MapleDataTool.getInt("stun", data, 0) > 0) {
-                            skil.status.add(MonsterStatus.MOB_STAT_Stun);
-                        }
-                        //if (MapleDataTool.getInt("poison", data, 0) > 0) {
-                        //	status.add(MonsterStatus.中毒);
-                        //}
-                        if (MapleDataTool.getInt("slow", data, 0) > 0) {
-                            skil.status.add(MonsterStatus.MOB_STAT_Speed);
-                        }
-                        try {
-                            jedis.hset(KEYNAMES.FAMILIAR_DATA.getKeyName(), data.getName(), mapper.writeValueAsString(skil));
-                        } catch (JsonProcessingException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                } else if (topDir.getName().startsWith("Recipe")) {
-                    for (MapleData data : datasource.getData(topDir.getName())) {
-                        skillid = Integer.parseInt(data.getName());
-                        CraftingEntry skil = new CraftingEntry(skillid, (byte) MapleDataTool.getInt("incFatigability", data, 0), (byte) MapleDataTool.getInt("reqSkillLevel", data, 0), (byte) MapleDataTool.getInt("incSkillProficiency", data, 0), MapleDataTool.getInt("needOpenItem", data, 0) > 0, MapleDataTool.getInt("period", data, 0));
-                        for (MapleData d : data.getChildByPath("target")) {
-                            skil.targetItems.add(new Triple<>(MapleDataTool.getInt("item", d, 0), MapleDataTool.getInt("count", d, 0), MapleDataTool.getInt("probWeight", d, 0)));
-                        }
-                        for (MapleData d : data.getChildByPath("recipe")) {
-                            skil.reqItems.put(MapleDataTool.getInt("item", d, 0), MapleDataTool.getInt("count", d, 0));
-                        }
+                    } else if (topDir.getName().startsWith("Recipe")) {
+                        for (MapleData data : datasource.getData(topDir.getName())) {
+                            skillid = Integer.parseInt(data.getName());
+                            CraftingEntry skil = new CraftingEntry(skillid, (byte) MapleDataTool.getInt("incFatigability", data, 0), (byte) MapleDataTool.getInt("reqSkillLevel", data, 0), (byte) MapleDataTool.getInt("incSkillProficiency", data, 0), MapleDataTool.getInt("needOpenItem", data, 0) > 0, MapleDataTool.getInt("period", data, 0));
+                            for (MapleData d : data.getChildByPath("target")) {
+                                skil.targetItems.add(new Triple<>(MapleDataTool.getInt("item", d, 0), MapleDataTool.getInt("count", d, 0), MapleDataTool.getInt("probWeight", d, 0)));
+                            }
+                            for (MapleData d : data.getChildByPath("recipe")) {
+                                skil.reqItems.put(MapleDataTool.getInt("item", d, 0), MapleDataTool.getInt("count", d, 0));
+                            }
 
-                        craftings.put(skillid, skil);
+                            craftings.put(skillid, skil);
 
-                        try {
-                            jedis.hset(KEYNAMES.CRAFT_DATA.getKeyName(), data.getName(), mapper.writeValueAsString(skil));
-                        } catch (JsonProcessingException e) {
-                            e.printStackTrace();
+                            try {
+                                jedis.hset(KEYNAMES.CRAFT_DATA.getKeyName(), data.getName(), mapper.writeValueAsString(skil));
+                            } catch (JsonProcessingException e) {
+                                e.printStackTrace();
+                            }
                         }
                     }
                 }
-            }
 
-            // SkillByJob 缓存到Redis
-            for (Entry<Integer, List<Integer>> entry : skillsByJob.entrySet()) {
-                try {
-                    jedis.hset(KEYNAMES.SKILL_BY_JOB.getKeyName(), String.valueOf(entry.getKey()), mapper.writeValueAsString(entry.getValue()));
-                } catch (JsonProcessingException e) {
-                    e.printStackTrace();
+                // SkillByJob 缓存到Redis
+                for (Entry<Integer, List<Integer>> entry : skillsByJob.entrySet()) {
+                    try {
+                        jedis.hset(KEYNAMES.SKILL_BY_JOB.getKeyName(), String.valueOf(entry.getKey()), mapper.writeValueAsString(entry.getValue()));
+                    } catch (JsonProcessingException e) {
+                        e.printStackTrace();
+                    }
                 }
-            }
 
-            // finalAttackSkills 缓存到Redis
-            finalAttackSkills.forEach(integer -> jedis.sadd(KEYNAMES.FINLA_ATTACK_SKILL.getKeyName(), integer.toString()));
-        } else {
-            Map<String, String> datas = jedis.hgetAll(KEYNAMES.SKILL_DATA.getKeyName());
+                // finalAttackSkills 缓存到Redis
+                finalAttackSkills.forEach(integer -> jedis.sadd(KEYNAMES.FINLA_ATTACK_SKILL.getKeyName(), integer.toString()));
+            } else {
+                Map<String, String> datas = jedis.hgetAll(KEYNAMES.SKILL_DATA.getKeyName());
 //            ForkJoinPool forkJoinPool = new ForkJoinPool(20);
 //            forkJoinPool.submit(() -> );
 //            forkJoinPool.shutdown();
 
-            datas.entrySet().parallelStream().forEach(k -> {
-                try {
-                    skills.put(Integer.valueOf(k.getKey()), JsonUtil.getMapperInstance().readValue(k.getValue(), Skill.class));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            });
+                datas.entrySet().parallelStream().forEach(k -> {
+                    try {
+                        skills.put(Integer.valueOf(k.getKey()), JsonUtil.getMapperInstance().readValue(k.getValue(), Skill.class));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                });
 
-            Map<String, String> datas_c = jedis.hgetAll(KEYNAMES.CRAFT_DATA.getKeyName());
-            datas_c.entrySet().parallelStream().forEach(k -> {
-                try {
-                    craftings.put(Integer.valueOf(k.getKey()), JsonUtil.getMapperInstance().readValue(k.getValue(), CraftingEntry.class));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            });
-            Set<String> smembers = jedis.smembers(KEYNAMES.FINLA_ATTACK_SKILL.getKeyName());
-            smembers.forEach(s -> finalAttackSkills.add(Integer.parseInt(s)));
+                Map<String, String> datas_c = jedis.hgetAll(KEYNAMES.CRAFT_DATA.getKeyName());
+                datas_c.entrySet().parallelStream().forEach(k -> {
+                    try {
+                        craftings.put(Integer.valueOf(k.getKey()), JsonUtil.getMapperInstance().readValue(k.getValue(), CraftingEntry.class));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                });
+                Set<String> smembers = jedis.smembers(KEYNAMES.FINLA_ATTACK_SKILL.getKeyName());
+                smembers.forEach(s -> finalAttackSkills.add(Integer.parseInt(s)));
+            }
+            finalAttackSkills.sort((o1, o2) -> o1.equals(o2) ? 0 : (o1 > o2 ? 1 : -1));
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        finalAttackSkills.sort((o1, o2) -> o1.equals(o2) ? 0 : (o1 > o2 ? 1 : -1));
     }
 
     public static void reloadSkills(int skillid) {
-        jedis.hdel(KEYNAMES.SKILL_DATA.getKeyName(), String.valueOf(skillid));
-        Skill skil = Skill.loadFromData(skillid, datasource.getData(String.valueOf(skillid / 10000) + ".img").getChildByPath("skill").getChildByPath(String.valueOf(skillid)), delayData);
-        skills.put(skillid, skil);
+        Jedis jedis = RedisUtil.getJedis();
         try {
-            jedis.hset(KEYNAMES.SKILL_DATA.getKeyName(), String.valueOf(skillid), mapper.writeValueAsString(skil));
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            jedis.hdel(KEYNAMES.SKILL_DATA.getKeyName(), String.valueOf(skillid));
+            Skill skil = Skill.loadFromData(skillid, datasource.getData(String.valueOf(skillid / 10000) + ".img").getChildByPath("skill").getChildByPath(String.valueOf(skillid)), delayData);
+            skills.put(skillid, skil);
+            try {
+                jedis.hset(KEYNAMES.SKILL_DATA.getKeyName(), String.valueOf(skillid), mapper.writeValueAsString(skil));
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
     }
 
     public static void loadMemorySkills() {
-        if (!jedis.exists(KEYNAMES.MEMORYSKILL_DATA.getKeyName())) {
-            try (DruidPooledConnection con = DatabaseConnection.getInstance().getConnection()) {
-                try (PreparedStatement ps = con.prepareStatement("SELECT * FROM memoryskills")) {
-                    try (ResultSet rs = ps.executeQuery()) {
-                        while (rs.next()) {
-                            int skillId = rs.getInt("skillid");
-                            Skill skill = SkillFactory.getSkill(skillId);
-                            /*
-                             * 如果复制技能中已经有这个技能 或者 这个技能不存在 或者 这个技能不是冒险家职业技能 就跳过不加载
-                             */
-                            if (jedis.hexists(KEYNAMES.MEMORYSKILL_DATA.getKeyName(), String.valueOf(skillId)) || skill == null || skill.getSkillByJobBook(skillId) == -1) {
-                                continue;
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            if (!jedis.exists(KEYNAMES.MEMORYSKILL_DATA.getKeyName())) {
+                try (DruidPooledConnection con = DatabaseConnection.getInstance().getConnection()) {
+                    try (PreparedStatement ps = con.prepareStatement("SELECT * FROM memoryskills")) {
+                        try (ResultSet rs = ps.executeQuery()) {
+                            while (rs.next()) {
+                                int skillId = rs.getInt("skillid");
+                                Skill skill = SkillFactory.getSkill(skillId);
+                                /*
+                                 * 如果复制技能中已经有这个技能 或者 这个技能不存在 或者 这个技能不是冒险家职业技能 就跳过不加载
+                                 */
+                                if (jedis.hexists(KEYNAMES.MEMORYSKILL_DATA.getKeyName(), String.valueOf(skillId)) || skill == null || skill.getSkillByJobBook(skillId) == -1) {
+                                    continue;
+                                }
+                                jedis.hset(KEYNAMES.MEMORYSKILL_DATA.getKeyName(), String.valueOf(skillId), String.valueOf(skill.getSkillByJobBook(skillId)));
                             }
-                            jedis.hset(KEYNAMES.MEMORYSKILL_DATA.getKeyName(), String.valueOf(skillId), String.valueOf(skill.getSkillByJobBook(skillId)));
                         }
                     }
+                } catch (SQLException e) {
+                    e.printStackTrace();
                 }
-            } catch (SQLException e) {
-                e.printStackTrace();
             }
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
     }
 
@@ -256,42 +276,67 @@ public class SkillFactory {
     }
 
     public static int getIdFromSkillId(int skillId) {
-        String ret = jedis.hget(KEYNAMES.MEMORYSKILL_DATA.getKeyName(), String.valueOf(skillId));
-        return ret != null ? Integer.valueOf(ret) : 0;
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            String ret = jedis.hget(KEYNAMES.MEMORYSKILL_DATA.getKeyName(), String.valueOf(skillId));
+            return ret != null ? Integer.valueOf(ret) : 0;
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public static boolean isMemorySkill(int skillId) {
-        return jedis.hexists(KEYNAMES.MEMORYSKILL_DATA.getKeyName(), String.valueOf(skillId));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hexists(KEYNAMES.MEMORYSKILL_DATA.getKeyName(), String.valueOf(skillId));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public static List<Integer> getSkillsByJob(int jobId) {
-        List<Integer> ret = null;
-        String data = jedis.hget(KEYNAMES.SKILL_BY_JOB.getKeyName(), String.valueOf(jobId));
-        if (data != null) {
-            try {
-                ret = mapper.readValue(data, new TypeReference<List<Integer>>() {
-                });
-            } catch (IOException e) {
-                e.printStackTrace();
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            List<Integer> ret = null;
+            String data = jedis.hget(KEYNAMES.SKILL_BY_JOB.getKeyName(), String.valueOf(jobId));
+            if (data != null) {
+                try {
+                    ret = mapper.readValue(data, new TypeReference<List<Integer>>() {
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     public static String getSkillName(int id) {
-        return jedis.hget(KEYNAMES.SKILL_NAME.getKeyName(), String.valueOf(id));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hget(KEYNAMES.SKILL_NAME.getKeyName(), String.valueOf(id));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public static Integer getDelay(String id) {
-        Delay delay = Delay.fromString(id);
-        if (delay != null) {
-            return delay.i;
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            Delay delay = Delay.fromString(id);
+            if (delay != null) {
+                return delay.i;
+            }
+            String data = jedis.hget(KEYNAMES.DELAYS.getKeyName(), id);
+            if (data != null) {
+                return Integer.valueOf(data);
+            }
+            return null;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        String data = jedis.hget(KEYNAMES.DELAYS.getKeyName(), id);
-        if (data != null) {
-            return Integer.valueOf(data);
-        }
-        return null;
     }
 
     private static String getName(int id, MapleData stringData) {
@@ -325,17 +370,22 @@ public class SkillFactory {
     }
 
     public static SummonSkillEntry getSummonData(int skillid) {
-        SummonSkillEntry ret = null;
+        Jedis jedis = RedisUtil.getJedis();
         try {
-            String data = jedis.hget(KEYNAMES.SUMMON_SKILL_DATA.getKeyName(), String.valueOf(skillid));
-            if (data == null) {
-                return null;
+            SummonSkillEntry ret = null;
+            try {
+                String data = jedis.hget(KEYNAMES.SUMMON_SKILL_DATA.getKeyName(), String.valueOf(skillid));
+                if (data == null) {
+                    return null;
+                }
+                ret = mapper.readValue(data, SummonSkillEntry.class);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-            ret = mapper.readValue(data, SummonSkillEntry.class);
-        } catch (IOException e) {
-            e.printStackTrace();
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     /**
@@ -344,12 +394,17 @@ public class SkillFactory {
      * @return
      */
     public static Map<Integer, String> getAllSkills() {
-        Map<Integer, String> ret = new HashMap<>();
-        Map<String, String> result = jedis.hgetAll(KEYNAMES.SKILL_NAME.getKeyName());
-        for (Entry<String, String> entry : result.entrySet()) {
-            ret.put(Integer.valueOf(entry.getKey()), entry.getValue());
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            Map<Integer, String> ret = new HashMap<>();
+            Map<String, String> result = jedis.hgetAll(KEYNAMES.SKILL_NAME.getKeyName());
+            for (Entry<String, String> entry : result.entrySet()) {
+                ret.put(Integer.valueOf(entry.getKey()), entry.getValue());
+            }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     public static Skill getSkill(int skillid) {
@@ -391,29 +446,39 @@ public class SkillFactory {
     }
 
     public static CraftingEntry getCraft(int id) {
-        CraftingEntry ret = null;
-        String data = jedis.hget(KEYNAMES.CRAFT_DATA.getKeyName(), String.valueOf(id));
-        if (data != null) {
-            try {
-                ret = mapper.readValue(data, CraftingEntry.class);
-            } catch (IOException e) {
-                e.printStackTrace();
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            CraftingEntry ret = null;
+            String data = jedis.hget(KEYNAMES.CRAFT_DATA.getKeyName(), String.valueOf(id));
+            if (data != null) {
+                try {
+                    ret = mapper.readValue(data, CraftingEntry.class);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     public static FamiliarEntry getFamiliar(int id) {
-        FamiliarEntry ret = null;
-        String data = jedis.hget(KEYNAMES.FAMILIAR_DATA.getKeyName(), String.valueOf(id));
-        if (data != null) {
-            try {
-                ret = mapper.readValue(data, FamiliarEntry.class);
-            } catch (IOException e) {
-                e.printStackTrace();
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            FamiliarEntry ret = null;
+            String data = jedis.hget(KEYNAMES.FAMILIAR_DATA.getKeyName(), String.valueOf(id));
+            if (data != null) {
+                try {
+                    ret = mapper.readValue(data, FamiliarEntry.class);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     /**
@@ -451,12 +516,17 @@ public class SkillFactory {
     }
 
     public static int getMountLinkId(int mountid) {
-        int ret = 0;
-        String data = jedis.hget(KEYNAMES.MOUNT_ID.getKeyName(), String.valueOf(mountid));
-        if (data != null) {
-            ret = Integer.parseInt(data);
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            int ret = 0;
+            String data = jedis.hget(KEYNAMES.MOUNT_ID.getKeyName(), String.valueOf(mountid));
+            if (data != null) {
+                ret = Integer.parseInt(data);
+            }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     public static List<Integer> getFinalAttackSkills() {
