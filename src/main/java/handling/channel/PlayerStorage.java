@@ -318,10 +318,11 @@ public class PlayerStorage {
     }
 
     public class UpdateCacheTask implements Runnable {
-        private final Jedis jedis = RedisUtil.getJedis();
+//        private final Jedis jedis = RedisUtil.getJedis();
 
         @Override
         public void run() {
+            Jedis jedis = RedisUtil.getJedis();
             try {
                 for (Entry<Integer, MapleCharacter> entry : idToChar.entrySet()) {
                     CharacterTransfer ct = new CharacterTransfer(entry.getValue());
@@ -329,6 +330,8 @@ public class PlayerStorage {
                 }
             } catch (JsonProcessingException e) {
                 log.error("更新缓存出错", e);
+            }finally {
+                RedisUtil.returnResource(jedis);
             }
         }
     }

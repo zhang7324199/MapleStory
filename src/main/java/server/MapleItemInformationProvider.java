@@ -55,7 +55,7 @@ public class MapleItemInformationProvider {
     protected final Map<Integer, VCoreDataEntry> vcoreDatas = new HashMap<>();
     protected final Map<String, List<VCoreDataEntry>> vcoreDatas_s = new HashMap<>();
     private final ObjectMapper mapper = JsonUtil.getMapperInstance();
-    private final Jedis jedis = RedisUtil.getJedis();
+//    private final Jedis jedis = RedisUtil.getJedis();
 
     public static MapleItemInformationProvider getInstance() {
         return instance;
@@ -320,68 +320,74 @@ public class MapleItemInformationProvider {
      * 加载套装属性
      */
     public void loadSetItemData() {
-        if (!jedis.exists(KEYNAMES.SETITEM_DATA.getKeyName())) {
-            MapleData setsData = etcData.getData("SetItemInfo.img");
-            StructSetItem SetItem;
-            StructSetItemStat SetItemStat;
-            for (MapleData dat : setsData) {
-                SetItem = new StructSetItem();
-                SetItem.setItemID = Integer.parseInt(dat.getName()); //套装ID
-                SetItem.setItemName = MapleDataTool.getString("setItemName", dat, ""); //套装名字
-                SetItem.completeCount = (byte) MapleDataTool.getIntConvert("completeCount", dat, 0); //套装总数
-                for (MapleData level : dat.getChildByPath("ItemID")) {
-                    if (level.getType() != MapleDataType.INT) {
-                        for (MapleData leve : level) {
-                            if (!leve.getName().equals("representName") && !leve.getName().equals("typeName")) {
-                                try {
-                                    SetItem.itemIDs.add(MapleDataTool.getIntConvert(leve));
-                                } catch (Exception e) {
-                                    System.err.println("出错数据： leve = " + leve.getData());
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            if (!jedis.exists(KEYNAMES.SETITEM_DATA.getKeyName())) {
+                MapleData setsData = etcData.getData("SetItemInfo.img");
+                StructSetItem SetItem;
+                StructSetItemStat SetItemStat;
+                for (MapleData dat : setsData) {
+                    SetItem = new StructSetItem();
+                    SetItem.setItemID = Integer.parseInt(dat.getName()); //套装ID
+                    SetItem.setItemName = MapleDataTool.getString("setItemName", dat, ""); //套装名字
+                    SetItem.completeCount = (byte) MapleDataTool.getIntConvert("completeCount", dat, 0); //套装总数
+                    for (MapleData level : dat.getChildByPath("ItemID")) {
+                        if (level.getType() != MapleDataType.INT) {
+                            for (MapleData leve : level) {
+                                if (!leve.getName().equals("representName") && !leve.getName().equals("typeName")) {
+                                    try {
+                                        SetItem.itemIDs.add(MapleDataTool.getIntConvert(leve));
+                                    } catch (Exception e) {
+                                        System.err.println("出错数据： leve = " + leve.getData());
+                                    }
                                 }
                             }
+                        } else {
+                            SetItem.itemIDs.add(MapleDataTool.getInt(level));
                         }
-                    } else {
-                        SetItem.itemIDs.add(MapleDataTool.getInt(level));
+                    }
+                    for (MapleData level : dat.getChildByPath("Effect")) {
+                        SetItemStat = new StructSetItemStat();
+                        SetItemStat.incSTR = MapleDataTool.getIntConvert("incSTR", level, 0);
+                        SetItemStat.incDEX = MapleDataTool.getIntConvert("incDEX", level, 0);
+                        SetItemStat.incINT = MapleDataTool.getIntConvert("incINT", level, 0);
+                        SetItemStat.incLUK = MapleDataTool.getIntConvert("incLUK", level, 0);
+                        SetItemStat.incMHP = MapleDataTool.getIntConvert("incMHP", level, 0);
+                        SetItemStat.incMMP = MapleDataTool.getIntConvert("incMMP", level, 0);
+                        SetItemStat.incMHPr = MapleDataTool.getIntConvert("incMHPr", level, 0);
+                        SetItemStat.incMMPr = MapleDataTool.getIntConvert("incMMPr", level, 0);
+                        SetItemStat.incACC = MapleDataTool.getIntConvert("incACC", level, 0);
+                        SetItemStat.incEVA = MapleDataTool.getIntConvert("incEVA", level, 0);
+                        SetItemStat.incPDD = MapleDataTool.getIntConvert("incPDD", level, 0);
+                        SetItemStat.incMDD = MapleDataTool.getIntConvert("incMDD", level, 0);
+                        SetItemStat.incPAD = MapleDataTool.getIntConvert("incPAD", level, 0);
+                        SetItemStat.incMAD = MapleDataTool.getIntConvert("incMAD", level, 0);
+                        SetItemStat.incJump = MapleDataTool.getIntConvert("incJump", level, 0);
+                        SetItemStat.incSpeed = MapleDataTool.getIntConvert("incSpeed", level, 0);
+                        SetItemStat.incAllStat = MapleDataTool.getIntConvert("incAllStat", level, 0);
+                        SetItemStat.incPQEXPr = MapleDataTool.getIntConvert("incPQEXPr", level, 0);
+                        SetItemStat.incPVPDamage = MapleDataTool.getIntConvert("incPVPDamage", level, 0);
+                        SetItemStat.option1 = MapleDataTool.getIntConvert("Option/1/option", level, 0);
+                        SetItemStat.option2 = MapleDataTool.getIntConvert("Option/2/option", level, 0);
+                        SetItemStat.option3 = MapleDataTool.getIntConvert("Option/3/option", level, 0);
+                        SetItemStat.option1Level = MapleDataTool.getIntConvert("Option/1/level", level, 0);
+                        SetItemStat.option2Level = MapleDataTool.getIntConvert("Option/2/level", level, 0);
+                        SetItemStat.option3Level = MapleDataTool.getIntConvert("Option/3/level", level, 0);
+                        SetItemStat.skillId = MapleDataTool.getIntConvert("activeSkill/0/id", level, 0);
+                        SetItemStat.skillLevel = MapleDataTool.getIntConvert("activeSkill/0/level", level, 0);
+                        SetItem.setItemStat.put(Integer.parseInt(level.getName()), SetItemStat); //[激活属性的数量] [激活后的套装加成属性]
+                    }
+                    try {
+                        jedis.hset(KEYNAMES.SETITEM_DATA.getKeyName(), dat.getName(), mapper.writeValueAsString(SetItem));
+                    } catch (JsonProcessingException e) {
+                        e.printStackTrace();
                     }
                 }
-                for (MapleData level : dat.getChildByPath("Effect")) {
-                    SetItemStat = new StructSetItemStat();
-                    SetItemStat.incSTR = MapleDataTool.getIntConvert("incSTR", level, 0);
-                    SetItemStat.incDEX = MapleDataTool.getIntConvert("incDEX", level, 0);
-                    SetItemStat.incINT = MapleDataTool.getIntConvert("incINT", level, 0);
-                    SetItemStat.incLUK = MapleDataTool.getIntConvert("incLUK", level, 0);
-                    SetItemStat.incMHP = MapleDataTool.getIntConvert("incMHP", level, 0);
-                    SetItemStat.incMMP = MapleDataTool.getIntConvert("incMMP", level, 0);
-                    SetItemStat.incMHPr = MapleDataTool.getIntConvert("incMHPr", level, 0);
-                    SetItemStat.incMMPr = MapleDataTool.getIntConvert("incMMPr", level, 0);
-                    SetItemStat.incACC = MapleDataTool.getIntConvert("incACC", level, 0);
-                    SetItemStat.incEVA = MapleDataTool.getIntConvert("incEVA", level, 0);
-                    SetItemStat.incPDD = MapleDataTool.getIntConvert("incPDD", level, 0);
-                    SetItemStat.incMDD = MapleDataTool.getIntConvert("incMDD", level, 0);
-                    SetItemStat.incPAD = MapleDataTool.getIntConvert("incPAD", level, 0);
-                    SetItemStat.incMAD = MapleDataTool.getIntConvert("incMAD", level, 0);
-                    SetItemStat.incJump = MapleDataTool.getIntConvert("incJump", level, 0);
-                    SetItemStat.incSpeed = MapleDataTool.getIntConvert("incSpeed", level, 0);
-                    SetItemStat.incAllStat = MapleDataTool.getIntConvert("incAllStat", level, 0);
-                    SetItemStat.incPQEXPr = MapleDataTool.getIntConvert("incPQEXPr", level, 0);
-                    SetItemStat.incPVPDamage = MapleDataTool.getIntConvert("incPVPDamage", level, 0);
-                    SetItemStat.option1 = MapleDataTool.getIntConvert("Option/1/option", level, 0);
-                    SetItemStat.option2 = MapleDataTool.getIntConvert("Option/2/option", level, 0);
-                    SetItemStat.option3 = MapleDataTool.getIntConvert("Option/3/option", level, 0);
-                    SetItemStat.option1Level = MapleDataTool.getIntConvert("Option/1/level", level, 0);
-                    SetItemStat.option2Level = MapleDataTool.getIntConvert("Option/2/level", level, 0);
-                    SetItemStat.option3Level = MapleDataTool.getIntConvert("Option/3/level", level, 0);
-                    SetItemStat.skillId = MapleDataTool.getIntConvert("activeSkill/0/id", level, 0);
-                    SetItemStat.skillLevel = MapleDataTool.getIntConvert("activeSkill/0/level", level, 0);
-                    SetItem.setItemStat.put(Integer.parseInt(level.getName()), SetItemStat); //[激活属性的数量] [激活后的套装加成属性]
-                }
-                try {
-                    jedis.hset(KEYNAMES.SETITEM_DATA.getKeyName(), dat.getName(), mapper.writeValueAsString(SetItem));
-                } catch (JsonProcessingException e) {
-                    e.printStackTrace();
-                }
             }
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
+
 
     }
 
@@ -389,49 +395,54 @@ public class MapleItemInformationProvider {
      * 加载潜能数据
      */
     public void loadPotentialData() {
-        if (!jedis.exists(KEYNAMES.POTENTIAL_DATA.getKeyName())) {
-            StructItemOption item;
-            MapleData potsData = itemData.getData("ItemOption.img");
-            List<StructItemOption> items;
-            for (MapleData dat : potsData) {
-                items = new LinkedList<>();
-                for (MapleData potLevel : dat.getChildByPath("level")) {
-                    item = new StructItemOption();
-                    item.opID = Integer.parseInt(dat.getName());
-                    item.optionType = MapleDataTool.getIntConvert("info/optionType", dat, 0);
-                    item.reqLevel = MapleDataTool.getIntConvert("info/reqLevel", dat, 0);
-                    item.opString = MapleDataTool.getString("info/string", dat, "");
-                    for (String i : StructItemOption.types) {
-                        if (i.equals("face")) {
-                            item.face = MapleDataTool.getString("face", potLevel, "");
-                        } else {
-                            int level = MapleDataTool.getIntConvert(i, potLevel, 0);
-                            if (level > 0) { // Save memory
-                                item.data.put(i, level);
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            if (!jedis.exists(KEYNAMES.POTENTIAL_DATA.getKeyName())) {
+                StructItemOption item;
+                MapleData potsData = itemData.getData("ItemOption.img");
+                List<StructItemOption> items;
+                for (MapleData dat : potsData) {
+                    items = new LinkedList<>();
+                    for (MapleData potLevel : dat.getChildByPath("level")) {
+                        item = new StructItemOption();
+                        item.opID = Integer.parseInt(dat.getName());
+                        item.optionType = MapleDataTool.getIntConvert("info/optionType", dat, 0);
+                        item.reqLevel = MapleDataTool.getIntConvert("info/reqLevel", dat, 0);
+                        item.opString = MapleDataTool.getString("info/string", dat, "");
+                        for (String i : StructItemOption.types) {
+                            if (i.equals("face")) {
+                                item.face = MapleDataTool.getString("face", potLevel, "");
+                            } else {
+                                int level = MapleDataTool.getIntConvert(i, potLevel, 0);
+                                if (level > 0) { // Save memory
+                                    item.data.put(i, level);
+                                }
                             }
                         }
+                        switch (item.opID) {
+                            case 31001: //可以使用好用的轻功技能
+                            case 31002: //可以使用好用的时空门技能
+                            case 31003: //可以使用好用的火眼晶晶技能
+                            case 31004: //可以使用好用的神圣之火技能
+                                item.data.put("skillID", (item.opID - 23001));
+                                break;
+                            case 41005: //可以使用强化战斗命令技能
+                            case 41006: //可以使用强化进阶祝福技能
+                            case 41007: //可以使用强化极速领域技能
+                                item.data.put("skillID", (item.opID - 33001));
+                                break;
+                        }
+                        items.add(item);
                     }
-                    switch (item.opID) {
-                        case 31001: //可以使用好用的轻功技能
-                        case 31002: //可以使用好用的时空门技能
-                        case 31003: //可以使用好用的火眼晶晶技能
-                        case 31004: //可以使用好用的神圣之火技能
-                            item.data.put("skillID", (item.opID - 23001));
-                            break;
-                        case 41005: //可以使用强化战斗命令技能
-                        case 41006: //可以使用强化进阶祝福技能
-                        case 41007: //可以使用强化极速领域技能
-                            item.data.put("skillID", (item.opID - 33001));
-                            break;
+                    try {
+                        jedis.hset(KEYNAMES.POTENTIAL_DATA.getKeyName(), String.valueOf(Integer.valueOf(dat.getName())), mapper.writeValueAsString(items));
+                    } catch (JsonProcessingException e) {
+                        e.printStackTrace();
                     }
-                    items.add(item);
-                }
-                try {
-                    jedis.hset(KEYNAMES.POTENTIAL_DATA.getKeyName(), String.valueOf(Integer.valueOf(dat.getName())), mapper.writeValueAsString(items));
-                } catch (JsonProcessingException e) {
-                    e.printStackTrace();
                 }
             }
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
     }
 
@@ -439,50 +450,55 @@ public class MapleItemInformationProvider {
      * 加载星岩数据
      */
     public void loadSocketData() {
-        if (!jedis.exists(KEYNAMES.SOCKET_DATA.getKeyName())) {
-            MapleData nebuliteData = itemData.getData("Install/0306.img");
-            StructItemOption item;
-            for (MapleData dat : nebuliteData) {
-                item = new StructItemOption();
-                item.opID = Integer.parseInt(dat.getName()); // Item Id
-                item.optionType = MapleDataTool.getInt("optionType", dat.getChildByPath("socket"), 0);
-                for (MapleData info : dat.getChildByPath("socket/option")) {
-                    String optionString = MapleDataTool.getString("optionString", info, "");
-                    int level = MapleDataTool.getInt("level", info, 0);
-                    if (level > 0) { // Save memory
-                        item.data.put(optionString, level);
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            if (!jedis.exists(KEYNAMES.SOCKET_DATA.getKeyName())) {
+                MapleData nebuliteData = itemData.getData("Install/0306.img");
+                StructItemOption item;
+                for (MapleData dat : nebuliteData) {
+                    item = new StructItemOption();
+                    item.opID = Integer.parseInt(dat.getName()); // Item Id
+                    item.optionType = MapleDataTool.getInt("optionType", dat.getChildByPath("socket"), 0);
+                    for (MapleData info : dat.getChildByPath("socket/option")) {
+                        String optionString = MapleDataTool.getString("optionString", info, "");
+                        int level = MapleDataTool.getInt("level", info, 0);
+                        if (level > 0) { // Save memory
+                            item.data.put(optionString, level);
+                        }
+                    }
+                    switch (item.opID) {
+                        case 3063370: // Haste
+                            item.data.put("skillID", 8000);
+                            break;
+                        case 3063380: // Mystic Door
+                            item.data.put("skillID", 8001);
+                            break;
+                        case 3063390: // Sharp Eyes
+                            item.data.put("skillID", 8002);
+                            break;
+                        case 3063400: // Hyper Body
+                            item.data.put("skillID", 8003);
+                            break;
+                        case 3064470: // Combat Orders
+                            item.data.put("skillID", 8004);
+                            break;
+                        case 3064480: // Advanced Blessing
+                            item.data.put("skillID", 8005);
+                            break;
+                        case 3064490: // Speed Infusion
+                            item.data.put("skillID", 8006);
+                            break;
+                    }
+                    try {
+                        jedis.hset(KEYNAMES.SOCKET_DATA.getKeyName() + ":" + ItemConstants.getNebuliteGrade(item.opID), String.valueOf(item.opID), mapper.writeValueAsString(item));
+                    } catch (JsonProcessingException e) {
+                        e.printStackTrace();
                     }
                 }
-                switch (item.opID) {
-                    case 3063370: // Haste
-                        item.data.put("skillID", 8000);
-                        break;
-                    case 3063380: // Mystic Door
-                        item.data.put("skillID", 8001);
-                        break;
-                    case 3063390: // Sharp Eyes
-                        item.data.put("skillID", 8002);
-                        break;
-                    case 3063400: // Hyper Body
-                        item.data.put("skillID", 8003);
-                        break;
-                    case 3064470: // Combat Orders
-                        item.data.put("skillID", 8004);
-                        break;
-                    case 3064480: // Advanced Blessing
-                        item.data.put("skillID", 8005);
-                        break;
-                    case 3064490: // Speed Infusion
-                        item.data.put("skillID", 8006);
-                        break;
-                }
-                try {
-                    jedis.hset(KEYNAMES.SOCKET_DATA.getKeyName() + ":" + ItemConstants.getNebuliteGrade(item.opID), String.valueOf(item.opID), mapper.writeValueAsString(item));
-                } catch (JsonProcessingException e) {
-                    e.printStackTrace();
-                }
+                jedis.set(KEYNAMES.SOCKET_DATA.getKeyName(), "true");
             }
-            jedis.set(KEYNAMES.SOCKET_DATA.getKeyName(), "true");
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
 
     }
@@ -492,103 +508,108 @@ public class MapleItemInformationProvider {
     }
 
     public void runItems() {
-        /*
-         * 读取所有物品名称、描述
-         */
-        if (!jedis.exists(KEYNAMES.ITEM_DATA.getKeyName())) {
-            List<Pair<String, String>> types = Arrays.asList(
-                    new Pair<>(KEYNAMES.ITEM_NAME.getKeyName(), "name"),
-                    new Pair<>(KEYNAMES.ITEM_DESC.getKeyName(), "desc"),
-                    new Pair<>(KEYNAMES.ITEM_MSG.getKeyName(), "msg"));
-            List<MapleData> mapleDatas = new ArrayList<>();
-            for (MapleDataFileEntry filedata : stringData.getRoot().getFiles()) {
-                switch (filedata.getName()) {
-                    case "Eqp.img": {
-                        MapleData data = stringData.getData(filedata.getName()).getChildByPath("Eqp");
-                        for (MapleData typedata : data.getChildren()) {
-                            mapleDatas.addAll(typedata.getChildren());
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            /*
+             * 读取所有物品名称、描述
+             */
+            if (!jedis.exists(KEYNAMES.ITEM_DATA.getKeyName())) {
+                List<Pair<String, String>> types = Arrays.asList(
+                        new Pair<>(KEYNAMES.ITEM_NAME.getKeyName(), "name"),
+                        new Pair<>(KEYNAMES.ITEM_DESC.getKeyName(), "desc"),
+                        new Pair<>(KEYNAMES.ITEM_MSG.getKeyName(), "msg"));
+                List<MapleData> mapleDatas = new ArrayList<>();
+                for (MapleDataFileEntry filedata : stringData.getRoot().getFiles()) {
+                    switch (filedata.getName()) {
+                        case "Eqp.img": {
+                            MapleData data = stringData.getData(filedata.getName()).getChildByPath("Eqp");
+                            for (MapleData typedata : data.getChildren()) {
+                                mapleDatas.addAll(typedata.getChildren());
+                            }
+                            break;
                         }
-                        break;
-                    }
-                    case "Consume.img":
-                    case "Ins.img":
-                    case "Etc.img":
-                    case "Cash.img":
-                    case "Pet.img": {
-                        MapleData data = filedata.getName().startsWith("Etc") ? stringData.getData(filedata.getName()).getChildByPath("Etc") : stringData.getData(filedata.getName());
-                        mapleDatas.addAll(data.getChildren());
-                        break;
-                    }
+                        case "Consume.img":
+                        case "Ins.img":
+                        case "Etc.img":
+                        case "Cash.img":
+                        case "Pet.img": {
+                            MapleData data = filedata.getName().startsWith("Etc") ? stringData.getData(filedata.getName()).getChildByPath("Etc") : stringData.getData(filedata.getName());
+                            mapleDatas.addAll(data.getChildren());
+                            break;
+                        }
 
-                    default:
-                        break;
+                        default:
+                            break;
+                    }
                 }
-            }
 
-            for (MapleData namedata : mapleDatas) {
-                String itemid = namedata.getName();
-                if (itemid.substring(0, 1).equals("0")) {
-                    itemid = itemid.substring(1, itemid.length());
+                for (MapleData namedata : mapleDatas) {
+                    String itemid = namedata.getName();
+                    if (itemid.substring(0, 1).equals("0")) {
+                        itemid = itemid.substring(1, itemid.length());
+                    }
+                    for (Pair<String, String> type : types) {
+                        jedis.hset(type.getLeft(), itemid, MapleDataTool.getString(namedata.getChildByPath(type.getRight()), ""));
+                    }
                 }
-                for (Pair<String, String> type : types) {
-                    jedis.hset(type.getLeft(), itemid, MapleDataTool.getString(namedata.getChildByPath(type.getRight()), ""));
-                }
-            }
 
             /*
               Load Item Data
              */
-            List<MapleDataProvider> dataProviders = new LinkedList<>();
-            dataProviders.add(chrData);
-            dataProviders.add(itemData);
-            Map<String, String> itemDataMap = new HashMap<>();
-            Map<String, String> specialItemNameMap = new HashMap<>();
-            Map<String, String> specialItemDescMap = new HashMap<>();
-            for (MapleDataProvider dataProvider : dataProviders) {
-                for (MapleDataDirectoryEntry topDir : dataProvider.getRoot().getSubdirectories()) {
-                    boolean isSpecial = topDir.getName().equals("Special");
-                    if (!topDir.getName().equalsIgnoreCase("Hair") && !topDir.getName().equalsIgnoreCase("Face") && !topDir.getName().equalsIgnoreCase("Afterimage")) {
-                        for (MapleDataFileEntry ifile : topDir.getFiles()) {
-                            MapleData iz = dataProvider.getData(topDir.getName() + "/" + ifile.getName());
-                            if (dataProvider.equals(chrData) || topDir.getName().equals("Pet")) {
-                                addItemDataToRedis(iz, itemDataMap, false, specialItemNameMap, specialItemDescMap);
-                            } else {
-                                for (MapleData data : iz) {
-                                    addItemDataToRedis(data, itemDataMap, isSpecial, specialItemNameMap, specialItemDescMap);
+                List<MapleDataProvider> dataProviders = new LinkedList<>();
+                dataProviders.add(chrData);
+                dataProviders.add(itemData);
+                Map<String, String> itemDataMap = new HashMap<>();
+                Map<String, String> specialItemNameMap = new HashMap<>();
+                Map<String, String> specialItemDescMap = new HashMap<>();
+                for (MapleDataProvider dataProvider : dataProviders) {
+                    for (MapleDataDirectoryEntry topDir : dataProvider.getRoot().getSubdirectories()) {
+                        boolean isSpecial = topDir.getName().equals("Special");
+                        if (!topDir.getName().equalsIgnoreCase("Hair") && !topDir.getName().equalsIgnoreCase("Face") && !topDir.getName().equalsIgnoreCase("Afterimage")) {
+                            for (MapleDataFileEntry ifile : topDir.getFiles()) {
+                                MapleData iz = dataProvider.getData(topDir.getName() + "/" + ifile.getName());
+                                if (dataProvider.equals(chrData) || topDir.getName().equals("Pet")) {
+                                    addItemDataToRedis(iz, itemDataMap, false, specialItemNameMap, specialItemDescMap);
+                                } else {
+                                    for (MapleData data : iz) {
+                                        addItemDataToRedis(data, itemDataMap, isSpecial, specialItemNameMap, specialItemDescMap);
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
 
-            jedis.hmset(KEYNAMES.ITEM_DATA.getKeyName(), itemDataMap);
-            if (!specialItemNameMap.isEmpty()) {
-                jedis.hmset(KEYNAMES.ITEM_NAME.getKeyName(), specialItemNameMap);
-            }
-            if (!specialItemDescMap.isEmpty()) {
-                jedis.hmset(KEYNAMES.ITEM_DESC.getKeyName(), specialItemDescMap);
-            }
-            log.info("共加载 " + jedis.hlen(KEYNAMES.ITEM_DATA.getKeyName()) + " 个道具信息.");
+                jedis.hmset(KEYNAMES.ITEM_DATA.getKeyName(), itemDataMap);
+                if (!specialItemNameMap.isEmpty()) {
+                    jedis.hmset(KEYNAMES.ITEM_NAME.getKeyName(), specialItemNameMap);
+                }
+                if (!specialItemDescMap.isEmpty()) {
+                    jedis.hmset(KEYNAMES.ITEM_DESC.getKeyName(), specialItemDescMap);
+                }
+                log.info("共加载 " + jedis.hlen(KEYNAMES.ITEM_DATA.getKeyName()) + " 个道具信息.");
 
             /*
               加载发型脸型
              */
-            MapleDataDirectoryEntry root = chrData.getRoot();
-            for (MapleDataDirectoryEntry topDir : root.getSubdirectories()) {
-                if (!topDir.getName().equals("Face") && !topDir.getName().equals("Hair")) {
-                    continue;
-                }
-                for (MapleDataFileEntry iFile : topDir.getFiles()) {
-                    String idstr = iFile.getName().substring(3, 8);
-                    if (idstr.equals("CommonFa")) {
+                MapleDataDirectoryEntry root = chrData.getRoot();
+                for (MapleDataDirectoryEntry topDir : root.getSubdirectories()) {
+                    if (!topDir.getName().equals("Face") && !topDir.getName().equals("Hair")) {
                         continue;
                     }
-                    jedis.lpush(KEYNAMES.HAIR_FACE_ID.getKeyName(), idstr);
+                    for (MapleDataFileEntry iFile : topDir.getFiles()) {
+                        String idstr = iFile.getName().substring(3, 8);
+                        if (idstr.equals("CommonFa")) {
+                            continue;
+                        }
+                        jedis.lpush(KEYNAMES.HAIR_FACE_ID.getKeyName(), idstr);
+                    }
                 }
             }
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        
+
 
         /*
          * 加载怪怪潜能信息
@@ -722,17 +743,22 @@ public class MapleItemInformationProvider {
      * 通过ID获取潜能信息
      */
     public List<StructItemOption> getPotentialInfo(int potId) {
-        String json = jedis.hget(KEYNAMES.POTENTIAL_DATA.getKeyName(), String.valueOf(potId));
-        List<StructItemOption> ret = new ArrayList<>();
-        if (json != null) {
-            try {
-                ret = mapper.readValue(json, new TypeReference<List<StructItemOption>>() {
-                });
-            } catch (IOException e) {
-                e.printStackTrace();
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            String json = jedis.hget(KEYNAMES.POTENTIAL_DATA.getKeyName(), String.valueOf(potId));
+            List<StructItemOption> ret = new ArrayList<>();
+            if (json != null) {
+                try {
+                    ret = mapper.readValue(json, new TypeReference<List<StructItemOption>>() {
+                    });
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     /**
@@ -751,20 +777,25 @@ public class MapleItemInformationProvider {
      * @return
      */
     public Map<Integer, List<StructItemOption>> getPotentialInfos(int potId) {
-        Map<Integer, List<StructItemOption>> ret = new HashMap<>();
-        Map<String, String> data = jedis.hgetAll(KEYNAMES.POTENTIAL_DATA.getKeyName());
-        for (Entry<String, String> entry : data.entrySet()) {
-            if (potId == -1 || Integer.valueOf(entry.getKey()) >= potId) {
-                try {
-                    List<StructItemOption> info = mapper.readValue(entry.getValue(), new TypeReference<List<StructItemOption>>() {
-                    });
-                    ret.put(Integer.valueOf(entry.getKey()), info);
-                } catch (IOException e) {
-                    e.printStackTrace();
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            Map<Integer, List<StructItemOption>> ret = new HashMap<>();
+            Map<String, String> data = jedis.hgetAll(KEYNAMES.POTENTIAL_DATA.getKeyName());
+            for (Entry<String, String> entry : data.entrySet()) {
+                if (potId == -1 || Integer.valueOf(entry.getKey()) >= potId) {
+                    try {
+                        List<StructItemOption> info = mapper.readValue(entry.getValue(), new TypeReference<List<StructItemOption>>() {
+                        });
+                        ret.put(Integer.valueOf(entry.getKey()), info);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     /*
@@ -814,30 +845,40 @@ public class MapleItemInformationProvider {
      * 通过ID获取星岩信息
      */
     public StructItemOption getSocketInfo(int socketId) {
-        int grade = ItemConstants.getNebuliteGrade(socketId);
-        String json = jedis.hget(KEYNAMES.SOCKET_DATA.getKeyName() + ":" + grade, String.valueOf(socketId));
-        if (grade == -1 || json == null) {
-            return null;
-        }
-        StructItemOption ret = null;
+        Jedis jedis = RedisUtil.getJedis();
         try {
-            ret = mapper.readValue(json, StructItemOption.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return ret;
-    }
-
-    public Map<Integer, StructItemOption> getAllSocketInfo(int grade) {
-        Map<Integer, StructItemOption> ret = new HashMap<>();
-        for (Entry<String, String> entry : jedis.hgetAll(KEYNAMES.SOCKET_DATA.getKeyName() + ":" + grade).entrySet()) {
+            int grade = ItemConstants.getNebuliteGrade(socketId);
+            String json = jedis.hget(KEYNAMES.SOCKET_DATA.getKeyName() + ":" + grade, String.valueOf(socketId));
+            if (grade == -1 || json == null) {
+                return null;
+            }
+            StructItemOption ret = null;
             try {
-                ret.put(Integer.valueOf(entry.getKey()), mapper.readValue(entry.getValue(), StructItemOption.class));
+                ret = mapper.readValue(json, StructItemOption.class);
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
+    }
+
+    public Map<Integer, StructItemOption> getAllSocketInfo(int grade) {
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            Map<Integer, StructItemOption> ret = new HashMap<>();
+            for (Entry<String, String> entry : jedis.hgetAll(KEYNAMES.SOCKET_DATA.getKeyName() + ":" + grade).entrySet()) {
+                try {
+                    ret.put(Integer.valueOf(entry.getKey()), mapper.readValue(entry.getValue(), StructItemOption.class));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public Collection<Integer> getMonsterBookList() {
@@ -861,11 +902,21 @@ public class MapleItemInformationProvider {
     }
 
     public Map<String, String> getAllItemNames() {
-        return jedis.hgetAll(KEYNAMES.ITEM_NAME.getKeyName());
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hgetAll(KEYNAMES.ITEM_NAME.getKeyName());
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public long getAllItemSize() {
-        return jedis.hlen(KEYNAMES.ITEM_DATA.getKeyName());
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hlen(KEYNAMES.ITEM_DATA.getKeyName());
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public StructAndroid getAndroidInfo(int i) {
@@ -930,51 +981,56 @@ public class MapleItemInformationProvider {
 
     @SuppressWarnings("unchecked")
     private <T> T getItemProperty(int itemId, String path, T defaultValue) {
-        String json = jedis.hget(KEYNAMES.ITEM_DATA.getKeyName(), String.valueOf(itemId));
-        if (json == null) {
-            return defaultValue;
-        }
-        Map<?, ?> data = null;
+        Jedis jedis = RedisUtil.getJedis();
         try {
-            data = mapper.readValue(json, Map.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        if (data == null) {
-            return defaultValue;
-        }
-        String[] loop = path.split("/");
-        Object ret = null;
-        for (String key : loop) {
-            if (data.containsKey(key)) {
-                if (data.get(key) instanceof Map<?, ?>) {
-                    data = (Map<?, ?>) data.get(key);
-                } else {
-                    ret = data.get(key);
-                    break;
-                }
-            } else {
+            String json = jedis.hget(KEYNAMES.ITEM_DATA.getKeyName(), String.valueOf(itemId));
+            if (json == null) {
                 return defaultValue;
             }
-        }
-
-        if (ret == null) {
-            ret = data;
-        }
-        if (ret != null && defaultValue != null && ret.getClass() != defaultValue.getClass()) {
-            if (defaultValue instanceof Integer) {
-                ret = Integer.valueOf(ret.toString());
-            } else if (defaultValue instanceof Double) {
-                ret = Double.valueOf(ret.toString());
+            Map<?, ?> data = null;
+            try {
+                data = mapper.readValue(json, Map.class);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+            if (data == null) {
+                return defaultValue;
+            }
+            String[] loop = path.split("/");
+            Object ret = null;
+            for (String key : loop) {
+                if (data.containsKey(key)) {
+                    if (data.get(key) instanceof Map<?, ?>) {
+                        data = (Map<?, ?>) data.get(key);
+                    } else {
+                        ret = data.get(key);
+                        break;
+                    }
+                } else {
+                    return defaultValue;
+                }
+            }
+
+            if (ret == null) {
+                ret = data;
+            }
+            if (ret != null && defaultValue != null && ret.getClass() != defaultValue.getClass()) {
+                if (defaultValue instanceof Integer) {
+                    ret = Integer.valueOf(ret.toString());
+                } else if (defaultValue instanceof Double) {
+                    ret = Double.valueOf(ret.toString());
+                }
 //            try {
 //                ret = defaultValue.getClass().getMethod("valueOf", ret.getClass())
 //                        .invoke(ret, ret.toString());
 //            } catch (IllegalAccessException | InvocationTargetException | NoSuchMethodException e) {
 //                e.printStackTrace();
 //            }
+            }
+            return (T) ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return (T) ret;
     }
 
     // TODO 暂未使用
@@ -1184,13 +1240,18 @@ public class MapleItemInformationProvider {
     }
 
     public StructSetItem getSetItem(int setItemId) {
-        StructSetItem ret = null;
+        Jedis jedis = RedisUtil.getJedis();
         try {
-            ret = mapper.readValue(jedis.hget("SetItemInfo", String.valueOf(setItemId)), StructSetItem.class);
-        } catch (IOException e) {
-            e.printStackTrace();
+            StructSetItem ret = null;
+            try {
+                ret = mapper.readValue(jedis.hget("SetItemInfo", String.valueOf(setItemId)), StructSetItem.class);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return ret;
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return ret;
     }
 
     public Map<Integer, Integer> getScrollReqs(int itemId) {
@@ -2397,18 +2458,33 @@ public class MapleItemInformationProvider {
      * 获取装备道具的名称
      */
     public String getName(int itemId) {
-        return jedis.hget(KEYNAMES.ITEM_NAME.getKeyName(), String.valueOf(itemId));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hget(KEYNAMES.ITEM_NAME.getKeyName(), String.valueOf(itemId));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     /*
      * 获取装备道具的描述
      */
     public String getDesc(int itemId) {
-        return jedis.hget(KEYNAMES.ITEM_DESC.getKeyName(), String.valueOf(itemId));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hget(KEYNAMES.ITEM_DESC.getKeyName(), String.valueOf(itemId));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public String getMsg(int itemId) {
-        return jedis.hget(KEYNAMES.ITEM_MSG.getKeyName(), String.valueOf(itemId));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.hget(KEYNAMES.ITEM_MSG.getKeyName(), String.valueOf(itemId));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public short getItemMakeLevel(int itemId) {
@@ -2567,10 +2643,15 @@ public class MapleItemInformationProvider {
     }
 
     public boolean itemExists(int itemId) {
-        if (ItemConstants.getInventoryType(itemId) == MapleInventoryType.UNDEFINED) {
-            return false;
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            if (ItemConstants.getInventoryType(itemId) == MapleInventoryType.UNDEFINED) {
+                return false;
+            }
+            return jedis.hexists(KEYNAMES.ITEM_DATA.getKeyName(), String.valueOf(itemId));
+        }finally {
+            RedisUtil.returnResource(jedis);
         }
-        return jedis.hexists(KEYNAMES.ITEM_DATA.getKeyName(), String.valueOf(itemId));
     }
 
     public boolean isCash(int itemId) {
@@ -2867,7 +2948,12 @@ public class MapleItemInformationProvider {
     }
 
     public boolean loadHairFace(int id) {
-        return jedis.lrange(KEYNAMES.HAIR_FACE_ID.getKeyName(), 0, -1).contains(String.valueOf(id));
+        Jedis jedis = RedisUtil.getJedis();
+        try {
+            return jedis.lrange(KEYNAMES.HAIR_FACE_ID.getKeyName(), 0, -1).contains(String.valueOf(id));
+        }finally {
+            RedisUtil.returnResource(jedis);
+        }
     }
 
     public Pair<Integer, Integer> getSocketReqLevel(int itemId) {
