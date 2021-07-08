@@ -239,7 +239,7 @@ function setEventPoints(Eventid, charid, points) {//通过eventid来给予参与
         insert.setString(4, cm.getPlayer().getName());//cname
         insert.setString(5, points);//points 点数
         insert.setString(6, getEventTimes(1, charid));//times 次数
-        insert.setString(7, null);
+        insert.setString(7, "1971-01-01 00:00:00");
         insert.executeUpdate(); //更新
         insert.close();
     } else {//update
@@ -268,7 +268,7 @@ function setEventTimes(Eventid, charid, times) {//通过eventid来设置参与�
         insert.setString(4, cm.getPlayer().getName());//cname
         insert.setString(5, getEventPoints(2, charid));//points 点数
         insert.setString(6, times);//times 次数
-        insert.setString(7, null);
+        insert.setString(7, "1971-01-01 00:00:00");
         insert.executeUpdate(); //更新
         insert.close();
     } else {//update

@@ -8,7 +8,6 @@ public class MapleDataFileEntry extends MapleDataEntry {
         super(name, size, checksum, parent);
     }
 
-    @Override
     public int getOffset() {
         return offset;
     }

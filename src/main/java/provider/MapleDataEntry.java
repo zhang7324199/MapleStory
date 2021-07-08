@@ -9,7 +9,6 @@ public class MapleDataEntry implements MapleDataEntity {
     private final int size;
     private final int checksum;
     private final MapleDataEntity parent;
-    private int offset;
 
     public MapleDataEntry(String name, int size, int checksum, MapleDataEntity parent) {
         super();
@@ -32,9 +31,6 @@ public class MapleDataEntry implements MapleDataEntity {
         return checksum;
     }
 
-    public int getOffset() {
-        return offset;
-    }
 
     @Override
     public MapleDataEntity getParent() {

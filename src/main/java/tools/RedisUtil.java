@@ -103,7 +103,7 @@ public final class RedisUtil {
      *
      * @return
      */
-    public synchronized static Jedis getJedis() {
+    public static Jedis getJedis() {
 //        (new Exception()).printStackTrace();
         return jedisPool.getResource();
     }

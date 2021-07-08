@@ -21,8 +21,8 @@ import java.util.*;
 
 public class PlayerHandlerTest {
 
-    private static MapleData delayData = MapleDataProviderFactory.getDataProvider(new File(System.getProperty("wzpath") + "/Character.wz")).getData("00002000.img");
-    private static MapleDataProvider datasource = MapleDataProviderFactory.getDataProvider(new File(System.getProperty("wzpath") + "/Skill.wz"));
+    private static MapleData delayData = MapleDataProviderFactory.getDataProvider(new File("D:\\workspace\\maplestory\\wz\\Character.wz")).getData("00002000.img");
+    private static MapleDataProvider datasource = MapleDataProviderFactory.getDataProvider(new File("D:\\workspace\\maplestory\\wz\\Skill.wz"));
 
     public static String giveBuff(int buffid, int bufflength, Map<MapleBuffStat, Integer> statups, MapleStatEffect effect) {
         MaplePacketLittleEndianWriter mplew = new MaplePacketLittleEndianWriter();
