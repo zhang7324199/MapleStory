@@ -32,7 +32,7 @@ public class CashShopOperation {
             return;
         }
         //开始处理
-        World.ChannelChange_Data(new CharacterTransfer(chr), chr.getId(), c.getChannel());
+        World.ChannelChange_Data(new CharacterTransfer(chr, (byte) c.getChannel()), chr.getId(), c.getChannel());
         CashShopServer.getPlayerStorage().deregisterPlayer(chr);
         c.updateLoginState(MapleClient.LOGIN_SERVER_TRANSITION, c.getSessionIPAddress());
         c.announce(MaplePacketCreator.getChannelChange(c, toch.getPort())); //发送更换频道的封包信息

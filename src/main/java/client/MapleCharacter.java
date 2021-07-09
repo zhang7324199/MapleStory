@@ -1776,7 +1776,7 @@ public class MapleCharacter extends AnimatedMapleMapObject implements Serializab
 
     public synchronized void saveToCache() {
         try {
-            CharacterTransfer ct = new CharacterTransfer(this);
+            CharacterTransfer ct = new CharacterTransfer(this, (byte) client.getChannel());
             RedisUtil.hset(RedisUtil.KEYNAMES.PLAYER_DATA.getKeyName(), String.valueOf(id), JsonUtil.getMapperInstance().writeValueAsString(ct));
         } catch (JsonProcessingException e) {
             log.error("更新缓存出错", e);
@@ -9938,7 +9938,7 @@ public class MapleCharacter extends AnimatedMapleMapObject implements Serializab
         PlayerBuffStorage.addBuffsToStorage(getId(), getAllBuffs());
         PlayerBuffStorage.addCooldownsToStorage(getId(), getCooldowns());
         PlayerBuffStorage.addDiseaseToStorage(getId(), getAllDiseases());
-        World.ChannelChange_Data(new CharacterTransfer(this), getId(), channel);
+        World.ChannelChange_Data(new CharacterTransfer(this, (byte) channel), getId(), channel);
         ch.removePlayer(this);
         client.updateLoginState(MapleClient.CHANGE_CHANNEL, client.getSessionIPAddress());
         client.announce(MaplePacketCreator.getChannelChange(client, toch.getPort()));

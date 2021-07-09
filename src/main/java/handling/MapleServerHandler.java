@@ -42,7 +42,7 @@ public class MapleServerHandler extends ChannelInboundHandlerAdapter {
     public static final Logger BuffPacketLog = LogManager.getLogger("BuffPackets");
     public static final Logger AttackPakcetLog = LogManager.getLogger("AttackPackets");
     public static final boolean preventIpAttack = true;
-    private static final Logger log = LogManager.getLogger(MapleServerHandler.class.getName());
+    private static final Logger log = LogManager.getLogger("");
     private static boolean show = false;
     private final Map<String, Pair<Long, Byte>> tracker = new ConcurrentHashMap<>();
     private int world = -1, channel = -1;

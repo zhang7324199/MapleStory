@@ -105,11 +105,11 @@ public class CharacterTransfer implements Externalizable {
         credit = new LinkedHashMap<>();
     }
 
-    public CharacterTransfer(MapleCharacter chr) {
+    public CharacterTransfer(MapleCharacter chr, byte targetChannel) {
         this.characterid = chr.getId();
         this.accountid = chr.getAccountID();
         this.accountname = chr.getClient().getAccountName();
-        this.channel = (byte) chr.getClient().getChannel();
+        this.channel = targetChannel;
 
 
         this.vpoints = chr.getVPoints();

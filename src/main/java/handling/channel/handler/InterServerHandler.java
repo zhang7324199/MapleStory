@@ -42,7 +42,7 @@ import java.util.Optional;
 
 public class InterServerHandler {
 
-    private static final Logger log = LogManager.getLogger(InterServerHandler.class.getName());
+    private static final Logger log = LogManager.getLogger("");
 
     public static void EnterMTS(MapleClient c, MapleCharacter chr) {
         if (chr.hasBlockedInventory() || chr.getMap() == null || chr.getEventInstance() != null || c.getChannelServer() == null) {
@@ -112,7 +112,7 @@ public class InterServerHandler {
         PlayerBuffStorage.addBuffsToStorage(chr.getId(), chr.getAllBuffs());
         PlayerBuffStorage.addCooldownsToStorage(chr.getId(), chr.getCooldowns());
         PlayerBuffStorage.addDiseaseToStorage(chr.getId(), chr.getAllDiseases());
-        World.ChannelChange_Data(new CharacterTransfer(chr), chr.getId(), -10);
+        World.ChannelChange_Data(new CharacterTransfer(chr, (byte)-10), chr.getId(), -10);
         ch.removePlayer(chr);
         c.updateLoginState(MapleClient.CHANGE_CHANNEL, c.getSessionIPAddress());
         chr.saveToCache();
@@ -180,7 +180,6 @@ public class InterServerHandler {
             player = MapleCharacter.ReconstructChr(transfer, c, true);
             firstLoggedIn = false;
         }
-
         slea.skip(13);
         long sessionId = slea.readLong();
         ChannelServer channelServer = c.getChannelServer();

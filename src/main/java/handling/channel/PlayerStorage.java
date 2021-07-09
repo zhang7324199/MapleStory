@@ -325,7 +325,7 @@ public class PlayerStorage {
             Jedis jedis = RedisUtil.getJedis();
             try {
                 for (Entry<Integer, MapleCharacter> entry : idToChar.entrySet()) {
-                    CharacterTransfer ct = new CharacterTransfer(entry.getValue());
+                    CharacterTransfer ct = new CharacterTransfer(entry.getValue(), (byte) entry.getValue().getClient().getChannel());
                     jedis.hset(RedisUtil.KEYNAMES.PLAYER_DATA.getKeyName(), String.valueOf(entry.getKey()), JsonUtil.getMapperInstance().writeValueAsString(ct));
                 }
             } catch (JsonProcessingException e) {

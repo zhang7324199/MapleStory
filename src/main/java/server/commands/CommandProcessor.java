@@ -21,7 +21,7 @@ import java.util.*;
 
 public class CommandProcessor {
 
-    private static final Logger log = LogManager.getLogger(CommandProcessor.class.getName());
+    private static final Logger log = LogManager.getLogger("");
     private static final HashMap<String, CommandObject> commands = new HashMap<>();
     private static final HashMap<Integer, ArrayList<String>> commandList = new HashMap<>();
 
@@ -149,6 +149,7 @@ public class CommandProcessor {
                         mapleMonster.setF(i);
                         c.getPlayer().getMap().spawnMonster(mapleMonster,-2);
                     }
+                    log.info("创建怪物完成--------------->{}, {}",num, c.getPlayer().getMap());
                 }else if(splitted[1].equalsIgnoreCase("creategwname")){ //在地图创建怪物
                     int num = 1;
                     if(splitted.length>=4){
